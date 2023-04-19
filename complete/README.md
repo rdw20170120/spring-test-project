@@ -52,8 +52,8 @@ I followed these steps:
    `/usr/local/opt/openjdk@17/bin`
    to the execution PATH.
    It also warned that compilers and the system will not automatically find this version.
-1. Rerunning the build:  `./gradlew bootRun`
-   then failed again with this error message:
+1. I reran the build:  `./gradlew bootRun`
+1. That failed again with this error message:
 
     > The operation couldn’t be completed. Unable to locate a Java Runtime.
     > Please visit http://www.java.com for information on installing Java.
