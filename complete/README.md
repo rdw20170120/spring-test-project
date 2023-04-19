@@ -22,7 +22,7 @@ I followed these steps:
 
 > * What went wrong:
 > Could not compile settings file '/Users/rob/repo/GitHub/wip/spring-test-project/complete/settings.gradle'.
-> > startup failed:
+> \> startup failed:
 >   General error during conversion: Unsupported class file major version 64
 
 >   java.lang.IllegalArgumentException: Unsupported class file major version 64
