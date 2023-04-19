@@ -16,14 +16,14 @@ I followed these steps:
 1. Rerunning the build:  `./gradlew bootRun`
    then failed with this error message:
 > FAILURE: Build failed with an exception.
-
+>
 > * Where:
 > Settings file '/Users/rob/repo/GitHub/wip/spring-test-project/complete/settings.gradle'
-
+>
 > * What went wrong:
 > Could not compile settings file '/Users/rob/repo/GitHub/wip/spring-test-project/complete/settings.gradle'.
 > \> startup failed:
 >   General error during conversion: Unsupported class file major version 64
-
+>
 >   java.lang.IllegalArgumentException: Unsupported class file major version 64
 
