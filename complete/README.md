@@ -42,6 +42,7 @@ I followed these steps:
    Therefore,
    I resorted to installing
    a compatible version of OpenJDK instead.
+1. I uninstalled the JDK:  `brew uninstall oracle-jdk`
 1. I installed an OpenJDK using Homebrew:  `brew install openjdk@17`
 
    The installation script
@@ -61,9 +62,9 @@ I followed these steps:
    which demonstrates that the OpenJDK could not be found.
 1. I executed this to add OpenJDK to the PATH:
     `export PATH=/usr/local/opt/openjdk@17/bin:$PATH`
-1. Then I reran the build:  `./gradlew bootRun`
+1. I reran the build:  `./gradlew bootRun`
 1. This time Gradle was able to build,
-   then startup Tomcat
+   then start up Tomcat
    which took over that shell (as a running process).
 1. So I opened another terminal shell (Bash) and executed: `curl localhost:8080`
 1. This command is supposed to execute the RESTful service,
@@ -72,4 +73,27 @@ I followed these steps:
     > {"timestamp":"TIMESTAMP","status":404,"error":"Not Found","path":"/"}
 
    which confirms that the RESTful service does not exist yet.
+1. I killed (Ctrl-C) the process to stop Tomcat.
+1. As I continued to research,
+   I discovered that
+   Gradle 7.4.2 is NOT the latest version,
+   but 8.1 is instead.
+   The Gradle wrapper
+   remembers the configured version of Gradle
+   but it can be updated.
+1. So I updated to the latest Gradle with
+   `./gradlew wrapper --gradle-version=8.1 --distribution-type=bin`
+1. I reran the build:  `./gradlew bootRun`
+1. This triggered the installation of the latest Gradle
+   which included a release note
+   that it now works with Oracle JDK 20!
+   This encouraged me to reinstall the Oracle JDK.
+1. I killed (Ctrl-C) the process to stop Tomcat.
+1. I uninstalled OpenJDK:  `brew uninstall openjdk@17`
+1. I reinstalled the Oracle JDK:  `brew install oracle-jdk`
+1. I closed the terminal in order to toss that shell environment.
+1. I opened a terminal shell (Bash) for a fresh shell environment.
+1. I navigated back to this `complete` subdirectory.
+1. I reran the build:  `./gradlew bootRun`
+1. The Gradle build was successful still, starting up Tomcat again.
 
