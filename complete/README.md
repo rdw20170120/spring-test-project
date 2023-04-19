@@ -7,16 +7,16 @@ I followed these steps:
 1. I navigated to the root of the forked repository clone.
 1. I created a new branch:  `git checkout -b Rob`
 1. I navigated to this `complete` subdirectory.
-1. I invoked the build:  `./gradlew bootRun`
-   based on instructions [here](https://spring.io/guides/gs/spring-boot/).
+1. Based on instructions [here](https://spring.io/guides/gs/spring-boot/),
+   I invoked the build:  `./gradlew bootRun`
 1. That failed with this error:
 
     > The operation couldn’t be completed. Unable to locate a Java Runtime.
     > Please visit http://www.java.com for information on installing Java.
 
 1. I installed a Java JDK using Homebrew:  `brew install oracle-jdk`
-1. Rerunning the build:  `./gradlew bootRun`
-   then failed with this error message:
+1. I reran the build:  `./gradlew bootRun`
+1. That failed with this error:
 
     > FAILURE: Build failed with an exception.
     >
@@ -43,6 +43,7 @@ I followed these steps:
    I resorted to installing
    a compatible version of OpenJDK instead.
 1. I installed an OpenJDK using Homebrew:  `brew install openjdk@17`
+
    The installation script
    warned that this JDK
    was not automatically linked into the execution PATH
@@ -61,11 +62,11 @@ I followed these steps:
 1. I executed this to add OpenJDK to the PATH:
     `export PATH=/usr/local/opt/openjdk@17/bin:$PATH`
 1. Then I reran the build:  `./gradlew bootRun`
-   This time Gradle was able to build,
+1. This time Gradle was able to build,
    then startup Tomcat
    which took over that shell (as a running process).
 1. So I opened another terminal shell (Bash) and executed: `curl localhost:8080`
-   This command is supposed to execute the RESTful service,
+1. This command is supposed to execute the RESTful service,
    but instead it returns an error:
 
     > {"timestamp":"TIMESTAMP","status":404,"error":"Not Found","path":"/"}
