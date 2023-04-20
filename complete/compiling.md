@@ -8,7 +8,8 @@ Follow these steps:
 1. Create a new branch: `git checkout -b Rob`
 1. Navigate to this `complete` subdirectory.
 1. Based on instructions [here](https://spring.io/guides/gs/spring-boot/),
-   Invoke Gradle to run the application: `./gradlew bootRun`
+   invoke Gradle to run the application: `./gradlew bootRun`
+
    NOTE the helpful shortcut in `source_me.bash`.
 1. That failed with this error:
 
@@ -70,6 +71,7 @@ Follow these steps:
    then start up Tomcat
    which took over that shell (as a running process).
 1. Open another terminal shell (Bash) and execute: `curl localhost:8080/greeting`
+
    NOTE the helpful shortcut in `source_me.bash`.
 1. This command executes the RESTful service:
 
