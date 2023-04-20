@@ -1,99 +1,30 @@
 # Rob Williams' notes
-To complete this interview exercise,
-I followed these steps:
-1. I forked the [source repository](https://github.com/mikee/spring-test-project).
-1. I opened a terminal shell (Bash).
-1. I cloned that fork to my laptop.
-1. I navigated to the root of the forked repository clone.
-1. I created a new branch:  `git checkout -b Rob`
-1. I navigated to this `complete` subdirectory.
-1. Based on instructions [here](https://spring.io/guides/gs/spring-boot/),
-   I invoked the build:  `./gradlew bootRun`
-1. That failed with this error:
+For technical interview exercise from Foster Moore.
 
-    > The operation couldn’t be completed. Unable to locate a Java Runtime.
-    > Please visit http://www.java.com for information on installing Java.
+Consider these factors:
+* Dockerfile best practices
+  * run time use
+  * image size
+  * minimizing attack footprint (exclude unnecessary packages)
+* Network Ingress limitation
+* Pod Service Account
 
-1. I installed a Java JDK using Homebrew:  `brew install oracle-jdk`
-1. I reran the build:  `./gradlew bootRun`
-1. That failed with this error:
+## Part 1
+1. [Compile the example Spring Boot application](./compiling.md)
+1. Create a Docker image hosting the application
+1. Deploy the application within Kubernetes
+1. Add a Kubernetes Service to route traffic
+1. Add a Kubernetes NetworkPolicy to limit the inbound traffic
 
-    > FAILURE: Build failed with an exception.
-    >
-    > * Where:
-    > Settings file '/Users/rob/repo/GitHub/wip/spring-test-project/complete/settings.gradle'
-    >
-    > * What went wrong:
-    > Could not compile settings file '/Users/rob/repo/GitHub/wip/spring-test-project/complete/settings.gradle'.
-    >
-    > \> startup failed:
-    >   General error during conversion: Unsupported class file major version 64
-    >
-    >   java.lang.IllegalArgumentException: Unsupported class file major version 64
+## Part 2
+1. Produce a software BoM (as text or CSV)
+1. Produce results of a security scan of the Docker image (using tool of choice)
 
-1. Research revealed that
-   the latest Gradle 7.4.2 installed by the Gradle wrapper
-   is not compatible with
-   the latest Oracle JDK 20 installed by Homebrew.
-   Instead, Gradle 7.4.2 runs with JDK versions 8 through 19.
-   However,
-   Homebrew does not provide
-   any earlier version of Oracle JDK.
-   Therefore,
-   I resorted to installing
-   a compatible version of OpenJDK instead.
-1. I uninstalled the JDK:  `brew uninstall oracle-jdk`
-1. I installed an OpenJDK using Homebrew:  `brew install openjdk@17`
-
-   The installation script
-   warned that this JDK
-   was not automatically linked into the execution PATH
-   since it is an alternate version of another formula.
-   To use this JDK, it recommends adding
-   `/usr/local/opt/openjdk@17/bin`
-   to the execution PATH.
-   It also warned that compilers and the system will not automatically find this version.
-1. I reran the build:  `./gradlew bootRun`
-1. That failed again with this error message:
-
-    > The operation couldn’t be completed. Unable to locate a Java Runtime.
-    > Please visit http://www.java.com for information on installing Java.
-
-   which demonstrates that the OpenJDK could not be found.
-1. I executed this to add OpenJDK to the PATH:
-    `export PATH=/usr/local/opt/openjdk@17/bin:$PATH`
-1. I reran the build:  `./gradlew bootRun`
-1. This time Gradle was able to build,
-   then start up Tomcat
-   which took over that shell (as a running process).
-1. So I opened another terminal shell (Bash) and executed: `curl localhost:8080`
-1. This command is supposed to execute the RESTful service,
-   but instead it returns an error:
-
-    > {"timestamp":"TIMESTAMP","status":404,"error":"Not Found","path":"/"}
-
-   which confirms that the RESTful service does not exist yet.
-1. I killed (Ctrl-C) the process to stop Tomcat.
-1. As I continued to research,
-   I discovered that
-   Gradle 7.4.2 is NOT the latest version,
-   but 8.1 is instead.
-   The Gradle wrapper
-   remembers the configured version of Gradle
-   but it can be updated.
-1. So I updated to the latest Gradle with
-   `./gradlew wrapper --gradle-version=8.1 --distribution-type=bin`
-1. I reran the build:  `./gradlew bootRun`
-1. This triggered the installation of the latest Gradle
-   which included a release note
-   that it now works with Oracle JDK 20!
-   This encouraged me to reinstall the Oracle JDK.
-1. I killed (Ctrl-C) the process to stop Tomcat.
-1. I uninstalled OpenJDK:  `brew uninstall openjdk@17`
-1. I reinstalled the Oracle JDK:  `brew install oracle-jdk`
-1. I closed the terminal in order to toss that shell environment.
-1. I opened a terminal shell (Bash) for a fresh shell environment.
-1. I navigated back to this `complete` subdirectory.
-1. I reran the build:  `./gradlew bootRun`
-1. The Gradle build was successful still, starting up Tomcat again.
+## Post results
+1. Checkin these deliverables:
+   * Dockerfile
+   * Kubernetes deployment
+   * software BoM
+   * security scan results
+1. Create a Pull Request (PR) back to the source repository
 
