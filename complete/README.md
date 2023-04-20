@@ -11,7 +11,7 @@ Consider these factors:
 
 ## Part 1
 1. [Compile the example Spring Boot application](./compiling.md)
-1. Create a Docker image hosting the application
+1. [Create a Docker image hosting the application](./containerize.md)
 1. Deploy the application within Kubernetes
 1. Add a Kubernetes Service to route traffic
 1. Add a Kubernetes NetworkPolicy to limit the inbound traffic
@@ -27,4 +27,11 @@ Consider these factors:
    * software BoM
    * security scan results
 1. Create a Pull Request (PR) back to the source repository
+
+## What I would still do to improve the deployment
+* Strictly build the components separately
+* Strictly compose the components using versioned and hashed references
+* Choose a different base for the Docker image (not Alpine Linux)
+* Build a base image from scratch with nothing unnecessary
+* Use Earthly to build the image
 
