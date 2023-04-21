@@ -13,25 +13,28 @@ Follow these steps:
    NOTE the helpful shortcut in [`source_me.bash`](./source_me.bash).
 1. That failed with this error:
 
-    > The operation couldn’t be completed. Unable to locate a Java Runtime.
-    > Please visit http://www.java.com for information on installing Java.
+    ```
+    The operation couldn’t be completed. Unable to locate a Java Runtime.
+    Please visit http://www.java.com for information on installing Java.
+    ```
 
 1. Install a Java JDK using Homebrew: `brew install oracle-jdk`
 1. Rerun the application: `./gradlew bootRun`
 1. That failed with this error:
 
-    > FAILURE: Build failed with an exception.
-    >
-    > * Where:
-    > Settings file '/Users/rob/repo/GitHub/wip/spring-test-project/complete/settings.gradle'
-    >
-    > * What went wrong:
-    > Could not compile settings file '/Users/rob/repo/GitHub/wip/spring-test-project/complete/settings.gradle'.
-    >
-    > \> startup failed:
-    >   General error during conversion: Unsupported class file major version 64
-    >
-    >   java.lang.IllegalArgumentException: Unsupported class file major version 64
+    ```
+    FAILURE: Build failed with an exception.
+
+    * Where:
+    Settings file '/Users/rob/repo/GitHub/wip/spring-test-project/complete/settings.gradle'
+ 
+    * What went wrong:
+    Could not compile settings file '/Users/rob/repo/GitHub/wip/spring-test-project/complete/settings.gradle'.
+
+    > startup failed:
+      General error during conversion: Unsupported class file major version 64
+      java.lang.IllegalArgumentException: Unsupported class file major version 64
+    ```
 
 1. Research revealed that
    Gradle 7.4.2 used by the Gradle wrapper

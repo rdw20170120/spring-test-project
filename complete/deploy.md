@@ -56,23 +56,20 @@ Follow these steps:
 
 1. Check Kubernetes: `kubectl get all`
 
-    > NAME                               READY   STATUS    RESTARTS   AGE
-    >
-    > pod/rest-service-fddb95bff-925kg   1/1     Running   0          34m
-    >
-    > NAME                   TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)    AGE
-    >
-    > service/kubernetes     ClusterIP   10.96.0.1       <none>        443/TCP    46h
-    >
-    > service/rest-service   ClusterIP   10.111.10.201   <none>        8080/TCP   34m
-    >
-    > NAME                           READY   UP-TO-DATE   AVAILABLE   AGE
-    >
-    > deployment.apps/rest-service   1/1     1            1           34m
-    >
-    > NAME                                     DESIRED   CURRENT   READY   AGE
-    >
-    > replicaset.apps/rest-service-fddb95bff   1         1         1       34m
+    ```
+    NAME                               READY   STATUS    RESTARTS   AGE
+    pod/rest-service-fddb95bff-925kg   1/1     Running   0          34m
+
+    NAME                   TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)    AGE
+    service/kubernetes     ClusterIP   10.96.0.1       <none>        443/TCP    46h
+    service/rest-service   ClusterIP   10.111.10.201   <none>        8080/TCP   34m
+
+    NAME                           READY   UP-TO-DATE   AVAILABLE   AGE
+    deployment.apps/rest-service   1/1     1            1           34m
+ 
+    NAME                                     DESIRED   CURRENT   READY   AGE
+    replicaset.apps/rest-service-fddb95bff   1         1         1       34m
+    ```
 
 1. Call the application (note the different port): `curl localhost:30080/greeting`
 1. Tear down the service: `kubectl delete service rest-service`
