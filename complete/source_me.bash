@@ -12,5 +12,5 @@ alias container-run='docker run -p 8080:8080 myorg/myapp'
 alias container-shell='docker run -ti --entrypoint /bin/sh myorg/myapp'
 alias gradle-app='./gradlew bootRun'
 alias gradle-jar='./gradlew build'
-alias image-build='docker build --build-arg JAR_FILE=build/libs/*-SNAPSHOT.jar -t myorg/myapp .'
+alias image-build='docker build -t myorg/myapp .'
 
