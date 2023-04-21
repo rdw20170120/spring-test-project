@@ -16,7 +16,9 @@ Follow these steps:
 1. That still fails, so find Docker. 
 1. Assume Docker is accessible within the user account: `find ~ -name docker`
 
-    > /Users/rob/.docker/bin/docker
+    ```
+    /Users/rob/.docker/bin/docker
+    ```
 
 1. Add Docker to the execution PATH:
    `export PATH=~/.docker/bin:$PATH`
@@ -35,7 +37,9 @@ Follow these steps:
    NOTE the helpful shortcut in [`source_me.bash`](./source_me.bash).
 1. This command executes the RESTful service running inside the container:
 
-    > {"id":1,"content":"Hello, World!"}
+    ```
+    {"id":1,"content":"Hello, World!"}
+    ```
 
 1. Peek into the running container: `docker exec -ti NAME /bin/sh`
 
