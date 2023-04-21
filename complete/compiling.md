@@ -10,7 +10,7 @@ Follow these steps:
 1. Based on instructions [here](https://spring.io/guides/gs/spring-boot/),
    invoke Gradle to run the application: `./gradlew bootRun`
 
-   NOTE the helpful shortcut in `source_me.bash`.
+   NOTE the helpful shortcut in [`source_me.bash`](./source_me.bash).
 1. That failed with this error:
 
     > The operation couldn’t be completed. Unable to locate a Java Runtime.
