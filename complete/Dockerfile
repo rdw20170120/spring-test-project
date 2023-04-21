@@ -1,13 +1,17 @@
 FROM eclipse-temurin:20-jre-alpine
 # This image contains the Ash shell rather than Bash
 
+# Add a non-root user so that we can run the container without superuser privileges
 RUN addgroup -S nonroot && adduser -S nonroot -G nonroot
 
 VOLUME /tmp
 
+# Grab the application from the Gradle-based build output
 COPY ./build/libs/rest-service-0.0.1-SNAPSHOT.jar /app.jar
+# Allow the non-root user to execute the application
 RUN chmod a+rx /app.jar
 
+# Run the application without superuser privileges
 USER nonroot
 ENTRYPOINT ["java", "-jar", "/app.jar"]
 
