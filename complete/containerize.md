@@ -26,6 +26,7 @@ Follow these steps:
    `docker build --build-arg JAR_FILE=build/libs/*-SNAPSHOT.jar -t myorg/myapp .`
 1. Success!  Check Docker Desktop for the image.
 1. Start a container with: `docker run -p 8080:8080 myorg/myapp`
+
    which took over that shell (as a running process).
 
    NOTE the helpful shortcut in `source_me.bash`.

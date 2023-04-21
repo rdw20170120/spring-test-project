@@ -101,6 +101,7 @@ Follow these steps:
 1. Rerun the application: `./gradlew bootRun`
 1. The Gradle build was successful still, starting up Tomcat again.
 1. In another terminal shell (Bash) execute: `curl localhost:8080/greeting`
+
    which again successfully returned the proper response of
 
     > {"id":1,"content":"Hello, World!"}
