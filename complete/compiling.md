@@ -72,7 +72,7 @@ Follow these steps:
    which took over that shell (as a running process).
 1. Open another terminal shell (Bash) and execute: `curl localhost:8080/greeting`
 
-   NOTE the helpful shortcut in `source_me.bash`.
+   NOTE the helpful shortcut in [`source_me.bash`](./source_me.bash).
 1. This command executes the RESTful service:
 
     > {"id":1,"content":"Hello, World!"}
