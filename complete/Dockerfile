@@ -14,6 +14,7 @@ ENTRYPOINT ["java", "-jar", "/app.jar"]
 # TODO: Consider a multi-stage Docker build
 # TODO: Consider activating Docker experimental features
 # TODO: Consider building an image from scratch
+# TODO: Consider passing `docker run` command-line parameters to the ENTRYPOINT
 # TODO: Consider unpacking the fat JAR
 # TODO: Consider using Earthly to create the multi-stage Docker build
 # TODO: Consider using JLink to build a custom JRE distribution
@@ -24,4 +25,6 @@ ENTRYPOINT ["java", "-jar", "/app.jar"]
 # TODO: Consider using Spring Boot Layer Index
 # TODO: Consider using Spring Boot plugin for Gradle
 # TODO: Consider using a buildpack
+# TODO: Consider using a different base for the Docker image (not Alpine Linux)
+# TODO: Consider using a shell script as the container ENTRYPOINT
 

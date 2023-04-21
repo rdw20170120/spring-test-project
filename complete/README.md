@@ -12,28 +12,25 @@ Consider these factors:
 ## Part 1
 1. [Compile the example Spring Boot application](./compiling.md)
 1. [Create a Docker image hosting the application](./containerize.md)
-1. Deploy the application within Kubernetes
-1. Add a Kubernetes Service to route traffic
-1. Add a Kubernetes NetworkPolicy to limit the inbound traffic
+1. [Deploy the application within Kubernetes](./deploy.md)
+1. [Add a Kubernetes Service to route traffic](./KubernetesService.md)
+1. [Add a Kubernetes NetworkPolicy to limit the inbound traffic](./KubernetesNetworkPolicy.md)
 
 ## Part 2
-1. Produce a software BoM (as text or CSV)
-1. Produce results of a security scan of the Docker image (using tool of choice)
+1. [Produce a software BoM](./software_BoM.md)
+1. [Produce results of a security scan of the Docker image](./security_scan.md)
 
 ## Post results
 1. Checkin these deliverables:
    * Dockerfile
    * Kubernetes deployment
-   * software BoM
+   * software BoM (as text or CSV)
    * security scan results
 1. Create a Pull Request (PR) back to the source repository
 
 ## What I would still do to improve the deployment
+* Improve the Docker image (see comments in [`Dockerfile`](./Dockerfile)
+* Run dynamic security scans against the deployment
 * Strictly build the components separately
 * Strictly compose the components using versioned and hashed references
-* Choose a different base for the Docker image (not Alpine Linux)
-* Build a base image from scratch with nothing unnecessary
-* Use Earthly to build the image
-* Consider using a shell script as the container ENTRYPOINT
-* Consider passing `docker run` command-line parameters to the ENTRYPOINT
 
