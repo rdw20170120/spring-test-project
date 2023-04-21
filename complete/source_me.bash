@@ -7,7 +7,8 @@ if [[ -z "${PathOriginal}" ]] ; then
     export PATH=~/.docker/bin:${PathOriginal}
 fi
 
-alias app-call='curl localhost:8080/greeting'
+alias app-call-direct='curl localhost:8080/greeting'
+alias app-call-k8s='curl localhost:30080/greeting'
 alias container-run='docker run -p 8080:8080 myorg/myapp'
 alias container-shell='docker run -ti --entrypoint /bin/sh myorg/myapp'
 alias gradle-app='./gradlew bootRun'

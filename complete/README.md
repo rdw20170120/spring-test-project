@@ -13,8 +13,6 @@ Consider these factors:
 1. [Compile the example Spring Boot application](./compiling.md)
 1. [Create a Docker image hosting the application](./containerize.md)
 1. [Deploy the application within Kubernetes](./deploy.md)
-1. [Add a Kubernetes Service to route traffic](./KubernetesService.md)
-1. [Add a Kubernetes NetworkPolicy to limit the inbound traffic](./KubernetesNetworkPolicy.md)
 
 ## Part 2
 1. [Produce a software BoM](./software_BoM.md)
@@ -29,7 +27,9 @@ Consider these factors:
 1. Create a Pull Request (PR) back to the source repository
 
 ## What I would still do to improve the deployment
+* Add liveness and readiness probes
 * Improve the Docker image (see comments in [`Dockerfile`](./Dockerfile)
+* Productionize everything
 * Run dynamic security scans against the deployment
 * Strictly build the components separately
 * Strictly compose the components using versioned and hashed references
