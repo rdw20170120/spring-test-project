@@ -6,7 +6,7 @@ RUN addgroup -S nonroot && adduser -S nonroot -G nonroot
 
 VOLUME /tmp
 
-# Grab the application from the Gradle-based build output
+# Grab the application from the Gradle build output
 COPY ./build/libs/rest-service-0.0.1-SNAPSHOT.jar /app.jar
 # Allow the non-root user to execute the application
 RUN chmod a+rx /app.jar
