@@ -70,7 +70,7 @@ Follow these steps:
 
    which demonstrates that the OpenJDK could not be found.
 1. Execute this to add OpenJDK to the PATH:
-    `export PATH=/usr/local/opt/openjdk@17/bin:$PATH`
+   `export PATH=/usr/local/opt/openjdk@17/bin:$PATH`
 1. Rerun the application: `./gradlew bootRun`
 1. This time Gradle was able to build,
    then start up Tomcat

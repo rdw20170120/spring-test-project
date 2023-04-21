@@ -14,4 +14,7 @@ alias container-shell='docker run -ti --entrypoint /bin/sh myorg/myapp'
 alias gradle-app='./gradlew bootRun'
 alias gradle-jar='./gradlew build'
 alias image-build='docker build -t myorg/myapp .'
+alias k8s-deploy='kubectl apply -f deployment.yaml'
+alias k8s-get-all='kubectl get all'
+alias k8s-undeploy='kubectl delete -f deployment.yaml'
 
