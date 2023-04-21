@@ -34,4 +34,6 @@ Consider these factors:
 * Choose a different base for the Docker image (not Alpine Linux)
 * Build a base image from scratch with nothing unnecessary
 * Use Earthly to build the image
+* Consider using a shell script as the container ENTRYPOINT
+* Consider passing `docker run` command-line parameters to the ENTRYPOINT
 
