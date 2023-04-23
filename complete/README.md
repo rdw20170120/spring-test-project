@@ -22,7 +22,7 @@ Consider these factors:
 1. Checkin these deliverables:
    * Dockerfile
    * Kubernetes deployment
-   * software BoM (as text or CSV)
+   * software BoM
    * security scan results
 1. Create a Pull Request (PR) back to the source repository
 
@@ -33,4 +33,6 @@ Consider these factors:
 * Run dynamic security scans against the deployment
 * Strictly build the components separately
 * Strictly compose the components using versioned and hashed references
+* Troubleshoot the Codacy security scan until it functions fully
+* Troubleshoot the CodeQL security scan until it functions fully
 

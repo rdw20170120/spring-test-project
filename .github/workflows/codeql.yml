@@ -6,8 +6,6 @@ on:
     branches: ["Rob"]
   pull_request:
     branches: ["Rob"]
-  schedule:
-    - cron: '45 5 * * 0'
 
 jobs:
   analyze:
@@ -32,9 +30,11 @@ jobs:
         with:
           languages: ${{ matrix.language }}
 
-      - run: |
-          echo "Run, Build Application using script"
-          cd ./complete && ./gradlew build
+      - name: Run Gradle
+        run: |
+          echo "Build application using Gradle"
+          ./gradlew build
+        working-directory: ./complete
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v2
