@@ -54,6 +54,7 @@ Follow these steps:
     ```
 
 # Add a Kubernetes Service to route traffic
+# Add a Kubernetes NetworkPolicy to limit the inbound traffic
 Follow these steps:
 
 1. Deploy: `kubectl apply -f deployment.yaml`
@@ -99,8 +100,4 @@ Follow these steps:
     NAME                 TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
     service/kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   44h
     ```
-
-# Add a Kubernetes NetworkPolicy to limit the inbound traffic
-Follow these steps:
-
 
