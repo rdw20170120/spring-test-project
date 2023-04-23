@@ -1,10 +1,11 @@
+---
 name: "CodeQL"
 
 on:
   push:
-    branches: [ "Rob" ]
+    branches: ["Rob"]
   pull_request:
-    branches: [ "Rob" ]
+    branches: ["Rob"]
   schedule:
     - cron: '45 5 * * 0'
 
@@ -20,23 +21,22 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        language: [ 'java' ]
+        language: ['java']
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    - name: Initialize CodeQL
-      uses: github/codeql-action/init@v2
-      with:
-        languages: ${{ matrix.language }}
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v2
+        with:
+          languages: ${{ matrix.language }}
 
       - run: |
           echo "Run, Build Application using script"
           cd ./complete && ./gradlew build
 
-    - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@v2
-      with:
-        category: "/language:${{matrix.language}}"
-
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v2
+        with:
+          category: "/language:${{matrix.language}}"
