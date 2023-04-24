@@ -16,7 +16,7 @@ spec:
         app: rest-service
     spec:
       containers:
-      - image: myorg/myapp
+      - image: robatdocker/myapp
         name: myapp
         resources: {}
         imagePullPolicy: Never

@@ -28,6 +28,8 @@ Consider these factors:
 
 ## What I would still do to improve the deployment
 * Add liveness and readiness probes
+* Enhance GitHub-integrated scanning with a paid account
+* Enhance Synk scanning with a paid account
 * Improve the Docker image (see comments in [`Dockerfile`](./Dockerfile)
 * Productionize everything
 * Run dynamic security scans against the deployment
