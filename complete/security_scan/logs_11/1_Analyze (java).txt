@@ -1,0 +1,640 @@
+2023-04-23T22:15:45.6467841Z Requested labels: ubuntu-latest
+2023-04-23T22:15:45.6468154Z Job defined at: rdw20170120/spring-test-project/.github/workflows/codeql.yml@refs/heads/Rob
+2023-04-23T22:15:45.6468296Z Waiting for a runner to pick up this job...
+2023-04-23T22:15:46.2245338Z Job is waiting for a hosted runner to come online.
+2023-04-23T22:15:49.0268552Z Job is about to start running on the hosted runner: GitHub Actions 1 (hosted)
+2023-04-23T22:15:51.0596562Z Current runner version: '2.303.0'
+2023-04-23T22:15:51.0622823Z ##[group]Operating System
+2023-04-23T22:15:51.0623830Z Ubuntu
+2023-04-23T22:15:51.0624128Z 22.04.2
+2023-04-23T22:15:51.0624414Z LTS
+2023-04-23T22:15:51.0624661Z ##[endgroup]
+2023-04-23T22:15:51.0625084Z ##[group]Runner Image
+2023-04-23T22:15:51.0625438Z Image: ubuntu-22.04
+2023-04-23T22:15:51.0625720Z Version: 20230417.1
+2023-04-23T22:15:51.0626289Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20230417.1/images/linux/Ubuntu2204-Readme.md
+2023-04-23T22:15:51.0626980Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20230417.1
+2023-04-23T22:15:51.0627383Z ##[endgroup]
+2023-04-23T22:15:51.0627730Z ##[group]Runner Image Provisioner
+2023-04-23T22:15:51.0628070Z 2.0.139.1
+2023-04-23T22:15:51.0628318Z ##[endgroup]
+2023-04-23T22:15:51.0629077Z ##[group]GITHUB_TOKEN Permissions
+2023-04-23T22:15:51.0629620Z Actions: read
+2023-04-23T22:15:51.0629939Z Contents: read
+2023-04-23T22:15:51.0630477Z Metadata: read
+2023-04-23T22:15:51.0630877Z SecurityEvents: write
+2023-04-23T22:15:51.0631228Z ##[endgroup]
+2023-04-23T22:15:51.0634875Z Secret source: Actions
+2023-04-23T22:15:51.0635414Z Prepare workflow directory
+2023-04-23T22:15:51.1350448Z Prepare all required actions
+2023-04-23T22:15:51.1532382Z Getting action download info
+2023-04-23T22:15:51.3975582Z Download action repository 'actions/checkout@v3' (SHA:8e5e7e5ab8b370d6c329ec480221332ada57f0ab)
+2023-04-23T22:15:51.7175435Z Download action repository 'github/codeql-action@v2' (SHA:b2c19fb9a2a485599ccf4ed5d65527d94bc57226)
+2023-04-23T22:15:55.8440976Z Complete job name: Analyze (java)
+2023-04-23T22:15:55.9323913Z ##[group]Run actions/checkout@v3
+2023-04-23T22:15:55.9324242Z with:
+2023-04-23T22:15:55.9324486Z   repository: rdw20170120/spring-test-project
+2023-04-23T22:15:55.9324940Z   token: ***
+2023-04-23T22:15:55.9325149Z   ssh-strict: true
+2023-04-23T22:15:55.9325383Z   persist-credentials: true
+2023-04-23T22:15:55.9325595Z   clean: true
+2023-04-23T22:15:55.9325815Z   fetch-depth: 1
+2023-04-23T22:15:55.9326021Z   lfs: false
+2023-04-23T22:15:55.9326203Z   submodules: false
+2023-04-23T22:15:55.9326429Z   set-safe-directory: true
+2023-04-23T22:15:55.9326654Z ##[endgroup]
+2023-04-23T22:15:56.2035164Z Syncing repository: rdw20170120/spring-test-project
+2023-04-23T22:15:56.2036882Z ##[group]Getting Git version info
+2023-04-23T22:15:56.2037439Z Working directory is '/home/runner/work/spring-test-project/spring-test-project'
+2023-04-23T22:15:56.2038020Z [command]/usr/bin/git version
+2023-04-23T22:15:56.2160294Z git version 2.40.0
+2023-04-23T22:15:56.2186638Z ##[endgroup]
+2023-04-23T22:15:56.2206022Z Temporarily overriding HOME='/home/runner/work/_temp/d2f0d125-d36f-4f18-bed0-777c1e372b4e' before making global git config changes
+2023-04-23T22:15:56.2206523Z Adding repository directory to the temporary git global config as a safe directory
+2023-04-23T22:15:56.2211371Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/spring-test-project/spring-test-project
+2023-04-23T22:15:56.2260535Z Deleting the contents of '/home/runner/work/spring-test-project/spring-test-project'
+2023-04-23T22:15:56.2266207Z ##[group]Initializing the repository
+2023-04-23T22:15:56.2269771Z [command]/usr/bin/git init /home/runner/work/spring-test-project/spring-test-project
+2023-04-23T22:15:56.2363969Z hint: Using 'master' as the name for the initial branch. This default branch name
+2023-04-23T22:15:56.2365006Z hint: is subject to change. To configure the initial branch name to use in all
+2023-04-23T22:15:56.2365480Z hint: of your new repositories, which will suppress this warning, call:
+2023-04-23T22:15:56.2365781Z hint: 
+2023-04-23T22:15:56.2366260Z hint: 	git config --global init.defaultBranch <name>
+2023-04-23T22:15:56.2366555Z hint: 
+2023-04-23T22:15:56.2366905Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2023-04-23T22:15:56.2367346Z hint: 'development'. The just-created branch can be renamed via this command:
+2023-04-23T22:15:56.2367625Z hint: 
+2023-04-23T22:15:56.2368170Z hint: 	git branch -m <name>
+2023-04-23T22:15:56.2380459Z Initialized empty Git repository in /home/runner/work/spring-test-project/spring-test-project/.git/
+2023-04-23T22:15:56.2394836Z [command]/usr/bin/git remote add origin https://github.com/rdw20170120/spring-test-project
+2023-04-23T22:15:56.2439771Z ##[endgroup]
+2023-04-23T22:15:56.2441497Z ##[group]Disabling automatic garbage collection
+2023-04-23T22:15:56.2445807Z [command]/usr/bin/git config --local gc.auto 0
+2023-04-23T22:15:56.2478172Z ##[endgroup]
+2023-04-23T22:15:56.2480086Z ##[group]Setting up auth
+2023-04-23T22:15:56.2484642Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2023-04-23T22:15:56.2518226Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2023-04-23T22:15:56.2890215Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2023-04-23T22:15:56.2925663Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2023-04-23T22:15:56.3189907Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2023-04-23T22:15:56.3190800Z ##[endgroup]
+2023-04-23T22:15:56.3191184Z ##[group]Fetching the repository
+2023-04-23T22:15:56.3197370Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +ccda7e422d85b5f20f41140dcb6b24a07654c270:refs/remotes/origin/Rob
+2023-04-23T22:15:56.4917017Z remote: Enumerating objects: 79, done.        
+2023-04-23T22:15:56.4918051Z remote: Counting objects:   1% (1/79)        
+2023-04-23T22:15:56.4918881Z remote: Counting objects:   2% (2/79)        
+2023-04-23T22:15:56.4919228Z remote: Counting objects:   3% (3/79)        
+2023-04-23T22:15:56.4919562Z remote: Counting objects:   5% (4/79)        
+2023-04-23T22:15:56.4919833Z remote: Counting objects:   6% (5/79)        
+2023-04-23T22:15:56.4920101Z remote: Counting objects:   7% (6/79)        
+2023-04-23T22:15:56.4920349Z remote: Counting objects:   8% (7/79)        
+2023-04-23T22:15:56.4920613Z remote: Counting objects:  10% (8/79)        
+2023-04-23T22:15:56.4920880Z remote: Counting objects:  11% (9/79)        
+2023-04-23T22:15:56.4921148Z remote: Counting objects:  12% (10/79)        
+2023-04-23T22:15:56.4921404Z remote: Counting objects:  13% (11/79)        
+2023-04-23T22:15:56.4921675Z remote: Counting objects:  15% (12/79)        
+2023-04-23T22:15:56.4921983Z remote: Counting objects:  16% (13/79)        
+2023-04-23T22:15:56.4922230Z remote: Counting objects:  17% (14/79)        
+2023-04-23T22:15:56.4922521Z remote: Counting objects:  18% (15/79)        
+2023-04-23T22:15:56.4922785Z remote: Counting objects:  20% (16/79)        
+2023-04-23T22:15:56.4923046Z remote: Counting objects:  21% (17/79)        
+2023-04-23T22:15:56.4923297Z remote: Counting objects:  22% (18/79)        
+2023-04-23T22:15:56.4923551Z remote: Counting objects:  24% (19/79)        
+2023-04-23T22:15:56.4923807Z remote: Counting objects:  25% (20/79)        
+2023-04-23T22:15:56.4924052Z remote: Counting objects:  26% (21/79)        
+2023-04-23T22:15:56.4924305Z remote: Counting objects:  27% (22/79)        
+2023-04-23T22:15:56.4924562Z remote: Counting objects:  29% (23/79)        
+2023-04-23T22:15:56.4924802Z remote: Counting objects:  30% (24/79)        
+2023-04-23T22:15:56.4925060Z remote: Counting objects:  31% (25/79)        
+2023-04-23T22:15:56.4925317Z remote: Counting objects:  32% (26/79)        
+2023-04-23T22:15:56.4925559Z remote: Counting objects:  34% (27/79)        
+2023-04-23T22:15:56.4925815Z remote: Counting objects:  35% (28/79)        
+2023-04-23T22:15:56.4926086Z remote: Counting objects:  36% (29/79)        
+2023-04-23T22:15:56.4926340Z remote: Counting objects:  37% (30/79)        
+2023-04-23T22:15:56.4926886Z remote: Counting objects:  39% (31/79)        
+2023-04-23T22:15:56.4927145Z remote: Counting objects:  40% (32/79)        
+2023-04-23T22:15:56.4927403Z remote: Counting objects:  41% (33/79)        
+2023-04-23T22:15:56.4927645Z remote: Counting objects:  43% (34/79)        
+2023-04-23T22:15:56.4927902Z remote: Counting objects:  44% (35/79)        
+2023-04-23T22:15:56.4928163Z remote: Counting objects:  45% (36/79)        
+2023-04-23T22:15:56.4928405Z remote: Counting objects:  46% (37/79)        
+2023-04-23T22:15:56.4928662Z remote: Counting objects:  48% (38/79)        
+2023-04-23T22:15:56.4928927Z remote: Counting objects:  49% (39/79)        
+2023-04-23T22:15:56.4929176Z remote: Counting objects:  50% (40/79)        
+2023-04-23T22:15:56.4929434Z remote: Counting objects:  51% (41/79)        
+2023-04-23T22:15:56.4929689Z remote: Counting objects:  53% (42/79)        
+2023-04-23T22:15:56.4929948Z remote: Counting objects:  54% (43/79)        
+2023-04-23T22:15:56.4930189Z remote: Counting objects:  55% (44/79)        
+2023-04-23T22:15:56.4930451Z remote: Counting objects:  56% (45/79)        
+2023-04-23T22:15:56.4930704Z remote: Counting objects:  58% (46/79)        
+2023-04-23T22:15:56.4930945Z remote: Counting objects:  59% (47/79)        
+2023-04-23T22:15:56.4931198Z remote: Counting objects:  60% (48/79)        
+2023-04-23T22:15:56.4931451Z remote: Counting objects:  62% (49/79)        
+2023-04-23T22:15:56.4931693Z remote: Counting objects:  63% (50/79)        
+2023-04-23T22:15:56.4931946Z remote: Counting objects:  64% (51/79)        
+2023-04-23T22:15:56.4932332Z remote: Counting objects:  65% (52/79)        
+2023-04-23T22:15:56.4932585Z remote: Counting objects:  67% (53/79)        
+2023-04-23T22:15:56.4932845Z remote: Counting objects:  68% (54/79)        
+2023-04-23T22:15:56.4933101Z remote: Counting objects:  69% (55/79)        
+2023-04-23T22:15:56.4933358Z remote: Counting objects:  70% (56/79)        
+2023-04-23T22:15:56.4933602Z remote: Counting objects:  72% (57/79)        
+2023-04-23T22:15:56.4933865Z remote: Counting objects:  73% (58/79)        
+2023-04-23T22:15:56.4934142Z remote: Counting objects:  74% (59/79)        
+2023-04-23T22:15:56.4934387Z remote: Counting objects:  75% (60/79)        
+2023-04-23T22:15:56.4934761Z remote: Counting objects:  77% (61/79)        
+2023-04-23T22:15:56.4935022Z remote: Counting objects:  78% (62/79)        
+2023-04-23T22:15:56.4935282Z remote: Counting objects:  79% (63/79)        
+2023-04-23T22:15:56.4935536Z remote: Counting objects:  81% (64/79)        
+2023-04-23T22:15:56.4935780Z remote: Counting objects:  82% (65/79)        
+2023-04-23T22:15:56.4936043Z remote: Counting objects:  83% (66/79)        
+2023-04-23T22:15:56.4936300Z remote: Counting objects:  84% (67/79)        
+2023-04-23T22:15:56.4936544Z remote: Counting objects:  86% (68/79)        
+2023-04-23T22:15:56.4936796Z remote: Counting objects:  87% (69/79)        
+2023-04-23T22:15:56.4937049Z remote: Counting objects:  88% (70/79)        
+2023-04-23T22:15:56.4937296Z remote: Counting objects:  89% (71/79)        
+2023-04-23T22:15:56.4937553Z remote: Counting objects:  91% (72/79)        
+2023-04-23T22:15:56.4937805Z remote: Counting objects:  92% (73/79)        
+2023-04-23T22:15:56.4938046Z remote: Counting objects:  93% (74/79)        
+2023-04-23T22:15:56.4938302Z remote: Counting objects:  94% (75/79)        
+2023-04-23T22:15:56.4938557Z remote: Counting objects:  96% (76/79)        
+2023-04-23T22:15:56.4938812Z remote: Counting objects:  97% (77/79)        
+2023-04-23T22:15:56.4939057Z remote: Counting objects:  98% (78/79)        
+2023-04-23T22:15:56.4939314Z remote: Counting objects: 100% (79/79)        
+2023-04-23T22:15:56.4939587Z remote: Counting objects: 100% (79/79), done.        
+2023-04-23T22:15:56.4939870Z remote: Compressing objects:   1% (1/53)        
+2023-04-23T22:15:56.4940156Z remote: Compressing objects:   3% (2/53)        
+2023-04-23T22:15:56.4940431Z remote: Compressing objects:   5% (3/53)        
+2023-04-23T22:15:56.4940696Z remote: Compressing objects:   7% (4/53)        
+2023-04-23T22:15:56.4941091Z remote: Compressing objects:   9% (5/53)        
+2023-04-23T22:15:56.4941372Z remote: Compressing objects:  11% (6/53)        
+2023-04-23T22:15:56.4941633Z remote: Compressing objects:  13% (7/53)        
+2023-04-23T22:15:56.4941906Z remote: Compressing objects:  15% (8/53)        
+2023-04-23T22:15:56.4988451Z remote: Compressing objects:  16% (9/53)        
+2023-04-23T22:15:56.4993007Z remote: Compressing objects:  18% (10/53)        
+2023-04-23T22:15:56.4994007Z remote: Compressing objects:  20% (11/53)        
+2023-04-23T22:15:56.4995214Z remote: Compressing objects:  22% (12/53)        
+2023-04-23T22:15:56.4996078Z remote: Compressing objects:  24% (13/53)        
+2023-04-23T22:15:56.4997161Z remote: Compressing objects:  26% (14/53)        
+2023-04-23T22:15:56.4998063Z remote: Compressing objects:  28% (15/53)        
+2023-04-23T22:15:56.4998764Z remote: Compressing objects:  30% (16/53)        
+2023-04-23T22:15:56.4999233Z remote: Compressing objects:  32% (17/53)        
+2023-04-23T22:15:56.4999924Z remote: Compressing objects:  33% (18/53)        
+2023-04-23T22:15:56.5000380Z remote: Compressing objects:  35% (19/53)        
+2023-04-23T22:15:56.5001211Z remote: Compressing objects:  37% (20/53)        
+2023-04-23T22:15:56.5002463Z remote: Compressing objects:  39% (21/53)        
+2023-04-23T22:15:56.5003223Z remote: Compressing objects:  41% (22/53)        
+2023-04-23T22:15:56.5003678Z remote: Compressing objects:  43% (23/53)        
+2023-04-23T22:15:56.5004790Z remote: Compressing objects:  45% (24/53)        
+2023-04-23T22:15:56.5005524Z remote: Compressing objects:  47% (25/53)        
+2023-04-23T22:15:56.5006805Z remote: Compressing objects:  49% (26/53)        
+2023-04-23T22:15:56.5007741Z remote: Compressing objects:  50% (27/53)        
+2023-04-23T22:15:56.5009096Z remote: Compressing objects:  52% (28/53)        
+2023-04-23T22:15:56.5009835Z remote: Compressing objects:  54% (29/53)        
+2023-04-23T22:15:56.5010559Z remote: Compressing objects:  56% (30/53)        
+2023-04-23T22:15:56.5011029Z remote: Compressing objects:  58% (31/53)        
+2023-04-23T22:15:56.5011732Z remote: Compressing objects:  60% (32/53)        
+2023-04-23T22:15:56.5012186Z remote: Compressing objects:  62% (33/53)        
+2023-04-23T22:15:56.5012826Z remote: Compressing objects:  64% (34/53)        
+2023-04-23T22:15:56.5013291Z remote: Compressing objects:  66% (35/53)        
+2023-04-23T22:15:56.5013937Z remote: Compressing objects:  67% (36/53)        
+2023-04-23T22:15:56.5014438Z remote: Compressing objects:  69% (37/53)        
+2023-04-23T22:15:56.5015090Z remote: Compressing objects:  71% (38/53)        
+2023-04-23T22:15:56.5015552Z remote: Compressing objects:  73% (39/53)        
+2023-04-23T22:15:56.5016666Z remote: Compressing objects:  75% (40/53)        
+2023-04-23T22:15:56.5018270Z remote: Compressing objects:  77% (41/53)        
+2023-04-23T22:15:56.5020361Z remote: Compressing objects:  79% (42/53)        
+2023-04-23T22:15:56.5021133Z remote: Compressing objects:  81% (43/53)        
+2023-04-23T22:15:56.5021596Z remote: Compressing objects:  83% (44/53)        
+2023-04-23T22:15:56.5022244Z remote: Compressing objects:  84% (45/53)        
+2023-04-23T22:15:56.5022692Z remote: Compressing objects:  86% (46/53)        
+2023-04-23T22:15:56.5023576Z remote: Compressing objects:  88% (47/53)        
+2023-04-23T22:15:56.5024016Z remote: Compressing objects:  90% (48/53)        
+2023-04-23T22:15:56.5024661Z remote: Compressing objects:  92% (49/53)        
+2023-04-23T22:15:56.5025115Z remote: Compressing objects:  94% (50/53)        
+2023-04-23T22:15:56.5025762Z remote: Compressing objects:  96% (51/53)        
+2023-04-23T22:15:56.5026263Z remote: Compressing objects:  98% (52/53)        
+2023-04-23T22:15:56.5026907Z remote: Compressing objects: 100% (53/53)        
+2023-04-23T22:15:56.5029424Z remote: Compressing objects: 100% (53/53), done.        
+2023-04-23T22:15:56.5425223Z remote: Total 79 (delta 5), reused 50 (delta 3), pack-reused 0        
+2023-04-23T22:15:56.5543884Z From https://github.com/rdw20170120/spring-test-project
+2023-04-23T22:15:56.5544758Z  * [new ref]         ccda7e422d85b5f20f41140dcb6b24a07654c270 -> origin/Rob
+2023-04-23T22:15:56.5569123Z ##[endgroup]
+2023-04-23T22:15:56.5569739Z ##[group]Determining the checkout info
+2023-04-23T22:15:56.5571029Z ##[endgroup]
+2023-04-23T22:15:56.5571620Z ##[group]Checking out the ref
+2023-04-23T22:15:56.5576810Z [command]/usr/bin/git checkout --progress --force -B Rob refs/remotes/origin/Rob
+2023-04-23T22:15:56.5742738Z Switched to a new branch 'Rob'
+2023-04-23T22:15:56.5744080Z branch 'Rob' set up to track 'origin/Rob'.
+2023-04-23T22:15:56.5750881Z ##[endgroup]
+2023-04-23T22:15:56.5792289Z [command]/usr/bin/git log -1 --format='%H'
+2023-04-23T22:15:56.5820772Z 'ccda7e422d85b5f20f41140dcb6b24a07654c270'
+2023-04-23T22:15:56.6216009Z ##[group]Run github/codeql-action/init@v2
+2023-04-23T22:15:56.6216346Z with:
+2023-04-23T22:15:56.6216677Z   languages: java
+2023-04-23T22:15:56.6217107Z   token: ***
+2023-04-23T22:15:56.6217431Z   matrix: {
+  "language": "java"
+}
+2023-04-23T22:15:56.6217770Z   setup-python-dependencies: true
+2023-04-23T22:15:56.6218036Z   debug: false
+2023-04-23T22:15:56.6218340Z ##[endgroup]
+2023-04-23T22:15:57.9342920Z ##[group]Setup CodeQL tools
+2023-04-23T22:15:58.8600611Z Did not find CodeQL tools version 2.13.0 in the toolcache.
+2023-04-23T22:15:59.8848956Z Downloading CodeQL tools from https://github.com/github/codeql-action/releases/download/codeql-bundle-20230414/codeql-bundle-linux64.tar.gz. This may take a while.
+2023-04-23T22:16:02.6756775Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/50ab6866-4160-45cb-9f09-d6f0ece36b01 -f /home/runner/work/_temp/5af2ca1b-bdcb-43bc-9d93-07d201f0915a
+2023-04-23T22:16:22.7878700Z [command]/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/codeql version --format=terse
+2023-04-23T22:16:23.2551819Z 2.13.0
+2023-04-23T22:16:23.2662114Z [command]/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/codeql version --format=json
+2023-04-23T22:16:23.8198668Z {
+2023-04-23T22:16:23.8199572Z   "productName" : "CodeQL",
+2023-04-23T22:16:23.8201185Z   "vendor" : "GitHub",
+2023-04-23T22:16:23.8201550Z   "version" : "2.13.0",
+2023-04-23T22:16:23.8201977Z   "sha" : "6b22ae9c5f2dfd49d2951fd30cc35bd3c82931b2",
+2023-04-23T22:16:23.8202437Z   "branches" : [
+2023-04-23T22:16:23.8203038Z     "codeql-cli-2.13.0"
+2023-04-23T22:16:23.8203382Z   ],
+2023-04-23T22:16:23.8203908Z   "copyright" : "Copyright (C) 2019-2023 GitHub, Inc.",
+2023-04-23T22:16:23.8204569Z   "unpackedLocation" : "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql",
+2023-04-23T22:16:23.8265489Z   "configFileLocation" : "/home/runner/.config/codeql/config",
+2023-04-23T22:16:23.8265787Z   "configFileFound" : false
+2023-04-23T22:16:23.8266003Z }
+2023-04-23T22:16:23.8306245Z ##[endgroup]
+2023-04-23T22:16:23.8308798Z ##[group]Load language configuration
+2023-04-23T22:16:23.8313529Z Languages from configuration: java
+2023-04-23T22:16:23.8319991Z [command]/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/codeql resolve queries java-code-scanning.qls --format=bylanguage
+2023-04-23T22:16:24.6130937Z Recording pack reference codeql/java-queries at /opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0.
+2023-04-23T22:16:24.6803564Z Recording pack reference codeql/suite-helpers at /opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/.codeql/libraries/codeql/suite-helpers/0.5.0.
+2023-04-23T22:16:25.3863942Z {
+2023-04-23T22:16:25.3864728Z   "byLanguage" : {
+2023-04-23T22:16:25.3865014Z     "java" : {
+2023-04-23T22:16:25.3865788Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-918/RequestForgery.ql" : { },
+2023-04-23T22:16:25.3866481Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-335/PredictableSeed.ql" : { },
+2023-04-23T22:16:25.3867148Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-940/AndroidIntentRedirection.ql" : { },
+2023-04-23T22:16:25.3977254Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-522/InsecureLdapAuth.ql" : { },
+2023-04-23T22:16:25.3983282Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-326/InsufficientKeySize.ql" : { },
+2023-04-23T22:16:25.3984108Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-297/UnsafeHostnameVerification.ql" : { },
+2023-04-23T22:16:25.3985081Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-347/MissingJWTSignatureCheck.ql" : { },
+2023-04-23T22:16:25.3985743Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-780/RsaWithoutOaep.ql" : { },
+2023-04-23T22:16:25.3986428Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-807/TaintedPermissionsCheck.ql" : { },
+2023-04-23T22:16:25.3987157Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-023/PartialPathTraversalFromRemote.ql" : { },
+2023-04-23T22:16:25.3987868Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-441/UnsafeContentUriResolution.ql" : { },
+2023-04-23T22:16:25.3988783Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-020/OverlyLargeRange.ql" : { },
+2023-04-23T22:16:25.3989579Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-681/NumericCastTainted.ql" : { },
+2023-04-23T22:16:25.3990264Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-489/DebuggableAttributeEnabled.ql" : { },
+2023-04-23T22:16:25.3990965Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-489/WebviewDebuggingEnabled.ql" : { },
+2023-04-23T22:16:25.3991622Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-917/OgnlInjection.ql" : { },
+2023-04-23T22:16:25.3992262Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-327/BrokenCryptoAlgorithm.ql" : { },
+2023-04-23T22:16:25.3992918Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-730/PolynomialReDoS.ql" : { },
+2023-04-23T22:16:25.3993540Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-730/ReDoS.ql" : { },
+2023-04-23T22:16:25.3994161Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-730/RegexInjection.ql" : { },
+2023-04-23T22:16:25.3994781Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-022/TaintedPath.ql" : { },
+2023-04-23T22:16:25.3995392Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-022/ZipSlip.ql" : { },
+2023-04-23T22:16:25.3996041Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-312/CleartextStorageCookie.ql" : { },
+2023-04-23T22:16:25.3996757Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-134/ExternallyControlledFormatString.ql" : { },
+2023-04-23T22:16:25.3997413Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-074/JndiInjection.ql" : { },
+2023-04-23T22:16:25.3998046Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-074/XsltInjection.ql" : { },
+2023-04-23T22:16:25.3998824Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-089/SqlTainted.ql" : { },
+2023-04-23T22:16:25.3999629Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-470/FragmentInjection.ql" : { },
+2023-04-23T22:16:25.4000491Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-470/FragmentInjectionInPreferenceActivity.ql" : { },
+2023-04-23T22:16:25.4001278Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-601/UrlRedirect.ql" : { },
+2023-04-23T22:16:25.4002055Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-113/NettyResponseSplitting.ql" : { },
+2023-04-23T22:16:25.4002723Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-113/ResponseSplitting.ql" : { },
+2023-04-23T22:16:25.4003393Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-338/JHipsterGeneratedPRNG.ql" : { },
+2023-04-23T22:16:25.4004084Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-732/ReadingFromWorldWritableFile.ql" : { },
+2023-04-23T22:16:25.4004727Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-079/XSS.ql" : { },
+2023-04-23T22:16:25.4005378Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-927/ImplicitPendingIntents.ql" : { },
+2023-04-23T22:16:25.4006049Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-502/UnsafeDeserialization.ql" : { },
+2023-04-23T22:16:25.4006689Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-094/GroovyInjection.ql" : { },
+2023-04-23T22:16:25.4007322Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-094/MvelInjection.ql" : { },
+2023-04-23T22:16:25.4007946Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-094/SpelInjection.ql" : { },
+2023-04-23T22:16:25.4008589Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-094/TemplateInjection.ql" : { },
+2023-04-23T22:16:25.4009246Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-094/InsecureBeanValidation.ql" : { },
+2023-04-23T22:16:25.4009891Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-094/JexlInjection.ql" : { },
+2023-04-23T22:16:25.4010523Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-078/ExecUnescaped.ql" : { },
+2023-04-23T22:16:25.4011147Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-078/ExecTainted.ql" : { },
+2023-04-23T22:16:25.4011842Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-295/ImproperWebViewCertificateValidation.ql" : { },
+2023-04-23T22:16:25.4012552Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-295/InsecureTrustManager.ql" : { },
+2023-04-23T22:16:25.4013200Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-614/InsecureCookie.ql" : { },
+2023-04-23T22:16:25.4013867Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-925/ImproperIntentVerification.ql" : { },
+2023-04-23T22:16:25.4014686Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-829/InsecureDependencyResolution.ql" : { },
+2023-04-23T22:16:25.4015407Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-926/ImplicitlyExportedAndroidComponent.ql" : { },
+2023-04-23T22:16:25.4016067Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-611/XXE.ql" : { },
+2023-04-23T22:16:25.4016733Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-266/IntentUriPermissionManipulation.ql" : { },
+2023-04-23T22:16:25.4017521Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-643/XPathInjection.ql" : { },
+2023-04-23T22:16:25.4018163Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-209/StackTraceExposure.ql" : { },
+2023-04-23T22:16:25.4018834Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-352/SpringCSRFProtection.ql" : { },
+2023-04-23T22:16:25.4019517Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-1104/MavenPomDependsOnBintray.ql" : { },
+2023-04-23T22:16:25.4020511Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-1204/StaticInitializationVector.ql" : { },
+2023-04-23T22:16:25.4021176Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Security/CWE/CWE-090/LdapInjection.ql" : { },
+2023-04-23T22:16:25.4021823Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Likely Bugs/Arithmetic/InformationLoss.ql" : { },
+2023-04-23T22:16:25.4022464Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Diagnostics/ExtractionWarnings.ql" : { },
+2023-04-23T22:16:25.4023296Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Diagnostics/SuccessfullyExtractedFiles.ql" : { },
+2023-04-23T22:16:25.4023936Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Diagnostics/ExtractionErrors.ql" : { },
+2023-04-23T22:16:25.4024576Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Telemetry/SupportedExternalApis.ql" : { },
+2023-04-23T22:16:25.4025221Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Telemetry/SupportedExternalTaint.ql" : { },
+2023-04-23T22:16:25.4025876Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Telemetry/SupportedExternalSinks.ql" : { },
+2023-04-23T22:16:25.4026508Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Telemetry/UnsupportedExternalAPIs.ql" : { },
+2023-04-23T22:16:25.4027154Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Telemetry/ExternalLibraryUsage.ql" : { },
+2023-04-23T22:16:25.4027805Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Telemetry/SupportedExternalSources.ql" : { },
+2023-04-23T22:16:25.4028449Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Telemetry/ExtractorInformation.ql" : { },
+2023-04-23T22:16:25.4029053Z       "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/qlpacks/codeql/java-queries/0.6.0/Metrics/Summaries/LinesOfCode.ql" : { }
+2023-04-23T22:16:25.4029381Z     }
+2023-04-23T22:16:25.4029555Z   },
+2023-04-23T22:16:25.4029769Z   "noDeclaredLanguage" : { },
+2023-04-23T22:16:25.4030018Z   "multipleDeclaredLanguages" : { }
+2023-04-23T22:16:25.4030246Z }
+2023-04-23T22:16:25.4061506Z [command]/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/codeql resolve languages --format=betterjson --extractor-options-verbosity=4
+2023-04-23T22:16:26.1670931Z {
+2023-04-23T22:16:26.1671504Z   "extractors" : {
+2023-04-23T22:16:26.1672409Z     "javascript" : [
+2023-04-23T22:16:26.1672767Z       {
+2023-04-23T22:16:26.1673606Z         "extractor_root" : "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/javascript",
+2023-04-23T22:16:26.1674425Z         "extractor_options" : {
+2023-04-23T22:16:26.1674684Z           "trap" : {
+2023-04-23T22:16:26.1674914Z             "title" : "TRAP options",
+2023-04-23T22:16:26.1675228Z             "description" : "Options about how the extractor handles TRAP files",
+2023-04-23T22:16:26.1675507Z             "type" : "object",
+2023-04-23T22:16:26.1676085Z             "visibility" : 3,
+2023-04-23T22:16:26.1676320Z             "properties" : {
+2023-04-23T22:16:26.1676526Z               "cache" : {
+2023-04-23T22:16:26.1676766Z                 "title" : "TRAP cache options",
+2023-04-23T22:16:26.1677106Z                 "description" : "Options about how the extractor handles its TRAP cache",
+2023-04-23T22:16:26.1677390Z                 "type" : "object",
+2023-04-23T22:16:26.1677614Z                 "properties" : {
+2023-04-23T22:16:26.1677829Z                   "dir" : {
+2023-04-23T22:16:26.1678058Z                     "title" : "TRAP cache directory",
+2023-04-23T22:16:26.1678366Z                     "description" : "The directory of the TRAP cache to use",
+2023-04-23T22:16:26.1678640Z                     "type" : "string"
+2023-04-23T22:16:26.1678841Z                   },
+2023-04-23T22:16:26.1679027Z                   "bound" : {
+2023-04-23T22:16:26.1679260Z                     "title" : "TRAP cache bound",
+2023-04-23T22:16:26.1679575Z                     "description" : "A soft limit (in MB) on the size of the TRAP cache",
+2023-04-23T22:16:26.1679852Z                     "type" : "string",
+2023-04-23T22:16:26.1680295Z                     "pattern" : "[0-9]+"
+2023-04-23T22:16:26.1680524Z                   },
+2023-04-23T22:16:26.1680713Z                   "write" : {
+2023-04-23T22:16:26.1680961Z                     "title" : "TRAP cache writeable",
+2023-04-23T22:16:26.1681291Z                     "description" : "Whether to write to the TRAP cache as well as reading it",
+2023-04-23T22:16:26.1681573Z                     "type" : "string",
+2023-04-23T22:16:26.1681833Z                     "pattern" : "(true|TRUE|false|FALSE)"
+2023-04-23T22:16:26.1682063Z                   }
+2023-04-23T22:16:26.1682236Z                 }
+2023-04-23T22:16:26.1682418Z               }
+2023-04-23T22:16:26.1682600Z             }
+2023-04-23T22:16:26.1682771Z           }
+2023-04-23T22:16:26.1682950Z         }
+2023-04-23T22:16:26.1683125Z       }
+2023-04-23T22:16:26.1683285Z     ],
+2023-04-23T22:16:26.1683469Z     "html" : [
+2023-04-23T22:16:26.1683653Z       {
+2023-04-23T22:16:26.1684018Z         "extractor_root" : "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/html"
+2023-04-23T22:16:26.1684296Z       }
+2023-04-23T22:16:26.1684469Z     ],
+2023-04-23T22:16:26.1684636Z     "python" : [
+2023-04-23T22:16:26.1684824Z       {
+2023-04-23T22:16:26.1685193Z         "extractor_root" : "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/python"
+2023-04-23T22:16:26.1685464Z       }
+2023-04-23T22:16:26.1685619Z     ],
+2023-04-23T22:16:26.1685794Z     "csv" : [
+2023-04-23T22:16:26.1685976Z       {
+2023-04-23T22:16:26.1686320Z         "extractor_root" : "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/csv"
+2023-04-23T22:16:26.1686581Z       }
+2023-04-23T22:16:26.1686750Z     ],
+2023-04-23T22:16:26.1686912Z     "java" : [
+2023-04-23T22:16:26.1687094Z       {
+2023-04-23T22:16:26.1687456Z         "extractor_root" : "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/java",
+2023-04-23T22:16:26.1687742Z         "extractor_options" : {
+2023-04-23T22:16:26.1687960Z           "exclude" : {
+2023-04-23T22:16:26.1688224Z             "title" : "A glob excluding files from analysis.",
+2023-04-23T22:16:26.1688734Z             "description" : "A glob indicating what files to exclude from the analysis.\n",
+2023-04-23T22:16:26.1689032Z             "type" : "string"
+2023-04-23T22:16:26.1689233Z           }
+2023-04-23T22:16:26.1689402Z         }
+2023-04-23T22:16:26.1689577Z       }
+2023-04-23T22:16:26.1689751Z     ],
+2023-04-23T22:16:26.1689917Z     "cpp" : [
+2023-04-23T22:16:26.1690101Z       {
+2023-04-23T22:16:26.1690472Z         "extractor_root" : "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/cpp"
+2023-04-23T22:16:26.1690721Z       }
+2023-04-23T22:16:26.1690892Z     ],
+2023-04-23T22:16:26.1691068Z     "csharp" : [
+2023-04-23T22:16:26.1691241Z       {
+2023-04-23T22:16:26.1691650Z         "extractor_root" : "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/csharp",
+2023-04-23T22:16:26.1692050Z         "extractor_options" : {
+2023-04-23T22:16:26.1692269Z           "trap" : {
+2023-04-23T22:16:26.1692504Z             "title" : "Options pertaining to TRAP.",
+2023-04-23T22:16:26.1692806Z             "description" : "Options pertaining to TRAP.",
+2023-04-23T22:16:26.1693073Z             "type" : "object",
+2023-04-23T22:16:26.1693280Z             "properties" : {
+2023-04-23T22:16:26.1693508Z               "compression" : {
+2023-04-23T22:16:26.1693819Z                 "title" : "Controls compression for the TRAP files written by the extractor.",
+2023-04-23T22:16:26.1694574Z                 "description" : "This option is only intended for use in debugging the extractor. Accepted values are 'brotli' (the default, to write brotli-compressed TRAP), 'gzip', and 'none' (to write uncompressed TRAP).\n",
+2023-04-23T22:16:26.1695047Z                 "type" : "string",
+2023-04-23T22:16:26.1695294Z                 "pattern" : "^(none|gzip|brotli)$"
+2023-04-23T22:16:26.1695517Z               }
+2023-04-23T22:16:26.1695693Z             }
+2023-04-23T22:16:26.1695879Z           },
+2023-04-23T22:16:26.1696077Z           "buildless" : {
+2023-04-23T22:16:26.1696348Z             "title" : "Whether to use buildless (standalone) extraction.",
+2023-04-23T22:16:26.1697500Z             "description" : "A value indicating, which type of extraction the autobuilder should perform. If 'true', then the standalone extractor will be used, otherwise tracing extraction will be performed. The default is 'false'. Note that buildless extraction will generally yield less accurate analysis results, and should only be used in cases where it is not possible to build the code (for example if it uses inaccessible dependencies).\n",
+2023-04-23T22:16:26.1698188Z             "type" : "string",
+2023-04-23T22:16:26.1698417Z             "pattern" : "^(false|true)$"
+2023-04-23T22:16:26.1698617Z           },
+2023-04-23T22:16:26.1698802Z           "cil" : {
+2023-04-23T22:16:26.1699049Z             "title" : "Whether to enable CIL extraction.",
+2023-04-23T22:16:26.1699542Z             "description" : "A value indicating, whether CIL extraction should be enabled. The default is 'true'.\n",
+2023-04-23T22:16:26.1699854Z             "type" : "string",
+2023-04-23T22:16:26.1700091Z             "pattern" : "^(false|true)$"
+2023-04-23T22:16:26.1700299Z           }
+2023-04-23T22:16:26.1700467Z         }
+2023-04-23T22:16:26.1700641Z       }
+2023-04-23T22:16:26.1700809Z     ],
+2023-04-23T22:16:26.1700974Z     "ruby" : [
+2023-04-23T22:16:26.1701154Z       {
+2023-04-23T22:16:26.1701521Z         "extractor_root" : "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/ruby",
+2023-04-23T22:16:26.1701804Z         "extractor_options" : {
+2023-04-23T22:16:26.1702015Z           "trap" : {
+2023-04-23T22:16:26.1702256Z             "title" : "Options pertaining to TRAP.",
+2023-04-23T22:16:26.1702538Z             "description" : "Options pertaining to TRAP.",
+2023-04-23T22:16:26.1702788Z             "type" : "object",
+2023-04-23T22:16:26.1703384Z             "properties" : {
+2023-04-23T22:16:26.1703615Z               "compression" : {
+2023-04-23T22:16:26.1703927Z                 "title" : "Controls compression for the TRAP files written by the extractor.",
+2023-04-23T22:16:26.1704923Z                 "description" : "This option is only intended for use in debugging the extractor. Accepted values are 'gzip' (the default, to write gzip-compressed TRAP) and 'none' (to write uncompressed TRAP).\n",
+2023-04-23T22:16:26.1705365Z                 "type" : "string",
+2023-04-23T22:16:26.1705592Z                 "pattern" : "^(none|gzip)$"
+2023-04-23T22:16:26.1705810Z               }
+2023-04-23T22:16:26.1706001Z             }
+2023-04-23T22:16:26.1706172Z           }
+2023-04-23T22:16:26.1706353Z         }
+2023-04-23T22:16:26.1706529Z       }
+2023-04-23T22:16:26.1706686Z     ],
+2023-04-23T22:16:26.1706925Z     "xml" : [
+2023-04-23T22:16:26.1707104Z       {
+2023-04-23T22:16:26.1707455Z         "extractor_root" : "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/xml"
+2023-04-23T22:16:26.1707826Z       }
+2023-04-23T22:16:26.1708022Z     ],
+2023-04-23T22:16:26.1708200Z     "go" : [
+2023-04-23T22:16:26.1708383Z       {
+2023-04-23T22:16:26.1708734Z         "extractor_root" : "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/go"
+2023-04-23T22:16:26.1709006Z       }
+2023-04-23T22:16:26.1709434Z     ],
+2023-04-23T22:16:26.1709635Z     "properties" : [
+2023-04-23T22:16:26.1709835Z       {
+2023-04-23T22:16:26.1710251Z         "extractor_root" : "/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/properties"
+2023-04-23T22:16:26.1710515Z       }
+2023-04-23T22:16:26.1710686Z     ]
+2023-04-23T22:16:26.1710858Z   }
+2023-04-23T22:16:26.1711014Z }
+2023-04-23T22:16:26.1903566Z java does not support TRAP caching (missing option group)
+2023-04-23T22:16:26.1904261Z Found 0 languages that support TRAP caching
+2023-04-23T22:16:26.1909670Z Code Scanning configuration file being processed in the codeql CLI.
+2023-04-23T22:16:26.1920588Z ##[endgroup]
+2023-04-23T22:16:26.1940930Z Writing augmented user configuration file to /home/runner/work/_temp/user-config.yaml
+2023-04-23T22:16:26.1941549Z ##[group]Augmented user configuration file contents
+2023-04-23T22:16:26.1947706Z {}
+2023-04-23T22:16:26.1947882Z 
+2023-04-23T22:16:26.1948243Z ##[endgroup]
+2023-04-23T22:16:26.1956358Z [command]/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/codeql database init --db-cluster /home/runner/work/_temp/codeql_databases --source-root=/home/runner/work/spring-test-project/spring-test-project --language=java --begin-tracing --trace-process-name=Runner.Worker.exe --codescanning-config=/home/runner/work/_temp/user-config.yaml
+2023-04-23T22:16:28.3000983Z Calculating baseline information in /home/runner/work/spring-test-project/spring-test-project
+2023-04-23T22:16:28.3536130Z Calculated baseline information for languages: java (51ms).
+2023-04-23T22:16:28.3945055Z Resolving extractor java.
+2023-04-23T22:16:28.3976338Z Successfully loaded extractor Java (java) from /opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/java.
+2023-04-23T22:16:28.4159056Z Created skeleton CodeQL database at /home/runner/work/_temp/codeql_databases/java. This in-progress database is ready to be populated by an extractor.
+2023-04-23T22:16:28.6877939Z ##[group]Run echo "Run, Build Application using script"
+2023-04-23T22:16:28.6878349Z [36;1mecho "Run, Build Application using script"[0m
+2023-04-23T22:16:28.6878636Z [36;1mcd ./complete && ./gradlew build[0m
+2023-04-23T22:16:28.6934726Z shell: /usr/bin/bash -e {0}
+2023-04-23T22:16:28.6934952Z env:
+2023-04-23T22:16:28.6935192Z   CODEQL_ACTION_FEATURE_MULTI_LANGUAGE: false
+2023-04-23T22:16:28.6935467Z   CODEQL_ACTION_FEATURE_SANDWICH: false
+2023-04-23T22:16:28.6935726Z   CODEQL_ACTION_FEATURE_SARIF_COMBINE: true
+2023-04-23T22:16:28.6935996Z   CODEQL_ACTION_FEATURE_WILL_UPLOAD: true
+2023-04-23T22:16:28.6936249Z   CODEQL_ACTION_VERSION: 2.3.0
+2023-04-23T22:16:28.6936529Z   CODEQL_ACTION_ANALYSIS_KEY: .github/workflows/codeql.yml:analyze
+2023-04-23T22:16:28.6936844Z   CODEQL_WORKFLOW_STARTED_AT: 2023-04-23T22:15:56.941Z
+2023-04-23T22:16:28.6937083Z   CODEQL_RAM: 5919
+2023-04-23T22:16:28.6937287Z   CODEQL_THREADS: 2
+2023-04-23T22:16:28.6937648Z   CODEQL_TRACER_LOG: /home/runner/work/_temp/codeql_databases/log/build-tracer.log
+2023-04-23T22:16:28.6938309Z   CODEQL_TRACER_DIAGNOSTICS_DIR: /home/runner/work/_temp/codeql_databases/diagnostic/tracer
+2023-04-23T22:16:28.6938619Z   CODEQL_TRACER_LANGUAGES: java
+2023-04-23T22:16:28.6938982Z   SEMMLE_PRELOAD_libtrace: /opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/tools/linux64/${LIB}_${PLATFORM}_trace.so
+2023-04-23T22:16:28.6939434Z   SEMMLE_PRELOAD_libtrace32: /opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/tools/linux64/lib32trace.so
+2023-04-23T22:16:28.6939848Z   SEMMLE_PRELOAD_libtrace64: /opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/tools/linux64/lib64trace.so
+2023-04-23T22:16:28.6940169Z   CODEQL_PLATFORM: linux64
+2023-04-23T22:16:28.6940454Z   CODEQL_DIST: /opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql
+2023-04-23T22:16:28.6940789Z   CODEQL_SCRATCH_DIR: /home/runner/work/_temp/codeql_databases/working
+2023-04-23T22:16:28.6941072Z   CODEQL_PLATFORM_DLL_EXTENSION: .so
+2023-04-23T22:16:28.6941400Z   CODEQL_JAVA_HOME: /opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/tools/linux64/java
+2023-04-23T22:16:28.6941783Z   CODEQL_EXTRACTOR_JAVA_ROOT: /opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/java
+2023-04-23T22:16:28.6942164Z   CODEQL_EXTRACTOR_JAVA_WIP_DATABASE: /home/runner/work/_temp/codeql_databases/java
+2023-04-23T22:16:28.6942565Z   CODEQL_EXTRACTOR_JAVA_DIAGNOSTIC_DIR: /home/runner/work/_temp/codeql_databases/java/diagnostic/extractors/java
+2023-04-23T22:16:28.6943173Z   CODEQL_EXTRACTOR_JAVA_LOG_DIR: /home/runner/work/_temp/codeql_databases/java/log
+2023-04-23T22:16:28.6943559Z   CODEQL_EXTRACTOR_JAVA_SCRATCH_DIR: /home/runner/work/_temp/codeql_databases/java/working
+2023-04-23T22:16:28.6943949Z   CODEQL_EXTRACTOR_JAVA_TRAP_DIR: /home/runner/work/_temp/codeql_databases/java/trap/java
+2023-04-23T22:16:28.6944326Z   CODEQL_EXTRACTOR_JAVA_SOURCE_ARCHIVE_DIR: /home/runner/work/_temp/codeql_databases/java/src
+2023-04-23T22:16:28.6944649Z   CODEQL_EXTRACTOR_JAVA_THREADS: 2
+2023-04-23T22:16:28.6944900Z   CODEQL_EXTRACTOR_JAVA_RAM: 5919
+2023-04-23T22:16:28.6945234Z   LD_PRELOAD: /opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/tools/linux64/${LIB}_${PLATFORM}_trace.so
+2023-04-23T22:16:28.6945635Z   CODEQL_RUNNER: /opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/tools/linux64/runner
+2023-04-23T22:16:28.6945935Z ##[endgroup]
+2023-04-23T22:16:28.7117349Z Run, Build Application using script
+2023-04-23T22:16:29.0317935Z Downloading https://services.gradle.org/distributions/gradle-8.1-bin.zip
+2023-04-23T22:16:30.5558203Z ...........10%............20%............30%............40%............50%............60%............70%............80%...........90%............100%
+2023-04-23T22:16:31.8379558Z 
+2023-04-23T22:16:31.8382012Z Welcome to Gradle 8.1!
+2023-04-23T22:16:31.8382200Z 
+2023-04-23T22:16:31.8382469Z Here are the highlights of this release:
+2023-04-23T22:16:31.8383192Z  - Stable configuration cache
+2023-04-23T22:16:31.8383600Z  - Experimental Kotlin DSL assignment syntax
+2023-04-23T22:16:31.8384489Z  - Building with Java 20
+2023-04-23T22:16:31.8384748Z 
+2023-04-23T22:16:31.8385227Z For more details see https://docs.gradle.org/8.1/release-notes.html
+2023-04-23T22:16:31.8385429Z 
+2023-04-23T22:16:32.0264100Z Starting a Gradle Daemon (subsequent builds will be faster)
+2023-04-23T22:16:41.6304033Z 
+2023-04-23T22:16:41.6304838Z FAILURE: Build failed with an exception.
+2023-04-23T22:16:41.6305047Z 
+2023-04-23T22:16:41.6305141Z * What went wrong:
+2023-04-23T22:16:41.6342015Z A problem occurred configuring root project 'rest-service'.
+2023-04-23T22:16:41.6342712Z > Could not resolve all files for configuration ':classpath'.
+2023-04-23T22:16:41.6343628Z    > Could not resolve org.springframework.boot:spring-boot-gradle-plugin:3.0.0.
+2023-04-23T22:16:41.6504917Z      Required by:
+2023-04-23T22:16:41.6505299Z          project : > org.springframework.boot:org.springframework.boot.gradle.plugin:3.0.0
+2023-04-23T22:16:41.6506508Z       > No matching variant of org.springframework.boot:spring-boot-gradle-plugin:3.0.0 was found. The consumer was configured to find a library for use during runtime, compatible with Java 11, packaged as a jar, and its dependencies declared externally, as well as attribute 'org.gradle.plugin.api-version' with value '8.1' but:
+2023-04-23T22:16:41.6507873Z           - Variant 'apiElements' capability org.springframework.boot:spring-boot-gradle-plugin:3.0.0 declares a library, packaged as a jar, and its dependencies declared externally:
+2023-04-23T22:16:41.6508738Z               - Incompatible because this component declares a component for use during compile-time, compatible with Java 17 and the consumer needed a component for use during runtime, compatible with Java 11
+2023-04-23T22:16:41.6509254Z               - Other compatible attribute:
+2023-04-23T22:16:41.6509685Z                   - Doesn't say anything about org.gradle.plugin.api-version (required '8.1')
+2023-04-23T22:16:41.6510429Z           - Variant 'javadocElements' capability org.springframework.boot:spring-boot-gradle-plugin:3.0.0 declares a component for use during runtime, and its dependencies declared externally:
+2023-04-23T22:16:41.6511101Z               - Incompatible because this component declares documentation and the consumer needed a library
+2023-04-23T22:16:41.6511487Z               - Other compatible attributes:
+2023-04-23T22:16:41.6511935Z                   - Doesn't say anything about its target Java version (required compatibility with Java 11)
+2023-04-23T22:16:41.6512422Z                   - Doesn't say anything about its elements (required them packaged as a jar)
+2023-04-23T22:16:41.6512905Z                   - Doesn't say anything about org.gradle.plugin.api-version (required '8.1')
+2023-04-23T22:16:41.6513690Z           - Variant 'mavenOptionalApiElements' capability org.springframework.boot:spring-boot-gradle-plugin-maven-optional:3.0.0 declares a library, packaged as a jar, and its dependencies declared externally:
+2023-04-23T22:16:41.6514615Z               - Incompatible because this component declares a component for use during compile-time, compatible with Java 17 and the consumer needed a component for use during runtime, compatible with Java 11
+2023-04-23T22:16:41.6515128Z               - Other compatible attribute:
+2023-04-23T22:16:41.6515558Z                   - Doesn't say anything about org.gradle.plugin.api-version (required '8.1')
+2023-04-23T22:16:41.6516395Z           - Variant 'mavenOptionalRuntimeElements' capability org.springframework.boot:spring-boot-gradle-plugin-maven-optional:3.0.0 declares a library for use during runtime, packaged as a jar, and its dependencies declared externally:
+2023-04-23T22:16:41.6517244Z               - Incompatible because this component declares a component, compatible with Java 17 and the consumer needed a component, compatible with Java 11
+2023-04-23T22:16:41.6517689Z               - Other compatible attribute:
+2023-04-23T22:16:41.6518117Z                   - Doesn't say anything about org.gradle.plugin.api-version (required '8.1')
+2023-04-23T22:16:41.6519018Z           - Variant 'runtimeElements' capability org.springframework.boot:spring-boot-gradle-plugin:3.0.0 declares a library for use during runtime, packaged as a jar, and its dependencies declared externally:
+2023-04-23T22:16:41.6519819Z               - Incompatible because this component declares a component, compatible with Java 17 and the consumer needed a component, compatible with Java 11
+2023-04-23T22:16:41.6520269Z               - Other compatible attribute:
+2023-04-23T22:16:41.6520699Z                   - Doesn't say anything about org.gradle.plugin.api-version (required '8.1')
+2023-04-23T22:16:41.6521415Z           - Variant 'sourcesElements' capability org.springframework.boot:spring-boot-gradle-plugin:3.0.0 declares a component for use during runtime, and its dependencies declared externally:
+2023-04-23T22:16:41.6522083Z               - Incompatible because this component declares documentation and the consumer needed a library
+2023-04-23T22:16:41.6522480Z               - Other compatible attributes:
+2023-04-23T22:16:41.6522937Z                   - Doesn't say anything about its target Java version (required compatibility with Java 11)
+2023-04-23T22:16:41.6523513Z                   - Doesn't say anything about its elements (required them packaged as a jar)
+2023-04-23T22:16:41.6523998Z                   - Doesn't say anything about org.gradle.plugin.api-version (required '8.1')
+2023-04-23T22:16:41.6524229Z 
+2023-04-23T22:16:41.6524303Z * Try:
+2023-04-23T22:16:41.6524592Z > Run with --stacktrace option to get the stack trace.
+2023-04-23T22:16:41.6524969Z > Run with --info or --debug option to get more log output.
+2023-04-23T22:16:41.6525298Z > Run with --scan to get full insights.
+2023-04-23T22:16:41.6570657Z 
+2023-04-23T22:16:41.6571302Z * Get more help at https://help.gradle.org
+2023-04-23T22:16:41.6571662Z 
+2023-04-23T22:16:41.6571901Z BUILD FAILED in 12s
+2023-04-23T22:16:42.0812535Z ##[error]Process completed with exit code 1.
+2023-04-23T22:16:42.0878324Z Post job cleanup.
+2023-04-23T22:16:42.4246157Z [command]/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/codeql version --format=terse
+2023-04-23T22:16:42.9187371Z 2.13.0
+2023-04-23T22:16:43.2462462Z [command]/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/codeql database export-diagnostics /home/runner/work/_temp/codeql_databases --db-cluster --format=sarif-latest --output=/home/runner/work/_temp/codeql-intermediate-results.sarif --sarif-include-diagnostics -vvv --sarif-category /language:java
+2023-04-23T22:16:43.7531905Z Writing logs to /home/runner/work/_temp/codeql_databases/log/database-export-diagnostics-20230423.221643.749.log.
+2023-04-23T22:16:43.9854033Z Interpreting diagnostic messages
+2023-04-23T22:16:43.9894249Z Looking for diagnostics in /home/runner/work/_temp/codeql_databases/java/diagnostic...
+2023-04-23T22:16:43.9901505Z Looking for diagnostics in /home/runner/work/_temp/codeql_databases/java/diagnostic/extractors...
+2023-04-23T22:16:43.9908116Z Looking for diagnostics in /home/runner/work/_temp/codeql_databases/java/diagnostic/extractors/java...
+2023-04-23T22:16:43.9914069Z Looking for diagnostics in /home/runner/work/_temp/codeql_databases/diagnostic...
+2023-04-23T22:16:43.9921122Z Looking for diagnostics in /home/runner/work/_temp/codeql_databases/diagnostic/tracer...
+2023-04-23T22:16:43.9938812Z Found 0 raw diagnostic messages.
+2023-04-23T22:16:44.0040957Z Processed diagnostic messages (removed 0 due to limits, created 0 summary diagnostics for status page).
+2023-04-23T22:16:44.0065784Z Interpreted diagnostic messages. (17ms)
+2023-04-23T22:16:44.1720077Z Uploading failed SARIF file ../codeql-failed-run.sarif
+2023-04-23T22:16:44.1801253Z ##[group]Uploading results
+2023-04-23T22:16:44.1802040Z Processing sarif files: ["../codeql-failed-run.sarif"]
+2023-04-23T22:16:44.1981706Z Uploading results
+2023-04-23T22:16:44.4795655Z Successfully uploaded results
+2023-04-23T22:16:44.4796843Z ##[endgroup]
+2023-04-23T22:16:44.4799277Z ##[group]Waiting for processing to finish
+2023-04-23T22:16:44.6437537Z Analysis upload status is pending.
+2023-04-23T22:16:49.8071557Z Analysis upload status is failed.
+2023-04-23T22:16:49.8078881Z ##[endgroup]
+2023-04-23T22:16:49.9866192Z Post job cleanup.
+2023-04-23T22:16:50.0891755Z [command]/usr/bin/git version
+2023-04-23T22:16:50.0965192Z git version 2.40.0
+2023-04-23T22:16:50.1031743Z Temporarily overriding HOME='/home/runner/work/_temp/cbc067f0-0bbf-4920-9f47-655fb9b53e28' before making global git config changes
+2023-04-23T22:16:50.1036543Z Adding repository directory to the temporary git global config as a safe directory
+2023-04-23T22:16:50.1045981Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/spring-test-project/spring-test-project
+2023-04-23T22:16:50.1134458Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2023-04-23T22:16:50.1183796Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2023-04-23T22:16:50.1601521Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2023-04-23T22:16:50.1628710Z http.https://github.com/.extraheader
+2023-04-23T22:16:50.1638485Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2023-04-23T22:16:50.1685982Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2023-04-23T22:16:50.2288840Z Cleaning up orphan processes
+2023-04-23T22:16:50.2610581Z Terminate orphan process: pid (1876) (java)

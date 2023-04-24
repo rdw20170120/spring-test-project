@@ -1,0 +1,27 @@
+2023-04-23T22:15:45.3337085Z ##[section]Starting: Prepare job analyze
+2023-04-23T22:15:45.3339608Z Evaluating strategy
+2023-04-23T22:15:45.3346800Z Creating job 'java'
+2023-04-23T22:15:45.3349194Z Evaluating timeout
+2023-04-23T22:15:45.3349243Z Evaluating cancel timeout
+2023-04-23T22:15:45.3349290Z Evaluating continue on error
+2023-04-23T22:15:45.3349325Z Evaluating target
+2023-04-23T22:15:45.3350514Z Evaluating: (((matrix.language == 'swift') && 'macos-latest') || 'ubuntu-latest')
+2023-04-23T22:15:45.3350680Z ##[debug]Evaluating Or:
+2023-04-23T22:15:45.3350723Z ##[debug]..Evaluating And:
+2023-04-23T22:15:45.3350753Z ##[debug]....Evaluating Equal:
+2023-04-23T22:15:45.3350783Z ##[debug]......Evaluating Index:
+2023-04-23T22:15:45.3350820Z ##[debug]........Evaluating matrix:
+2023-04-23T22:15:45.3350871Z ##[debug]........=> Object
+2023-04-23T22:15:45.3350912Z ##[debug]........Evaluating String:
+2023-04-23T22:15:45.3350936Z ##[debug]........=> 'language'
+2023-04-23T22:15:45.3350988Z ##[debug]......=> 'java'
+2023-04-23T22:15:45.3351003Z ##[debug]......Evaluating String:
+2023-04-23T22:15:45.3351039Z ##[debug]......=> 'swift'
+2023-04-23T22:15:45.3351064Z ##[debug]....=> false
+2023-04-23T22:15:45.3351080Z ##[debug]..=> false
+2023-04-23T22:15:45.3351092Z ##[debug]..Evaluating String:
+2023-04-23T22:15:45.3351113Z ##[debug]..=> 'ubuntu-latest'
+2023-04-23T22:15:45.3351133Z ##[debug]=> 'ubuntu-latest'
+2023-04-23T22:15:45.3351197Z Expanded: ((('java' == 'swift') && 'macos-latest') || 'ubuntu-latest')
+2023-04-23T22:15:45.3351237Z Result: 'ubuntu-latest'
+2023-04-23T22:15:45.3352228Z ##[section]Finishing: Prepare job analyze

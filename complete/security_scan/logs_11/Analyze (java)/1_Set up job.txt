@@ -1,0 +1,28 @@
+2023-04-23T22:15:51.0596133Z Current runner version: '2.303.0'
+2023-04-23T22:15:51.0622798Z ##[group]Operating System
+2023-04-23T22:15:51.0623820Z Ubuntu
+2023-04-23T22:15:51.0624124Z 22.04.2
+2023-04-23T22:15:51.0624410Z LTS
+2023-04-23T22:15:51.0624656Z ##[endgroup]
+2023-04-23T22:15:51.0625079Z ##[group]Runner Image
+2023-04-23T22:15:51.0625433Z Image: ubuntu-22.04
+2023-04-23T22:15:51.0625716Z Version: 20230417.1
+2023-04-23T22:15:51.0626285Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20230417.1/images/linux/Ubuntu2204-Readme.md
+2023-04-23T22:15:51.0626974Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20230417.1
+2023-04-23T22:15:51.0627378Z ##[endgroup]
+2023-04-23T22:15:51.0627725Z ##[group]Runner Image Provisioner
+2023-04-23T22:15:51.0628065Z 2.0.139.1
+2023-04-23T22:15:51.0628313Z ##[endgroup]
+2023-04-23T22:15:51.0629072Z ##[group]GITHUB_TOKEN Permissions
+2023-04-23T22:15:51.0629614Z Actions: read
+2023-04-23T22:15:51.0629935Z Contents: read
+2023-04-23T22:15:51.0630217Z Metadata: read
+2023-04-23T22:15:51.0630872Z SecurityEvents: write
+2023-04-23T22:15:51.0631223Z ##[endgroup]
+2023-04-23T22:15:51.0634851Z Secret source: Actions
+2023-04-23T22:15:51.0635408Z Prepare workflow directory
+2023-04-23T22:15:51.1350428Z Prepare all required actions
+2023-04-23T22:15:51.1532344Z Getting action download info
+2023-04-23T22:15:51.3975550Z Download action repository 'actions/checkout@v3' (SHA:8e5e7e5ab8b370d6c329ec480221332ada57f0ab)
+2023-04-23T22:15:51.7175408Z Download action repository 'github/codeql-action@v2' (SHA:b2c19fb9a2a485599ccf4ed5d65527d94bc57226)
+2023-04-23T22:15:55.8440944Z Complete job name: Analyze (java)

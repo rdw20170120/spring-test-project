@@ -1,0 +1,42 @@
+---
+name: "CodeQL"
+
+on:
+  push:
+    branches: ["Rob"]
+  pull_request:
+    branches: ["Rob"]
+
+jobs:
+  analyze:
+    name: Analyze
+    runs-on: ${{ (matrix.language == 'swift' && 'macos-latest') || 'ubuntu-latest' }}
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    strategy:
+      fail-fast: false
+      matrix:
+        language: ['java']
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v2
+        with:
+          languages: ${{ matrix.language }}
+
+      - name: Run Gradle
+        run: |
+          echo "Build application using Gradle"
+          ./gradlew build
+        working-directory: ./complete
+
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v2
+        with:
+          category: "/language:${{matrix.language}}"

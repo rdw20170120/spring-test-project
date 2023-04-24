@@ -1,0 +1,8 @@
+2023-04-23T22:15:45.3337000Z ##[section]Starting: Prepare job codacy-security-scan
+2023-04-23T22:15:45.3339418Z Evaluating strategy
+2023-04-23T22:15:45.3343991Z Creating job '__default'
+2023-04-23T22:15:45.3346328Z Evaluating timeout
+2023-04-23T22:15:45.3346383Z Evaluating cancel timeout
+2023-04-23T22:15:45.3346410Z Evaluating continue on error
+2023-04-23T22:15:45.3346459Z Evaluating target
+2023-04-23T22:15:45.3347756Z ##[section]Finishing: Prepare job codacy-security-scan

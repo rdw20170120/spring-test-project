@@ -1,0 +1,99 @@
+2023-04-23T22:16:28.6877917Z ##[group]Run echo "Run, Build Application using script"
+2023-04-23T22:16:28.6878346Z [36;1mecho "Run, Build Application using script"[0m
+2023-04-23T22:16:28.6878632Z [36;1mcd ./complete && ./gradlew build[0m
+2023-04-23T22:16:28.6934708Z shell: /usr/bin/bash -e {0}
+2023-04-23T22:16:28.6934947Z env:
+2023-04-23T22:16:28.6935188Z   CODEQL_ACTION_FEATURE_MULTI_LANGUAGE: false
+2023-04-23T22:16:28.6935463Z   CODEQL_ACTION_FEATURE_SANDWICH: false
+2023-04-23T22:16:28.6935722Z   CODEQL_ACTION_FEATURE_SARIF_COMBINE: true
+2023-04-23T22:16:28.6935992Z   CODEQL_ACTION_FEATURE_WILL_UPLOAD: true
+2023-04-23T22:16:28.6936245Z   CODEQL_ACTION_VERSION: 2.3.0
+2023-04-23T22:16:28.6936525Z   CODEQL_ACTION_ANALYSIS_KEY: .github/workflows/codeql.yml:analyze
+2023-04-23T22:16:28.6936840Z   CODEQL_WORKFLOW_STARTED_AT: 2023-04-23T22:15:56.941Z
+2023-04-23T22:16:28.6937080Z   CODEQL_RAM: 5919
+2023-04-23T22:16:28.6937271Z   CODEQL_THREADS: 2
+2023-04-23T22:16:28.6937571Z   CODEQL_TRACER_LOG: /home/runner/work/_temp/codeql_databases/log/build-tracer.log
+2023-04-23T22:16:28.6938290Z   CODEQL_TRACER_DIAGNOSTICS_DIR: /home/runner/work/_temp/codeql_databases/diagnostic/tracer
+2023-04-23T22:16:28.6938615Z   CODEQL_TRACER_LANGUAGES: java
+2023-04-23T22:16:28.6938978Z   SEMMLE_PRELOAD_libtrace: /opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/tools/linux64/${LIB}_${PLATFORM}_trace.so
+2023-04-23T22:16:28.6939431Z   SEMMLE_PRELOAD_libtrace32: /opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/tools/linux64/lib32trace.so
+2023-04-23T22:16:28.6939844Z   SEMMLE_PRELOAD_libtrace64: /opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/tools/linux64/lib64trace.so
+2023-04-23T22:16:28.6940165Z   CODEQL_PLATFORM: linux64
+2023-04-23T22:16:28.6940450Z   CODEQL_DIST: /opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql
+2023-04-23T22:16:28.6940786Z   CODEQL_SCRATCH_DIR: /home/runner/work/_temp/codeql_databases/working
+2023-04-23T22:16:28.6941068Z   CODEQL_PLATFORM_DLL_EXTENSION: .so
+2023-04-23T22:16:28.6941391Z   CODEQL_JAVA_HOME: /opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/tools/linux64/java
+2023-04-23T22:16:28.6941779Z   CODEQL_EXTRACTOR_JAVA_ROOT: /opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/java
+2023-04-23T22:16:28.6942160Z   CODEQL_EXTRACTOR_JAVA_WIP_DATABASE: /home/runner/work/_temp/codeql_databases/java
+2023-04-23T22:16:28.6942561Z   CODEQL_EXTRACTOR_JAVA_DIAGNOSTIC_DIR: /home/runner/work/_temp/codeql_databases/java/diagnostic/extractors/java
+2023-04-23T22:16:28.6943168Z   CODEQL_EXTRACTOR_JAVA_LOG_DIR: /home/runner/work/_temp/codeql_databases/java/log
+2023-04-23T22:16:28.6943556Z   CODEQL_EXTRACTOR_JAVA_SCRATCH_DIR: /home/runner/work/_temp/codeql_databases/java/working
+2023-04-23T22:16:28.6943932Z   CODEQL_EXTRACTOR_JAVA_TRAP_DIR: /home/runner/work/_temp/codeql_databases/java/trap/java
+2023-04-23T22:16:28.6944322Z   CODEQL_EXTRACTOR_JAVA_SOURCE_ARCHIVE_DIR: /home/runner/work/_temp/codeql_databases/java/src
+2023-04-23T22:16:28.6944645Z   CODEQL_EXTRACTOR_JAVA_THREADS: 2
+2023-04-23T22:16:28.6944891Z   CODEQL_EXTRACTOR_JAVA_RAM: 5919
+2023-04-23T22:16:28.6945229Z   LD_PRELOAD: /opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/tools/linux64/${LIB}_${PLATFORM}_trace.so
+2023-04-23T22:16:28.6945632Z   CODEQL_RUNNER: /opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/tools/linux64/runner
+2023-04-23T22:16:28.6945931Z ##[endgroup]
+2023-04-23T22:16:28.7117331Z Run, Build Application using script
+2023-04-23T22:16:29.0317894Z Downloading https://services.gradle.org/distributions/gradle-8.1-bin.zip
+2023-04-23T22:16:30.5558104Z ...........10%............20%............30%............40%............50%............60%............70%............80%...........90%............100%
+2023-04-23T22:16:31.8379507Z 
+2023-04-23T22:16:31.8382005Z Welcome to Gradle 8.1!
+2023-04-23T22:16:31.8382197Z 
+2023-04-23T22:16:31.8382463Z Here are the highlights of this release:
+2023-04-23T22:16:31.8383187Z  - Stable configuration cache
+2023-04-23T22:16:31.8383596Z  - Experimental Kotlin DSL assignment syntax
+2023-04-23T22:16:31.8383985Z  - Building with Java 20
+2023-04-23T22:16:31.8384744Z 
+2023-04-23T22:16:31.8385222Z For more details see https://docs.gradle.org/8.1/release-notes.html
+2023-04-23T22:16:31.8385426Z 
+2023-04-23T22:16:32.0264003Z Starting a Gradle Daemon (subsequent builds will be faster)
+2023-04-23T22:16:41.6303987Z 
+2023-04-23T22:16:41.6304807Z FAILURE: Build failed with an exception.
+2023-04-23T22:16:41.6305044Z 
+2023-04-23T22:16:41.6305137Z * What went wrong:
+2023-04-23T22:16:41.6341998Z A problem occurred configuring root project 'rest-service'.
+2023-04-23T22:16:41.6342707Z > Could not resolve all files for configuration ':classpath'.
+2023-04-23T22:16:41.6343623Z    > Could not resolve org.springframework.boot:spring-boot-gradle-plugin:3.0.0.
+2023-04-23T22:16:41.6504901Z      Required by:
+2023-04-23T22:16:41.6505294Z          project : > org.springframework.boot:org.springframework.boot.gradle.plugin:3.0.0
+2023-04-23T22:16:41.6506479Z       > No matching variant of org.springframework.boot:spring-boot-gradle-plugin:3.0.0 was found. The consumer was configured to find a library for use during runtime, compatible with Java 11, packaged as a jar, and its dependencies declared externally, as well as attribute 'org.gradle.plugin.api-version' with value '8.1' but:
+2023-04-23T22:16:41.6507867Z           - Variant 'apiElements' capability org.springframework.boot:spring-boot-gradle-plugin:3.0.0 declares a library, packaged as a jar, and its dependencies declared externally:
+2023-04-23T22:16:41.6508732Z               - Incompatible because this component declares a component for use during compile-time, compatible with Java 17 and the consumer needed a component for use during runtime, compatible with Java 11
+2023-04-23T22:16:41.6509235Z               - Other compatible attribute:
+2023-04-23T22:16:41.6509680Z                   - Doesn't say anything about org.gradle.plugin.api-version (required '8.1')
+2023-04-23T22:16:41.6510418Z           - Variant 'javadocElements' capability org.springframework.boot:spring-boot-gradle-plugin:3.0.0 declares a component for use during runtime, and its dependencies declared externally:
+2023-04-23T22:16:41.6511095Z               - Incompatible because this component declares documentation and the consumer needed a library
+2023-04-23T22:16:41.6511483Z               - Other compatible attributes:
+2023-04-23T22:16:41.6511931Z                   - Doesn't say anything about its target Java version (required compatibility with Java 11)
+2023-04-23T22:16:41.6512418Z                   - Doesn't say anything about its elements (required them packaged as a jar)
+2023-04-23T22:16:41.6512901Z                   - Doesn't say anything about org.gradle.plugin.api-version (required '8.1')
+2023-04-23T22:16:41.6513685Z           - Variant 'mavenOptionalApiElements' capability org.springframework.boot:spring-boot-gradle-plugin-maven-optional:3.0.0 declares a library, packaged as a jar, and its dependencies declared externally:
+2023-04-23T22:16:41.6514605Z               - Incompatible because this component declares a component for use during compile-time, compatible with Java 17 and the consumer needed a component for use during runtime, compatible with Java 11
+2023-04-23T22:16:41.6515124Z               - Other compatible attribute:
+2023-04-23T22:16:41.6515554Z                   - Doesn't say anything about org.gradle.plugin.api-version (required '8.1')
+2023-04-23T22:16:41.6516390Z           - Variant 'mavenOptionalRuntimeElements' capability org.springframework.boot:spring-boot-gradle-plugin-maven-optional:3.0.0 declares a library for use during runtime, packaged as a jar, and its dependencies declared externally:
+2023-04-23T22:16:41.6517240Z               - Incompatible because this component declares a component, compatible with Java 17 and the consumer needed a component, compatible with Java 11
+2023-04-23T22:16:41.6517685Z               - Other compatible attribute:
+2023-04-23T22:16:41.6518114Z                   - Doesn't say anything about org.gradle.plugin.api-version (required '8.1')
+2023-04-23T22:16:41.6518855Z           - Variant 'runtimeElements' capability org.springframework.boot:spring-boot-gradle-plugin:3.0.0 declares a library for use during runtime, packaged as a jar, and its dependencies declared externally:
+2023-04-23T22:16:41.6519815Z               - Incompatible because this component declares a component, compatible with Java 17 and the consumer needed a component, compatible with Java 11
+2023-04-23T22:16:41.6520265Z               - Other compatible attribute:
+2023-04-23T22:16:41.6520695Z                   - Doesn't say anything about org.gradle.plugin.api-version (required '8.1')
+2023-04-23T22:16:41.6521410Z           - Variant 'sourcesElements' capability org.springframework.boot:spring-boot-gradle-plugin:3.0.0 declares a component for use during runtime, and its dependencies declared externally:
+2023-04-23T22:16:41.6522079Z               - Incompatible because this component declares documentation and the consumer needed a library
+2023-04-23T22:16:41.6522476Z               - Other compatible attributes:
+2023-04-23T22:16:41.6522927Z                   - Doesn't say anything about its target Java version (required compatibility with Java 11)
+2023-04-23T22:16:41.6523508Z                   - Doesn't say anything about its elements (required them packaged as a jar)
+2023-04-23T22:16:41.6523994Z                   - Doesn't say anything about org.gradle.plugin.api-version (required '8.1')
+2023-04-23T22:16:41.6524225Z 
+2023-04-23T22:16:41.6524299Z * Try:
+2023-04-23T22:16:41.6524588Z > Run with --stacktrace option to get the stack trace.
+2023-04-23T22:16:41.6524964Z > Run with --info or --debug option to get more log output.
+2023-04-23T22:16:41.6525294Z > Run with --scan to get full insights.
+2023-04-23T22:16:41.6570641Z 
+2023-04-23T22:16:41.6571297Z * Get more help at https://help.gradle.org
+2023-04-23T22:16:41.6571639Z 
+2023-04-23T22:16:41.6571896Z BUILD FAILED in 12s
+2023-04-23T22:16:42.0812497Z ##[error]Process completed with exit code 1.

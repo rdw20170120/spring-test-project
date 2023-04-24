@@ -1,0 +1,20 @@
+2023-04-23T22:17:24.7009513Z ##[group]Run github/codeql-action/upload-sarif@v2
+2023-04-23T22:17:24.7009798Z with:
+2023-04-23T22:17:24.7010003Z   sarif_file: results.sarif
+2023-04-23T22:17:24.7010314Z   checkout_path: /home/runner/work/spring-test-project/spring-test-project
+2023-04-23T22:17:24.7010822Z   token: ***
+2023-04-23T22:17:24.7011016Z   matrix: null
+2023-04-23T22:17:24.7011238Z   wait-for-processing: true
+2023-04-23T22:17:24.7011450Z env:
+2023-04-23T22:17:24.7011664Z   CODACY_ANALYSIS_CLI_VERSION: 4.0.0
+2023-04-23T22:17:24.7012090Z   CLI_SCRIPT_PATH: /home/runner/work/_actions/codacy/codacy-analysis-cli-action/d840f886c4bd4edc059706d09c6a1586111c540b/codacy-analysis-cli.sh
+2023-04-23T22:17:24.7012460Z ##[endgroup]
+2023-04-23T22:17:25.7724664Z ##[group]Uploading results
+2023-04-23T22:17:25.7726670Z Processing sarif files: ["results.sarif"]
+2023-04-23T22:17:25.8954551Z Uploading results
+2023-04-23T22:17:26.2426798Z Successfully uploaded results
+2023-04-23T22:17:26.2428043Z ##[endgroup]
+2023-04-23T22:17:26.2436163Z ##[group]Waiting for processing to finish
+2023-04-23T22:17:26.4718801Z Analysis upload status is pending.
+2023-04-23T22:17:31.6966116Z Analysis upload status is complete.
+2023-04-23T22:17:31.6967064Z ##[endgroup]

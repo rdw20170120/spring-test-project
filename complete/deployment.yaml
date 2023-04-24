@@ -1,0 +1,62 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: rest-service
+  name: rest-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rest-service
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: rest-service
+    spec:
+      containers:
+      - image: robatdocker/myapp
+        name: myapp
+        resources: {}
+        imagePullPolicy: Never
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: rest-service
+  name: rest-service
+spec:
+  ports:
+  - name: http
+    nodePort: 30080
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: rest-service
+  type: NodePort
+status:
+  loadBalancer: {}
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: only-from-test-one-on-port-8080
+spec:
+  podSelector:
+    matchLabels:
+      app: rest-service
+  policyTypes:
+    - Ingress
+  ingress:
+  - from:
+    - namespaceSelector:
+        matchLabels:
+          kubernetes.io/metadata.name: test-one
+    ports:
+      - protocol: TCP
+        port: 8080
+

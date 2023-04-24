@@ -1,0 +1,1159 @@
+2023-04-23T22:15:58.0251794Z ##[group]Run codacy/codacy-analysis-cli-action@d840f886c4bd4edc059706d09c6a1586111c540b
+2023-04-23T22:15:58.0252185Z with:
+2023-04-23T22:15:58.0252385Z   verbose: true
+2023-04-23T22:15:58.0252590Z   output: results.sarif
+2023-04-23T22:15:58.0252978Z   format: sarif
+2023-04-23T22:15:58.0253217Z   gh-code-scanning-compat: true
+2023-04-23T22:15:58.0253471Z   max-allowed-issues: 2147483647
+2023-04-23T22:15:58.0253702Z ##[endgroup]
+2023-04-23T22:15:58.0497979Z ##[group]Run echo "CODACY_ANALYSIS_CLI_VERSION=4.0.0" >> $GITHUB_ENV
+2023-04-23T22:15:58.0498424Z [36;1mecho "CODACY_ANALYSIS_CLI_VERSION=4.0.0" >> $GITHUB_ENV[0m
+2023-04-23T22:15:58.0554436Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2023-04-23T22:15:58.0554751Z ##[endgroup]
+2023-04-23T22:15:58.0804128Z ##[group]Run echo "CLI_SCRIPT_PATH=/home/runner/work/_actions/codacy/codacy-analysis-cli-action/d840f886c4bd4edc059706d09c6a1586111c540b/codacy-analysis-cli.sh" >> $GITHUB_ENV
+2023-04-23T22:15:58.0804820Z [36;1mecho "CLI_SCRIPT_PATH=/home/runner/work/_actions/codacy/codacy-analysis-cli-action/d840f886c4bd4edc059706d09c6a1586111c540b/codacy-analysis-cli.sh" >> $GITHUB_ENV[0m
+2023-04-23T22:15:58.0855741Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2023-04-23T22:15:58.0856041Z env:
+2023-04-23T22:15:58.0856252Z   CODACY_ANALYSIS_CLI_VERSION: 4.0.0
+2023-04-23T22:15:58.0856490Z ##[endgroup]
+2023-04-23T22:15:58.0952569Z ##[group]Run wget -O - https://raw.githubusercontent.com/codacy/codacy-analysis-cli/4.0.0/bin/codacy-analysis-cli.sh > /home/runner/work/_actions/codacy/codacy-analysis-cli-action/d840f886c4bd4edc059706d09c6a1586111c540b/codacy-analysis-cli.sh
+2023-04-23T22:15:58.0953488Z [36;1mwget -O - https://raw.githubusercontent.com/codacy/codacy-analysis-cli/4.0.0/bin/codacy-analysis-cli.sh > /home/runner/work/_actions/codacy/codacy-analysis-cli-action/d840f886c4bd4edc059706d09c6a1586111c540b/codacy-analysis-cli.sh[0m
+2023-04-23T22:15:58.1002062Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2023-04-23T22:15:58.1002372Z env:
+2023-04-23T22:15:58.1002661Z   CODACY_ANALYSIS_CLI_VERSION: 4.0.0
+2023-04-23T22:15:58.1003080Z   CLI_SCRIPT_PATH: /home/runner/work/_actions/codacy/codacy-analysis-cli-action/d840f886c4bd4edc059706d09c6a1586111c540b/codacy-analysis-cli.sh
+2023-04-23T22:15:58.1003468Z ##[endgroup]
+2023-04-23T22:15:58.1130676Z --2023-04-23 22:15:58--  https://raw.githubusercontent.com/codacy/codacy-analysis-cli/4.0.0/bin/codacy-analysis-cli.sh
+2023-04-23T22:15:58.1190079Z Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.110.133, 185.199.108.133, ...
+2023-04-23T22:15:58.1283358Z Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... connected.
+2023-04-23T22:15:58.2716655Z HTTP request sent, awaiting response... 200 OK
+2023-04-23T22:15:58.2717516Z Length: 3107 (3.0K) [text/plain]
+2023-04-23T22:15:58.2719129Z Saving to: ‘STDOUT’
+2023-04-23T22:15:58.2721388Z 
+2023-04-23T22:15:58.2727398Z      0K ...                                                   100% 1.98M=0.001s
+2023-04-23T22:15:58.2728135Z 
+2023-04-23T22:15:58.2729339Z 2023-04-23 22:15:58 (1.98 MB/s) - written to stdout [3107/3107]
+2023-04-23T22:15:58.2729734Z 
+2023-04-23T22:15:58.2763172Z ##[group]Run chmod +x /home/runner/work/_actions/codacy/codacy-analysis-cli-action/d840f886c4bd4edc059706d09c6a1586111c540b/codacy-analysis-cli.sh
+2023-04-23T22:15:58.2763792Z [36;1mchmod +x /home/runner/work/_actions/codacy/codacy-analysis-cli-action/d840f886c4bd4edc059706d09c6a1586111c540b/codacy-analysis-cli.sh[0m
+2023-04-23T22:15:58.2814824Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2023-04-23T22:15:58.2815100Z env:
+2023-04-23T22:15:58.2815304Z   CODACY_ANALYSIS_CLI_VERSION: 4.0.0
+2023-04-23T22:15:58.2815738Z   CLI_SCRIPT_PATH: /home/runner/work/_actions/codacy/codacy-analysis-cli-action/d840f886c4bd4edc059706d09c6a1586111c540b/codacy-analysis-cli.sh
+2023-04-23T22:15:58.2816126Z ##[endgroup]
+2023-04-23T22:15:58.2920372Z ##[group]Run /home/runner/work/_actions/codacy/codacy-analysis-cli-action/d840f886c4bd4edc059706d09c6a1586111c540b/codacy-analysis-cli.sh analyze $(if [ true = true ]; then echo "--verbose"; fi) $(if [  ]; then echo "--project-token "; fi) $(if [  ]; then echo "--codacy-api-base-url "; fi) $(if [ sarif ]; then echo "--format sarif"; fi) $(if [ results.sarif ]; then echo "--output results.sarif"; fi) $(if [  ]; then echo "--directory "; fi) $(if [  ]; then echo "--parallel "; fi) $(if [ 2147483647 ]; then echo "--max-allowed-issues 2147483647"; fi) $(if [  ]; then echo "--tool "; fi) $(if [  ]; then echo "--tool-timeout "; fi) $(if [  = true ]; then echo "--upload"; fi) $(if [  = true ]; then echo "--fail-if-incomplete"; fi) $(if [  = true ]; then echo "--allow-network"; fi) $(if [  = true ]; then echo "--force-file-permissions"; fi) $(if [ true = true ]; then echo "--gh-code-scanning-compat"; fi)
+2023-04-23T22:15:58.2922883Z [36;1m/home/runner/work/_actions/codacy/codacy-analysis-cli-action/d840f886c4bd4edc059706d09c6a1586111c540b/codacy-analysis-cli.sh analyze $(if [ true = true ]; then echo "--verbose"; fi) $(if [  ]; then echo "--project-token "; fi) $(if [  ]; then echo "--codacy-api-base-url "; fi) $(if [ sarif ]; then echo "--format sarif"; fi) $(if [ results.sarif ]; then echo "--output results.sarif"; fi) $(if [  ]; then echo "--directory "; fi) $(if [  ]; then echo "--parallel "; fi) $(if [ 2147483647 ]; then echo "--max-allowed-issues 2147483647"; fi) $(if [  ]; then echo "--tool "; fi) $(if [  ]; then echo "--tool-timeout "; fi) $(if [  = true ]; then echo "--upload"; fi) $(if [  = true ]; then echo "--fail-if-incomplete"; fi) $(if [  = true ]; then echo "--allow-network"; fi) $(if [  = true ]; then echo "--force-file-permissions"; fi) $(if [ true = true ]; then echo "--gh-code-scanning-compat"; fi)[0m
+2023-04-23T22:15:58.2969795Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2023-04-23T22:15:58.2970056Z env:
+2023-04-23T22:15:58.2970272Z   CODACY_ANALYSIS_CLI_VERSION: 4.0.0
+2023-04-23T22:15:58.2970703Z   CLI_SCRIPT_PATH: /home/runner/work/_actions/codacy/codacy-analysis-cli-action/d840f886c4bd4edc059706d09c6a1586111c540b/codacy-analysis-cli.sh
+2023-04-23T22:15:58.2971109Z ##[endgroup]
+2023-04-23T22:15:58.3081174Z /home/runner/work/_temp/a165205e-2880-460a-80cd-11a6e1b3f10b.sh: line 1: [: =: unary operator expected
+2023-04-23T22:15:58.3087552Z /home/runner/work/_temp/a165205e-2880-460a-80cd-11a6e1b3f10b.sh: line 1: [: =: unary operator expected
+2023-04-23T22:15:58.3093579Z /home/runner/work/_temp/a165205e-2880-460a-80cd-11a6e1b3f10b.sh: line 1: [: =: unary operator expected
+2023-04-23T22:15:58.3099612Z /home/runner/work/_temp/a165205e-2880-460a-80cd-11a6e1b3f10b.sh: line 1: [: =: unary operator expected
+2023-04-23T22:15:58.4844815Z Unable to find image 'codacy/codacy-analysis-cli:4.0.0' locally
+2023-04-23T22:15:59.1493279Z 4.0.0: Pulling from codacy/codacy-analysis-cli
+2023-04-23T22:15:59.1501268Z e7c96db7181b: Pulling fs layer
+2023-04-23T22:15:59.1501734Z f910a506b6cb: Pulling fs layer
+2023-04-23T22:15:59.1502059Z b6abafe80f63: Pulling fs layer
+2023-04-23T22:15:59.1502785Z 1811036e9141: Pulling fs layer
+2023-04-23T22:15:59.1503593Z 6314bc44cdf3: Pulling fs layer
+2023-04-23T22:15:59.1503828Z 8eac012f9da4: Pulling fs layer
+2023-04-23T22:15:59.1508089Z 1811036e9141: Waiting
+2023-04-23T22:15:59.1508431Z 6314bc44cdf3: Waiting
+2023-04-23T22:15:59.1508640Z 8eac012f9da4: Waiting
+2023-04-23T22:15:59.3324060Z f910a506b6cb: Verifying Checksum
+2023-04-23T22:15:59.3326966Z f910a506b6cb: Download complete
+2023-04-23T22:15:59.3953150Z e7c96db7181b: Download complete
+2023-04-23T22:15:59.5605711Z e7c96db7181b: Pull complete
+2023-04-23T22:15:59.5803185Z 6314bc44cdf3: Verifying Checksum
+2023-04-23T22:15:59.5805919Z 6314bc44cdf3: Download complete
+2023-04-23T22:15:59.7676498Z f910a506b6cb: Pull complete
+2023-04-23T22:15:59.8864342Z b6abafe80f63: Verifying Checksum
+2023-04-23T22:15:59.8868956Z b6abafe80f63: Download complete
+2023-04-23T22:16:00.1438459Z 1811036e9141: Verifying Checksum
+2023-04-23T22:16:00.1439114Z 1811036e9141: Download complete
+2023-04-23T22:16:00.1764689Z 8eac012f9da4: Verifying Checksum
+2023-04-23T22:16:00.1765651Z 8eac012f9da4: Download complete
+2023-04-23T22:16:01.4869060Z b6abafe80f63: Pull complete
+2023-04-23T22:16:04.8016061Z 1811036e9141: Pull complete
+2023-04-23T22:16:04.8657239Z 6314bc44cdf3: Pull complete
+2023-04-23T22:16:05.4197636Z 8eac012f9da4: Pull complete
+2023-04-23T22:16:05.4232508Z Digest: sha256:4e563da124426918287e6ca75e80396264f4304b4a971c601099029bf89f9bcb
+2023-04-23T22:16:05.4247934Z Status: Downloaded newer image for codacy/codacy-analysis-cli:4.0.0
+2023-04-23T22:16:07.9984776Z 04/23 22:16:07 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, create new FileSnapshot: lastRead=2023-04-23 22:16:07.988000000, lastModified=2023-04-23 22:15:57.000000000, size=426, fileKey=(dev=811,ino=1103282) 
+2023-04-23T22:16:08.0003051Z 04/23 22:16:07 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.config/jgit/config.lock, isRacyClean=true, read=2023-04-23 22:16:07.883000000, lastModified=2023-04-23 22:16:07.000000000, delta=883000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.0004692Z 04/23 22:16:07 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:564[0;39m - file=/root/.config/jgit/config.lock, is racily clean 
+2023-04-23T22:16:08.0006255Z 04/23 22:16:07 [39mDEBUG[0;39m [36mo.e.jgit.util.SystemReader:432[0;39m - loading config FileBasedConfig[/root/.config/jgit/config] 
+2023-04-23T22:16:08.0008231Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/root/.config/jgit/config, create new FileSnapshot: lastRead=2023-04-23 22:16:08.000000000, lastModified=2023-04-23 22:16:07.000000000, size=131, fileKey=(dev=2c,ino=1594471) 
+2023-04-23T22:16:08.0012184Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.config/jgit/config.lock, isRacyClean=true, read=2023-04-23 22:16:08.000000000, lastModified=2023-04-23 22:16:07.000000000, delta=1000000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.0017619Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.gitconfig, isRacyClean=false, read=2023-04-23 22:16:07.342000000, lastModified=1970-01-01 00:00:00.000000000, delta=1682288167342000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.0018947Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/root/.gitconfig, is unmodified 
+2023-04-23T22:16:08.0022290Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, create new FileSnapshot: lastRead=2023-04-23 22:16:08.001000000, lastModified=2023-04-23 22:15:57.000000000, size=426, fileKey=(dev=811,ino=1103282) 
+2023-04-23T22:16:08.0030470Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.config/jgit/config.lock, isRacyClean=true, read=2023-04-23 22:16:08.000000000, lastModified=2023-04-23 22:16:07.000000000, delta=1000000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.0033686Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:564[0;39m - file=/root/.config/jgit/config.lock, is racily clean 
+2023-04-23T22:16:08.0034308Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.jgit.util.SystemReader:432[0;39m - loading config FileBasedConfig[/root/.config/jgit/config] 
+2023-04-23T22:16:08.0040843Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/root/.config/jgit/config, create new FileSnapshot: lastRead=2023-04-23 22:16:08.003000000, lastModified=2023-04-23 22:16:07.000000000, size=131, fileKey=(dev=2c,ino=1594471) 
+2023-04-23T22:16:08.0041844Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.config/jgit/config.lock, isRacyClean=true, read=2023-04-23 22:16:08.003000000, lastModified=2023-04-23 22:16:07.000000000, delta=1003000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.0088782Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.gitconfig, isRacyClean=false, read=2023-04-23 22:16:07.342000000, lastModified=1970-01-01 00:00:00.000000000, delta=1682288167342000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.0092903Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/root/.gitconfig, is unmodified 
+2023-04-23T22:16:08.0107623Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, isRacyClean=false, read=2023-04-23 22:16:08.001000000, lastModified=2023-04-23 22:15:57.000000000, delta=11001000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.0115725Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, is unmodified 
+2023-04-23T22:16:08.0123847Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/index, create new FileSnapshot: lastRead=2023-04-23 22:16:08.011000000, lastModified=2023-04-23 22:15:57.000000000, size=6076, fileKey=(dev=811,ino=1104686) 
+2023-04-23T22:16:08.0130549Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, create new FileSnapshot: lastRead=2023-04-23 22:16:08.012000000, lastModified=2023-04-23 22:15:57.000000000, size=426, fileKey=(dev=811,ino=1103282) 
+2023-04-23T22:16:08.0140182Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.config/jgit/config.lock, isRacyClean=true, read=2023-04-23 22:16:08.003000000, lastModified=2023-04-23 22:16:07.000000000, delta=1003000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.0144223Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:564[0;39m - file=/root/.config/jgit/config.lock, is racily clean 
+2023-04-23T22:16:08.0147989Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.jgit.util.SystemReader:432[0;39m - loading config FileBasedConfig[/root/.config/jgit/config] 
+2023-04-23T22:16:08.0152951Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/root/.config/jgit/config, create new FileSnapshot: lastRead=2023-04-23 22:16:08.014000000, lastModified=2023-04-23 22:16:07.000000000, size=131, fileKey=(dev=2c,ino=1594471) 
+2023-04-23T22:16:08.0159614Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.config/jgit/config.lock, isRacyClean=true, read=2023-04-23 22:16:08.014000000, lastModified=2023-04-23 22:16:07.000000000, delta=1014000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.0165743Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.gitconfig, isRacyClean=false, read=2023-04-23 22:16:07.342000000, lastModified=1970-01-01 00:00:00.000000000, delta=1682288167342000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.0170175Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/root/.gitconfig, is unmodified 
+2023-04-23T22:16:08.0176749Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, create new FileSnapshot: lastRead=2023-04-23 22:16:08.016000000, lastModified=2023-04-23 22:15:57.000000000, size=426, fileKey=(dev=811,ino=1103282) 
+2023-04-23T22:16:08.0185674Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.config/jgit/config.lock, isRacyClean=true, read=2023-04-23 22:16:08.014000000, lastModified=2023-04-23 22:16:07.000000000, delta=1014000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.0190070Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:564[0;39m - file=/root/.config/jgit/config.lock, is racily clean 
+2023-04-23T22:16:08.0194527Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.jgit.util.SystemReader:432[0;39m - loading config FileBasedConfig[/root/.config/jgit/config] 
+2023-04-23T22:16:08.0200589Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/root/.config/jgit/config, create new FileSnapshot: lastRead=2023-04-23 22:16:08.019000000, lastModified=2023-04-23 22:16:07.000000000, size=131, fileKey=(dev=2c,ino=1594471) 
+2023-04-23T22:16:08.0207525Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.config/jgit/config.lock, isRacyClean=true, read=2023-04-23 22:16:08.019000000, lastModified=2023-04-23 22:16:07.000000000, delta=1019000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.0213881Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.gitconfig, isRacyClean=false, read=2023-04-23 22:16:07.342000000, lastModified=1970-01-01 00:00:00.000000000, delta=1682288167342000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.0218679Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/root/.gitconfig, is unmodified 
+2023-04-23T22:16:08.0226121Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, isRacyClean=false, read=2023-04-23 22:16:08.016000000, lastModified=2023-04-23 22:15:57.000000000, delta=11016000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.0230697Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, is unmodified 
+2023-04-23T22:16:08.0238371Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/index, create new FileSnapshot: lastRead=2023-04-23 22:16:08.023000000, lastModified=2023-04-23 22:15:57.000000000, size=6076, fileKey=(dev=811,ino=1104686) 
+2023-04-23T22:16:08.0312091Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.config/jgit/config.lock, isRacyClean=true, read=2023-04-23 22:16:08.019000000, lastModified=2023-04-23 22:16:07.000000000, delta=1019000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.0315852Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:564[0;39m - file=/root/.config/jgit/config.lock, is racily clean 
+2023-04-23T22:16:08.0319418Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.jgit.util.SystemReader:432[0;39m - loading config FileBasedConfig[/root/.config/jgit/config] 
+2023-04-23T22:16:08.0324581Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/root/.config/jgit/config, create new FileSnapshot: lastRead=2023-04-23 22:16:08.031000000, lastModified=2023-04-23 22:16:07.000000000, size=131, fileKey=(dev=2c,ino=1594471) 
+2023-04-23T22:16:08.0329969Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.config/jgit/config.lock, isRacyClean=true, read=2023-04-23 22:16:08.031000000, lastModified=2023-04-23 22:16:07.000000000, delta=1031000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.0335573Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.gitconfig, isRacyClean=false, read=2023-04-23 22:16:07.342000000, lastModified=1970-01-01 00:00:00.000000000, delta=1682288167342000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.0339246Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/root/.gitconfig, is unmodified 
+2023-04-23T22:16:08.0343972Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, isRacyClean=false, read=2023-04-23 22:16:08.016000000, lastModified=2023-04-23 22:15:57.000000000, delta=11016000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.0347679Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, is unmodified 
+2023-04-23T22:16:08.0379495Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.config/jgit/config.lock, isRacyClean=true, read=2023-04-23 22:16:08.031000000, lastModified=2023-04-23 22:16:07.000000000, delta=1031000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.0383299Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:564[0;39m - file=/root/.config/jgit/config.lock, is racily clean 
+2023-04-23T22:16:08.0387125Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.jgit.util.SystemReader:432[0;39m - loading config FileBasedConfig[/root/.config/jgit/config] 
+2023-04-23T22:16:08.0391795Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/root/.config/jgit/config, create new FileSnapshot: lastRead=2023-04-23 22:16:08.038000000, lastModified=2023-04-23 22:16:07.000000000, size=131, fileKey=(dev=2c,ino=1594471) 
+2023-04-23T22:16:08.0397407Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.config/jgit/config.lock, isRacyClean=true, read=2023-04-23 22:16:08.038000000, lastModified=2023-04-23 22:16:07.000000000, delta=1038000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.0402545Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.gitconfig, isRacyClean=false, read=2023-04-23 22:16:07.342000000, lastModified=1970-01-01 00:00:00.000000000, delta=1682288167342000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.0406040Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/root/.gitconfig, is unmodified 
+2023-04-23T22:16:08.0410498Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, isRacyClean=false, read=2023-04-23 22:16:08.016000000, lastModified=2023-04-23 22:15:57.000000000, delta=11016000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.0413966Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, is unmodified 
+2023-04-23T22:16:08.0482279Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.config/jgit/config.lock, isRacyClean=true, read=2023-04-23 22:16:08.038000000, lastModified=2023-04-23 22:16:07.000000000, delta=1038000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.0485954Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:564[0;39m - file=/root/.config/jgit/config.lock, is racily clean 
+2023-04-23T22:16:08.0489310Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.jgit.util.SystemReader:432[0;39m - loading config FileBasedConfig[/root/.config/jgit/config] 
+2023-04-23T22:16:08.0493689Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/root/.config/jgit/config, create new FileSnapshot: lastRead=2023-04-23 22:16:08.048000000, lastModified=2023-04-23 22:16:07.000000000, size=131, fileKey=(dev=2c,ino=1594471) 
+2023-04-23T22:16:08.0500019Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.config/jgit/config.lock, isRacyClean=true, read=2023-04-23 22:16:08.048000000, lastModified=2023-04-23 22:16:07.000000000, delta=1048000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.0505617Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.gitconfig, isRacyClean=false, read=2023-04-23 22:16:07.342000000, lastModified=1970-01-01 00:00:00.000000000, delta=1682288167342000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.0508922Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/root/.gitconfig, is unmodified 
+2023-04-23T22:16:08.0519138Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, isRacyClean=false, read=2023-04-23 22:16:08.016000000, lastModified=2023-04-23 22:15:57.000000000, delta=11016000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.0523222Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, is unmodified 
+2023-04-23T22:16:08.0529749Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/HEAD, create new FileSnapshot: lastRead=2023-04-23 22:16:08.052000000, lastModified=2023-04-23 22:15:57.000000000, size=20, fileKey=(dev=811,ino=1104772) 
+2023-04-23T22:16:08.0536314Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/refs/heads/Rob, create new FileSnapshot: lastRead=2023-04-23 22:16:08.053000000, lastModified=2023-04-23 22:15:57.000000000, size=41, fileKey=(dev=811,ino=1104769) 
+2023-04-23T22:16:08.0541787Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.config/jgit/config.lock, isRacyClean=true, read=2023-04-23 22:16:08.048000000, lastModified=2023-04-23 22:16:07.000000000, delta=1048000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.0545779Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:564[0;39m - file=/root/.config/jgit/config.lock, is racily clean 
+2023-04-23T22:16:08.0549401Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.jgit.util.SystemReader:432[0;39m - loading config FileBasedConfig[/root/.config/jgit/config] 
+2023-04-23T22:16:08.0554564Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/root/.config/jgit/config, create new FileSnapshot: lastRead=2023-04-23 22:16:08.054000000, lastModified=2023-04-23 22:16:07.000000000, size=131, fileKey=(dev=2c,ino=1594471) 
+2023-04-23T22:16:08.0559916Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.config/jgit/config.lock, isRacyClean=true, read=2023-04-23 22:16:08.054000000, lastModified=2023-04-23 22:16:07.000000000, delta=1054000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.0565289Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.gitconfig, isRacyClean=false, read=2023-04-23 22:16:07.342000000, lastModified=1970-01-01 00:00:00.000000000, delta=1682288167342000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.0568930Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/root/.gitconfig, is unmodified 
+2023-04-23T22:16:08.0573742Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, isRacyClean=false, read=2023-04-23 22:16:08.016000000, lastModified=2023-04-23 22:15:57.000000000, delta=11016000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.0578145Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, is unmodified 
+2023-04-23T22:16:08.0583822Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/HEAD, isRacyClean=false, read=2023-04-23 22:16:08.052000000, lastModified=2023-04-23 22:15:57.000000000, delta=11052000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.0589046Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/HEAD, is unmodified 
+2023-04-23T22:16:08.0595030Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/refs/heads/Rob, isRacyClean=false, read=2023-04-23 22:16:08.053000000, lastModified=2023-04-23 22:15:57.000000000, delta=11053000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.0599078Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/refs/heads/Rob, is unmodified 
+2023-04-23T22:16:08.0610077Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:581[0;39m - file=null, size changed from -1 to 4096 bytes 
+2023-04-23T22:16:08.0616018Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, create new FileSnapshot: lastRead=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, size=4096, fileKey=(dev=811,ino=1103283) 
+2023-04-23T22:16:08.0621476Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.0625310Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.0632493Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:581[0;39m - file=null, size changed from -1 to 41 bytes 
+2023-04-23T22:16:08.0639263Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/shallow, create new FileSnapshot: lastRead=2023-04-23 22:16:08.063000000, lastModified=2023-04-23 22:15:57.000000000, size=41, fileKey=(dev=811,ino=1103286) 
+2023-04-23T22:16:08.0645380Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.0649299Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.0684572Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/index, create new FileSnapshot: lastRead=2023-04-23 22:16:08.067000000, lastModified=2023-04-23 22:15:57.000000000, size=6076, fileKey=(dev=811,ino=1104686) 
+2023-04-23T22:16:08.0712164Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/index, create new FileSnapshot: lastRead=2023-04-23 22:16:08.070000000, lastModified=2023-04-23 22:15:57.000000000, size=6076, fileKey=(dev=811,ino=1104686) 
+2023-04-23T22:16:08.0742195Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.config/jgit/config.lock, isRacyClean=true, read=2023-04-23 22:16:08.054000000, lastModified=2023-04-23 22:16:07.000000000, delta=1054000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.0746267Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:564[0;39m - file=/root/.config/jgit/config.lock, is racily clean 
+2023-04-23T22:16:08.0749842Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.jgit.util.SystemReader:432[0;39m - loading config FileBasedConfig[/root/.config/jgit/config] 
+2023-04-23T22:16:08.0754954Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/root/.config/jgit/config, create new FileSnapshot: lastRead=2023-04-23 22:16:08.074000000, lastModified=2023-04-23 22:16:07.000000000, size=131, fileKey=(dev=2c,ino=1594471) 
+2023-04-23T22:16:08.0759816Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.config/jgit/config.lock, isRacyClean=true, read=2023-04-23 22:16:08.074000000, lastModified=2023-04-23 22:16:07.000000000, delta=1074000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.0765149Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.gitconfig, isRacyClean=false, read=2023-04-23 22:16:07.342000000, lastModified=1970-01-01 00:00:00.000000000, delta=1682288167342000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.0768347Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/root/.gitconfig, is unmodified 
+2023-04-23T22:16:08.0773095Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, isRacyClean=false, read=2023-04-23 22:16:08.016000000, lastModified=2023-04-23 22:15:57.000000000, delta=11016000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.0777084Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, is unmodified 
+2023-04-23T22:16:08.0796063Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.0799803Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.0871293Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.config/jgit/config.lock, isRacyClean=true, read=2023-04-23 22:16:08.074000000, lastModified=2023-04-23 22:16:07.000000000, delta=1074000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.0875175Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:564[0;39m - file=/root/.config/jgit/config.lock, is racily clean 
+2023-04-23T22:16:08.0879411Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.jgit.util.SystemReader:432[0;39m - loading config FileBasedConfig[/root/.config/jgit/config] 
+2023-04-23T22:16:08.0884926Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/root/.config/jgit/config, create new FileSnapshot: lastRead=2023-04-23 22:16:08.087000000, lastModified=2023-04-23 22:16:07.000000000, size=131, fileKey=(dev=2c,ino=1594471) 
+2023-04-23T22:16:08.0890660Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.config/jgit/config.lock, isRacyClean=true, read=2023-04-23 22:16:08.087000000, lastModified=2023-04-23 22:16:07.000000000, delta=1087000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.0896655Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.gitconfig, isRacyClean=false, read=2023-04-23 22:16:07.342000000, lastModified=1970-01-01 00:00:00.000000000, delta=1682288167342000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.0900166Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/root/.gitconfig, is unmodified 
+2023-04-23T22:16:08.0905482Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, isRacyClean=false, read=2023-04-23 22:16:08.016000000, lastModified=2023-04-23 22:15:57.000000000, delta=11016000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.0909538Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, is unmodified 
+2023-04-23T22:16:08.0928746Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.0932408Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.0942297Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.0946571Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.0978798Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.config/jgit/config.lock, isRacyClean=true, read=2023-04-23 22:16:08.087000000, lastModified=2023-04-23 22:16:07.000000000, delta=1087000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.0982433Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:564[0;39m - file=/root/.config/jgit/config.lock, is racily clean 
+2023-04-23T22:16:08.0986433Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.jgit.util.SystemReader:432[0;39m - loading config FileBasedConfig[/root/.config/jgit/config] 
+2023-04-23T22:16:08.0991236Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/root/.config/jgit/config, create new FileSnapshot: lastRead=2023-04-23 22:16:08.098000000, lastModified=2023-04-23 22:16:07.000000000, size=131, fileKey=(dev=2c,ino=1594471) 
+2023-04-23T22:16:08.0997204Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.config/jgit/config.lock, isRacyClean=true, read=2023-04-23 22:16:08.098000000, lastModified=2023-04-23 22:16:07.000000000, delta=1098000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.1002605Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.gitconfig, isRacyClean=false, read=2023-04-23 22:16:07.342000000, lastModified=1970-01-01 00:00:00.000000000, delta=1682288167342000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.1007231Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/root/.gitconfig, is unmodified 
+2023-04-23T22:16:08.1012065Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, isRacyClean=false, read=2023-04-23 22:16:08.016000000, lastModified=2023-04-23 22:15:57.000000000, delta=11016000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.1016544Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, is unmodified 
+2023-04-23T22:16:08.1134406Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.1138642Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.1154262Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.1159425Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.1169722Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.1173666Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.1241352Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.1247068Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.1256204Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.1260771Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.1693635Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.1698404Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.1709298Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.1713843Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.1746557Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.1751108Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.1761169Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.1766052Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.1776687Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.1781692Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.1791530Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.1795488Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.1805394Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.1809314Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.1819161Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.1823095Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.1835695Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.1839679Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.1848555Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.1852683Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.1861353Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.1865508Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.1874676Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.1879384Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.1889172Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.1893044Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.1902572Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.1907587Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.1932473Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.1936459Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.1944921Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.1949269Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.1975866Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.1979940Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.1988484Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.1992370Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.2001006Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2005548Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.2014351Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2018833Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.2027312Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2031484Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.2040825Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2044823Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.2059333Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2063156Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.2072009Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2076020Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.2084133Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2088452Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.2096653Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2100570Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.2108990Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2112710Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.2121783Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2125720Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.2135686Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2139980Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.2169226Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.config/jgit/config.lock, isRacyClean=true, read=2023-04-23 22:16:08.098000000, lastModified=2023-04-23 22:16:07.000000000, delta=1098000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2172990Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:564[0;39m - file=/root/.config/jgit/config.lock, is racily clean 
+2023-04-23T22:16:08.2177045Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.jgit.util.SystemReader:432[0;39m - loading config FileBasedConfig[/root/.config/jgit/config] 
+2023-04-23T22:16:08.2181415Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/root/.config/jgit/config, create new FileSnapshot: lastRead=2023-04-23 22:16:08.217000000, lastModified=2023-04-23 22:16:07.000000000, size=131, fileKey=(dev=2c,ino=1594471) 
+2023-04-23T22:16:08.2187816Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.config/jgit/config.lock, isRacyClean=true, read=2023-04-23 22:16:08.217000000, lastModified=2023-04-23 22:16:07.000000000, delta=1217000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2192937Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.gitconfig, isRacyClean=false, read=2023-04-23 22:16:07.342000000, lastModified=1970-01-01 00:00:00.000000000, delta=1682288167342000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.2197083Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/root/.gitconfig, is unmodified 
+2023-04-23T22:16:08.2201737Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, isRacyClean=false, read=2023-04-23 22:16:08.016000000, lastModified=2023-04-23 22:15:57.000000000, delta=11016000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.2205616Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, is unmodified 
+2023-04-23T22:16:08.2210849Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.config/jgit/config.lock, isRacyClean=true, read=2023-04-23 22:16:08.217000000, lastModified=2023-04-23 22:16:07.000000000, delta=1217000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2214540Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:564[0;39m - file=/root/.config/jgit/config.lock, is racily clean 
+2023-04-23T22:16:08.2218905Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.jgit.util.SystemReader:432[0;39m - loading config FileBasedConfig[/root/.config/jgit/config] 
+2023-04-23T22:16:08.2223477Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/root/.config/jgit/config, create new FileSnapshot: lastRead=2023-04-23 22:16:08.221000000, lastModified=2023-04-23 22:16:07.000000000, size=131, fileKey=(dev=2c,ino=1594471) 
+2023-04-23T22:16:08.2229401Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.config/jgit/config.lock, isRacyClean=true, read=2023-04-23 22:16:08.221000000, lastModified=2023-04-23 22:16:07.000000000, delta=1221000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2234737Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.gitconfig, isRacyClean=false, read=2023-04-23 22:16:07.342000000, lastModified=1970-01-01 00:00:00.000000000, delta=1682288167342000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.2238386Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/root/.gitconfig, is unmodified 
+2023-04-23T22:16:08.2243271Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, isRacyClean=false, read=2023-04-23 22:16:08.016000000, lastModified=2023-04-23 22:15:57.000000000, delta=11016000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.2247716Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, is unmodified 
+2023-04-23T22:16:08.2356313Z 04/23 22:16:08 [31mWARN [0;39m [36mc.c.a.c.command.AnalyseCommand:105[0;39m - There are uncommitted changes in the project.
+2023-04-23T22:16:08.2356749Z Please commit them before running your analysis:
+2023-04-23T22:16:08.2357002Z Uncommited files:
+2023-04-23T22:16:08.2357198Z results.sarif 
+2023-04-23T22:16:08.2367653Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.config/jgit/config.lock, isRacyClean=true, read=2023-04-23 22:16:08.221000000, lastModified=2023-04-23 22:16:07.000000000, delta=1221000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2371524Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:564[0;39m - file=/root/.config/jgit/config.lock, is racily clean 
+2023-04-23T22:16:08.2375147Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.jgit.util.SystemReader:432[0;39m - loading config FileBasedConfig[/root/.config/jgit/config] 
+2023-04-23T22:16:08.2380341Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/root/.config/jgit/config, create new FileSnapshot: lastRead=2023-04-23 22:16:08.237000000, lastModified=2023-04-23 22:16:07.000000000, size=131, fileKey=(dev=2c,ino=1594471) 
+2023-04-23T22:16:08.2385983Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.config/jgit/config.lock, isRacyClean=true, read=2023-04-23 22:16:08.237000000, lastModified=2023-04-23 22:16:07.000000000, delta=1237000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2391269Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.gitconfig, isRacyClean=false, read=2023-04-23 22:16:07.342000000, lastModified=1970-01-01 00:00:00.000000000, delta=1682288167342000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.2394749Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/root/.gitconfig, is unmodified 
+2023-04-23T22:16:08.2399944Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, isRacyClean=false, read=2023-04-23 22:16:08.016000000, lastModified=2023-04-23 22:15:57.000000000, delta=11016000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.2403786Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, is unmodified 
+2023-04-23T22:16:08.2410055Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/HEAD, isRacyClean=false, read=2023-04-23 22:16:08.052000000, lastModified=2023-04-23 22:15:57.000000000, delta=11052000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2414139Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/HEAD, is unmodified 
+2023-04-23T22:16:08.2419711Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/refs/heads/Rob, isRacyClean=false, read=2023-04-23 22:16:08.053000000, lastModified=2023-04-23 22:15:57.000000000, delta=11053000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2423504Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/refs/heads/Rob, is unmodified 
+2023-04-23T22:16:08.2428985Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.config/jgit/config.lock, isRacyClean=true, read=2023-04-23 22:16:08.237000000, lastModified=2023-04-23 22:16:07.000000000, delta=1237000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2433045Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:564[0;39m - file=/root/.config/jgit/config.lock, is racily clean 
+2023-04-23T22:16:08.2437098Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.jgit.util.SystemReader:432[0;39m - loading config FileBasedConfig[/root/.config/jgit/config] 
+2023-04-23T22:16:08.2441425Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/root/.config/jgit/config, create new FileSnapshot: lastRead=2023-04-23 22:16:08.243000000, lastModified=2023-04-23 22:16:07.000000000, size=131, fileKey=(dev=2c,ino=1594471) 
+2023-04-23T22:16:08.2447455Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.config/jgit/config.lock, isRacyClean=true, read=2023-04-23 22:16:08.243000000, lastModified=2023-04-23 22:16:07.000000000, delta=1243000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2452472Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.gitconfig, isRacyClean=false, read=2023-04-23 22:16:07.342000000, lastModified=1970-01-01 00:00:00.000000000, delta=1682288167342000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.2456789Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/root/.gitconfig, is unmodified 
+2023-04-23T22:16:08.2461623Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, isRacyClean=false, read=2023-04-23 22:16:08.016000000, lastModified=2023-04-23 22:15:57.000000000, delta=11016000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.2465585Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, is unmodified 
+2023-04-23T22:16:08.2471509Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/HEAD, isRacyClean=false, read=2023-04-23 22:16:08.052000000, lastModified=2023-04-23 22:15:57.000000000, delta=11052000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2475273Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/HEAD, is unmodified 
+2023-04-23T22:16:08.2480733Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/refs/heads/Rob, isRacyClean=false, read=2023-04-23 22:16:08.053000000, lastModified=2023-04-23 22:15:57.000000000, delta=11053000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2484745Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/refs/heads/Rob, is unmodified 
+2023-04-23T22:16:08.2489964Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.060000000, lastModified=2023-04-23 22:15:57.000000000, delta=11060000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2494550Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.2516091Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/shallow, isRacyClean=false, read=2023-04-23 22:16:08.063000000, lastModified=2023-04-23 22:15:57.000000000, delta=11063000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2520592Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/shallow, is unmodified 
+2023-04-23T22:16:08.2552065Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, create new FileSnapshot: lastRead=2023-04-23 22:16:08.254000000, lastModified=2023-04-23 22:15:57.000000000, size=426, fileKey=(dev=811,ino=1103282) 
+2023-04-23T22:16:08.2559860Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.config/jgit/config.lock, isRacyClean=true, read=2023-04-23 22:16:08.243000000, lastModified=2023-04-23 22:16:07.000000000, delta=1243000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2563846Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:564[0;39m - file=/root/.config/jgit/config.lock, is racily clean 
+2023-04-23T22:16:08.2568064Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.jgit.util.SystemReader:432[0;39m - loading config FileBasedConfig[/root/.config/jgit/config] 
+2023-04-23T22:16:08.2572708Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/root/.config/jgit/config, create new FileSnapshot: lastRead=2023-04-23 22:16:08.256000000, lastModified=2023-04-23 22:16:07.000000000, size=131, fileKey=(dev=2c,ino=1594471) 
+2023-04-23T22:16:08.2578514Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.config/jgit/config.lock, isRacyClean=false, read=2023-04-23 22:16:08.256000000, lastModified=2023-04-23 22:16:07.000000000, delta=1256000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2583644Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.gitconfig, isRacyClean=false, read=2023-04-23 22:16:07.342000000, lastModified=1970-01-01 00:00:00.000000000, delta=1682288167342000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.2587803Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/root/.gitconfig, is unmodified 
+2023-04-23T22:16:08.2592788Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, create new FileSnapshot: lastRead=2023-04-23 22:16:08.258000000, lastModified=2023-04-23 22:15:57.000000000, size=426, fileKey=(dev=811,ino=1103282) 
+2023-04-23T22:16:08.2599215Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:550[0;39m - file=/root/.config/jgit/config.lock, cannot be racily clean 
+2023-04-23T22:16:08.2604679Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.gitconfig, isRacyClean=false, read=2023-04-23 22:16:07.342000000, lastModified=1970-01-01 00:00:00.000000000, delta=1682288167342000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.2608339Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/root/.gitconfig, is unmodified 
+2023-04-23T22:16:08.2612846Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, isRacyClean=false, read=2023-04-23 22:16:08.258000000, lastModified=2023-04-23 22:15:57.000000000, delta=11258000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.2617200Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, is unmodified 
+2023-04-23T22:16:08.2624084Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/index, create new FileSnapshot: lastRead=2023-04-23 22:16:08.261000000, lastModified=2023-04-23 22:15:57.000000000, size=6076, fileKey=(dev=811,ino=1104686) 
+2023-04-23T22:16:08.2630670Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, create new FileSnapshot: lastRead=2023-04-23 22:16:08.262000000, lastModified=2023-04-23 22:15:57.000000000, size=426, fileKey=(dev=811,ino=1103282) 
+2023-04-23T22:16:08.2637710Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:550[0;39m - file=/root/.config/jgit/config.lock, cannot be racily clean 
+2023-04-23T22:16:08.2643375Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.gitconfig, isRacyClean=false, read=2023-04-23 22:16:07.342000000, lastModified=1970-01-01 00:00:00.000000000, delta=1682288167342000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.2653447Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/root/.gitconfig, is unmodified 
+2023-04-23T22:16:08.2658660Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, create new FileSnapshot: lastRead=2023-04-23 22:16:08.265000000, lastModified=2023-04-23 22:15:57.000000000, size=426, fileKey=(dev=811,ino=1103282) 
+2023-04-23T22:16:08.2665589Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:550[0;39m - file=/root/.config/jgit/config.lock, cannot be racily clean 
+2023-04-23T22:16:08.2670556Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.gitconfig, isRacyClean=false, read=2023-04-23 22:16:07.342000000, lastModified=1970-01-01 00:00:00.000000000, delta=1682288167342000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.2674225Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/root/.gitconfig, is unmodified 
+2023-04-23T22:16:08.2679005Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, isRacyClean=false, read=2023-04-23 22:16:08.265000000, lastModified=2023-04-23 22:15:57.000000000, delta=11265000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.2683145Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, is unmodified 
+2023-04-23T22:16:08.2689590Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/index, create new FileSnapshot: lastRead=2023-04-23 22:16:08.268000000, lastModified=2023-04-23 22:15:57.000000000, size=6076, fileKey=(dev=811,ino=1104686) 
+2023-04-23T22:16:08.2699985Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:550[0;39m - file=/root/.config/jgit/config.lock, cannot be racily clean 
+2023-04-23T22:16:08.2705354Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.gitconfig, isRacyClean=false, read=2023-04-23 22:16:07.342000000, lastModified=1970-01-01 00:00:00.000000000, delta=1682288167342000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.2709199Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/root/.gitconfig, is unmodified 
+2023-04-23T22:16:08.2713913Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, isRacyClean=false, read=2023-04-23 22:16:08.265000000, lastModified=2023-04-23 22:15:57.000000000, delta=11265000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.2718404Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, is unmodified 
+2023-04-23T22:16:08.2724886Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/HEAD, create new FileSnapshot: lastRead=2023-04-23 22:16:08.271000000, lastModified=2023-04-23 22:15:57.000000000, size=20, fileKey=(dev=811,ino=1104772) 
+2023-04-23T22:16:08.2730534Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/refs/heads/Rob, create new FileSnapshot: lastRead=2023-04-23 22:16:08.272000000, lastModified=2023-04-23 22:15:57.000000000, size=41, fileKey=(dev=811,ino=1104769) 
+2023-04-23T22:16:08.2735822Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:550[0;39m - file=/root/.config/jgit/config.lock, cannot be racily clean 
+2023-04-23T22:16:08.2740970Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.gitconfig, isRacyClean=false, read=2023-04-23 22:16:07.342000000, lastModified=1970-01-01 00:00:00.000000000, delta=1682288167342000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.2744599Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/root/.gitconfig, is unmodified 
+2023-04-23T22:16:08.2749620Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, isRacyClean=false, read=2023-04-23 22:16:08.265000000, lastModified=2023-04-23 22:15:57.000000000, delta=11265000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.2753324Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, is unmodified 
+2023-04-23T22:16:08.2759144Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/HEAD, isRacyClean=false, read=2023-04-23 22:16:08.271000000, lastModified=2023-04-23 22:15:57.000000000, delta=11271000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2762989Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/HEAD, is unmodified 
+2023-04-23T22:16:08.2768640Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/refs/heads/Rob, isRacyClean=false, read=2023-04-23 22:16:08.272000000, lastModified=2023-04-23 22:15:57.000000000, delta=11272000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2772484Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/refs/heads/Rob, is unmodified 
+2023-04-23T22:16:08.2777491Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:581[0;39m - file=null, size changed from -1 to 4096 bytes 
+2023-04-23T22:16:08.2782647Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, create new FileSnapshot: lastRead=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, size=4096, fileKey=(dev=811,ino=1103283) 
+2023-04-23T22:16:08.2788582Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2792417Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.2799800Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:581[0;39m - file=null, size changed from -1 to 41 bytes 
+2023-04-23T22:16:08.2806289Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:272[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/shallow, create new FileSnapshot: lastRead=2023-04-23 22:16:08.280000000, lastModified=2023-04-23 22:15:57.000000000, size=41, fileKey=(dev=811,ino=1103286) 
+2023-04-23T22:16:08.2818171Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:550[0;39m - file=/root/.config/jgit/config.lock, cannot be racily clean 
+2023-04-23T22:16:08.2823173Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/root/.gitconfig, isRacyClean=false, read=2023-04-23 22:16:07.342000000, lastModified=1970-01-01 00:00:00.000000000, delta=1682288167342000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.2827509Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/root/.gitconfig, is unmodified 
+2023-04-23T22:16:08.2832368Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, isRacyClean=false, read=2023-04-23 22:16:08.265000000, lastModified=2023-04-23 22:15:57.000000000, delta=11265000000 ns, racy<=2500000000 ns 
+2023-04-23T22:16:08.2836688Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/config, is unmodified 
+2023-04-23T22:16:08.2843103Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/shallow, isRacyClean=false, read=2023-04-23 22:16:08.280000000, lastModified=2023-04-23 22:15:57.000000000, delta=11280000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2847294Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/shallow, is unmodified 
+2023-04-23T22:16:08.2852421Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2856681Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.2862353Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2866237Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.2873177Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2877394Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.2883545Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2888238Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.2895780Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2899682Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.2905985Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2910276Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.2916397Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2920583Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.2927892Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2931976Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.2937875Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2941783Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.2948825Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2952809Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.2958878Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2962989Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.2971453Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2975699Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.2981858Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2986287Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.2992980Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.2997784Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.3003748Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.3008354Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.3014109Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.3018773Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.3025050Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.3029337Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.3036517Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.3040528Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.3047655Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.3052108Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.3058447Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.3062557Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.3068975Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.3073218Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.3079588Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.3083434Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.3089796Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.3093506Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.3101170Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.3105124Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.3111314Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.3114996Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.3122174Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.3126001Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.3131844Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.3136061Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.3141838Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.3145817Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.3151550Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.3155889Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.3162331Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.3166064Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.3172365Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.3176269Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.3192510Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.3196301Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.3202971Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.3206985Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.3212673Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.3216699Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.3228269Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.3232048Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.3238477Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.3242259Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.3248772Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.3252463Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.3258550Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:513[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, isRacyClean=false, read=2023-04-23 22:16:08.277000000, lastModified=2023-04-23 22:15:57.000000000, delta=11277000000 ns, racy<=1251250000 ns 
+2023-04-23T22:16:08.3262527Z 04/23 22:16:08 [39mDEBUG[0;39m [36mo.e.j.i.s.file.FileSnapshot:557[0;39m - file=/home/runner/work/spring-test-project/spring-test-project/.git/objects/pack, is unmodified 
+2023-04-23T22:16:08.3776012Z 04/23 22:16:08 [34mINFO [0;39m [36mc.c.a.c.utils.LanguagesHelper:16[0;39m - No language found for LICENSE.txt 
+2023-04-23T22:16:08.3781668Z 04/23 22:16:08 [34mINFO [0;39m [36mc.c.a.c.utils.LanguagesHelper:16[0;39m - No language found for README.adoc 
+2023-04-23T22:16:08.3789553Z 04/23 22:16:08 [34mINFO [0;39m [36mc.c.a.c.utils.LanguagesHelper:16[0;39m - No language found for .gitignore 
+2023-04-23T22:16:08.3794726Z 04/23 22:16:08 [34mINFO [0;39m [36mc.c.a.c.utils.LanguagesHelper:16[0;39m - No language found for complete/settings.gradle 
+2023-04-23T22:16:08.3804447Z 04/23 22:16:08 [34mINFO [0;39m [36mc.c.a.c.utils.LanguagesHelper:16[0;39m - No language found for initial/src/main/resources/application.properties 
+2023-04-23T22:16:08.3809324Z 04/23 22:16:08 [34mINFO [0;39m [36mc.c.a.c.utils.LanguagesHelper:16[0;39m - No language found for initial/mvnw.cmd 
+2023-04-23T22:16:08.3819243Z 04/23 22:16:08 [34mINFO [0;39m [36mc.c.a.c.utils.LanguagesHelper:16[0;39m - No language found for initial/.mvn/wrapper/maven-wrapper.properties 
+2023-04-23T22:16:08.3824294Z 04/23 22:16:08 [34mINFO [0;39m [36mc.c.a.c.utils.LanguagesHelper:16[0;39m - No language found for initial/gradlew.bat 
+2023-04-23T22:16:08.3829422Z 04/23 22:16:08 [34mINFO [0;39m [36mc.c.a.c.utils.LanguagesHelper:16[0;39m - No language found for complete/mvnw 
+2023-04-23T22:16:08.3834274Z 04/23 22:16:08 [34mINFO [0;39m [36mc.c.a.c.utils.LanguagesHelper:16[0;39m - No language found for complete/gradlew.bat 
+2023-04-23T22:16:08.3840949Z 04/23 22:16:08 [34mINFO [0;39m [36mc.c.a.c.utils.LanguagesHelper:16[0;39m - No language found for complete/gradlew 
+2023-04-23T22:16:08.3848423Z 04/23 22:16:08 [34mINFO [0;39m [36mc.c.a.c.utils.LanguagesHelper:16[0;39m - No language found for initial/.mvn/wrapper/maven-wrapper.jar 
+2023-04-23T22:16:08.3855585Z 04/23 22:16:08 [34mINFO [0;39m [36mc.c.a.c.utils.LanguagesHelper:16[0;39m - No language found for complete/gradle/wrapper/gradle-wrapper.properties 
+2023-04-23T22:16:08.3860910Z 04/23 22:16:08 [34mINFO [0;39m [36mc.c.a.c.utils.LanguagesHelper:16[0;39m - No language found for complete/mvnw.cmd 
+2023-04-23T22:16:08.3866204Z 04/23 22:16:08 [34mINFO [0;39m [36mc.c.a.c.utils.LanguagesHelper:16[0;39m - No language found for complete/build.gradle 
+2023-04-23T22:16:08.3871144Z 04/23 22:16:08 [34mINFO [0;39m [36mc.c.a.c.utils.LanguagesHelper:16[0;39m - No language found for complete/gradle/wrapper/gradle-wrapper.jar 
+2023-04-23T22:16:08.3876233Z 04/23 22:16:08 [34mINFO [0;39m [36mc.c.a.c.utils.LanguagesHelper:16[0;39m - No language found for complete/.mvn/wrapper/maven-wrapper.jar 
+2023-04-23T22:16:08.3881053Z 04/23 22:16:08 [34mINFO [0;39m [36mc.c.a.c.utils.LanguagesHelper:16[0;39m - No language found for CONTRIBUTING.adoc 
+2023-04-23T22:16:08.3893277Z 04/23 22:16:08 [34mINFO [0;39m [36mc.c.a.c.utils.LanguagesHelper:16[0;39m - No language found for initial/mvnw 
+2023-04-23T22:16:08.3898863Z 04/23 22:16:08 [34mINFO [0;39m [36mc.c.a.c.utils.LanguagesHelper:16[0;39m - No language found for initial/build.gradle 
+2023-04-23T22:16:08.3903924Z 04/23 22:16:08 [34mINFO [0;39m [36mc.c.a.c.utils.LanguagesHelper:16[0;39m - No language found for initial/settings.gradle 
+2023-04-23T22:16:08.3910771Z 04/23 22:16:08 [34mINFO [0;39m [36mc.c.a.c.utils.LanguagesHelper:16[0;39m - No language found for LICENSE.writing.txt 
+2023-04-23T22:16:08.3916045Z 04/23 22:16:08 [34mINFO [0;39m [36mc.c.a.c.utils.LanguagesHelper:16[0;39m - No language found for initial/gradlew 
+2023-04-23T22:16:08.3920711Z 04/23 22:16:08 [34mINFO [0;39m [36mc.c.a.c.utils.LanguagesHelper:16[0;39m - No language found for initial/gradle/wrapper/gradle-wrapper.jar 
+2023-04-23T22:16:08.3925961Z 04/23 22:16:08 [34mINFO [0;39m [36mc.c.a.c.utils.LanguagesHelper:16[0;39m - No language found for initial/gradle/wrapper/gradle-wrapper.properties 
+2023-04-23T22:16:08.3930767Z 04/23 22:16:08 [34mINFO [0;39m [36mc.c.a.c.utils.LanguagesHelper:16[0;39m - No language found for Jenkinsfile 
+2023-04-23T22:16:08.3935745Z 04/23 22:16:08 [34mINFO [0;39m [36mc.c.a.c.utils.LanguagesHelper:16[0;39m - No language found for complete/.mvn/wrapper/maven-wrapper.properties 
+2023-04-23T22:16:09.2182063Z 04/23 22:16:09 [34mINFO [0;39m [36mc.c.a.c.t.DuplicationToolCollector:81[0;39m - No duplication tools found for language Shell 
+2023-04-23T22:16:09.2184292Z 04/23 22:16:09 [34mINFO [0;39m [36mc.c.a.c.t.DuplicationToolCollector:81[0;39m - No duplication tools found for language XML 
+2023-04-23T22:16:09.2184940Z 04/23 22:16:09 [34mINFO [0;39m [36mc.c.a.c.t.DuplicationToolCollector:81[0;39m - No duplication tools found for language JSON 
+2023-04-23T22:16:09.2185804Z 04/23 22:16:09 [34mINFO [0;39m [36mc.c.a.c.t.DuplicationToolCollector:81[0;39m - No duplication tools found for language Markdown 
+2023-04-23T22:16:09.2187252Z 04/23 22:16:09 [34mINFO [0;39m [36mc.c.a.c.t.DuplicationToolCollector:81[0;39m - No duplication tools found for language Dockerfile 
+2023-04-23T22:16:09.2187874Z 04/23 22:16:09 [34mINFO [0;39m [36mc.c.a.c.t.DuplicationToolCollector:81[0;39m - No duplication tools found for language YAML 
+2023-04-23T22:16:09.3715909Z 04/23 22:16:09 [39mDEBUG[0;39m [36mCodacyPlugins:17[0;39m - codacy/codacy-metrics-cloc:0.2.4 doesn't exist locally. 
+2023-04-23T22:16:09.3718561Z 04/23 22:16:09 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Verifying if docker image codacy/codacy-metrics-cloc:0.2.4 exists locally. took 62ms 
+2023-04-23T22:16:13.1506825Z 04/23 22:16:13 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Pulling docker image codacy/codacy-metrics-cloc:0.2.4. took 3777ms 
+2023-04-23T22:16:14.6002334Z 04/23 22:16:14 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Running docker image codacy/codacy-metrics-cloc:0.2.4. took 1447ms 
+2023-04-23T22:16:14.6126367Z 04/23 22:16:14 [34mINFO [0;39m [36mc.c.a.c.a.CodacyPluginsAnalyser:48[0;39m - Completed metrics for metrics with 2 results 
+2023-04-23T22:16:14.6133511Z 04/23 22:16:14 [34mINFO [0;39m [36mc.c.a.c.a.AnalyseExecutor:192[0;39m - Could not find local extra configuration for pmd 
+2023-04-23T22:16:14.6134079Z 04/23 22:16:14 [34mINFO [0;39m [36mc.c.a.c.a.AnalyseExecutor:181[0;39m - Preparing to run pmd with defaults 
+2023-04-23T22:16:14.6152192Z 04/23 22:16:14 [34mINFO [0;39m [36mc.c.analysis.core.tools.Tool:101[0;39m - Using the root directory /home/runner/work/spring-test-project/spring-test-project to run 
+2023-04-23T22:16:14.6974950Z 04/23 22:16:14 [39mDEBUG[0;39m [36mCodacyPlugins:17[0;39m - codacy/codacy-pmd:3.10.2 doesn't exist locally. 
+2023-04-23T22:16:14.6993353Z 04/23 22:16:14 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Verifying if docker image codacy/codacy-pmd:3.10.2 exists locally. took 40ms 
+2023-04-23T22:16:17.5300724Z 04/23 22:16:17 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Pulling docker image codacy/codacy-pmd:3.10.2. took 2830ms 
+2023-04-23T22:16:19.0787496Z 04/23 22:16:19 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Running docker image codacy/codacy-pmd:3.10.2. took 1547ms 
+2023-04-23T22:16:19.0843734Z 04/23 22:16:19 [1;31mERROR[0;39m [36mc.c.a.c.a.CodacyPluginsAnalyser:30[0;39m - Failed analysis for pmd 
+2023-04-23T22:16:19.0844347Z java.lang.Throwable: 
+2023-04-23T22:16:19.0844648Z Docker exited with code 1
+2023-04-23T22:16:19.0844934Z stdout: 
+2023-04-23T22:16:19.0845329Z stderr: Apr 23, 2023 10:16:19 PM net.sourceforge.pmd.RulesetsFactoryUtils getRuleSets
+2023-04-23T22:16:19.0845794Z SEVERE: No rules found. Maybe you misspelled a rule name? (null)
+2023-04-23T22:16:19.0846135Z Error executing the tool
+2023-04-23T22:16:19.0846555Z java.lang.IllegalArgumentException: No rules found. Maybe you misspelled a rule name? (null)
+2023-04-23T22:16:19.0847128Z 	at net.sourceforge.pmd.RulesetsFactoryUtils.getRuleSets(RulesetsFactoryUtils.java:47)
+2023-04-23T22:16:19.0847636Z 	at com.codacy.pmd.PMD$.apply(PMD.scala:66)
+2023-04-23T22:16:19.0848159Z 	at com.codacy.tools.scala.seed.DockerEngine.executeTool(DockerEngine.scala:53)
+2023-04-23T22:16:19.0848712Z 	at com.codacy.tools.scala.seed.DockerEngine.$anonfun$main$2(DockerEngine.scala:35)
+2023-04-23T22:16:19.0849155Z 	at scala.util.Success.map(Try.scala:262)
+2023-04-23T22:16:19.0849604Z 	at com.codacy.tools.scala.seed.DockerEngine.$anonfun$main$1(DockerEngine.scala:27)
+2023-04-23T22:16:19.0851008Z 	at scala.util.Success.flatMap(Try.scala:258)
+2023-04-23T22:16:19.0851395Z 	at com.codacy.tools.scala.seed.DockerEngine.main(DockerEngine.scala:26)
+2023-04-23T22:16:19.0851759Z 	at com.codacy.Engine.main(Engine.scala)
+2023-04-23T22:16:19.0851983Z            
+2023-04-23T22:16:19.0852383Z 	at com.codacy.plugins.runners.BinaryDockerRunner.$anonfun$run$4(BinaryDockerRunner.scala:87)
+2023-04-23T22:16:19.0852791Z 	at scala.util.Success.flatMap(Try.scala:251)
+2023-04-23T22:16:19.0853198Z 	at com.codacy.plugins.runners.BinaryDockerRunner.run(BinaryDockerRunner.scala:72)
+2023-04-23T22:16:19.0853698Z 	at com.codacy.plugins.results.traits.ToolRunner.$anonfun$apply$2(ToolRunner.scala:73)
+2023-04-23T22:16:19.0854208Z 	at com.codacy.plugins.results.traits.CodacyDocker$.$anonfun$usingDockerConfig$2(CodacyDocker.scala:41)
+2023-04-23T22:16:19.0854698Z 	at com.codacy.plugins.utils.FileHelper$.$anonfun$usingNewFile$2(FileHelper.scala:51)
+2023-04-23T22:16:19.0855036Z 	at scala.util.Try$.apply(Try.scala:213)
+2023-04-23T22:16:19.0855385Z 	at com.codacy.plugins.utils.FileHelper$.usingNewFile(FileHelper.scala:45)
+2023-04-23T22:16:19.0855851Z 	at com.codacy.plugins.results.traits.CodacyDocker$.usingConfigPath(CodacyDocker.scala:53)
+2023-04-23T22:16:19.0856371Z 	at com.codacy.plugins.results.traits.CodacyDocker$.$anonfun$usingDockerConfig$1(CodacyDocker.scala:38)
+2023-04-23T22:16:19.0856755Z 	at scala.Option.map(Option.scala:230)
+2023-04-23T22:16:19.0857147Z 	at com.codacy.plugins.results.traits.CodacyDocker$.usingDockerConfig(CodacyDocker.scala:37)
+2023-04-23T22:16:19.0857639Z 	at com.codacy.plugins.results.traits.ToolRunner.$anonfun$apply$1(ToolRunner.scala:72)
+2023-04-23T22:16:19.0858354Z 	at scala.util.Try$.apply(Try.scala:213)
+2023-04-23T22:16:19.0858735Z 	at com.codacy.plugins.results.traits.ToolRunner.apply(ToolRunner.scala:58)
+2023-04-23T22:16:19.0859201Z 	at com.codacy.plugins.results.traits.ToolRunner.run(ToolRunner.scala:47)
+2023-04-23T22:16:19.0859617Z 	at com.codacy.analysis.core.tools.Tool.run(Tool.scala:80)
+2023-04-23T22:16:19.0860107Z 	at com.codacy.analysis.core.analysis.CodacyPluginsAnalyser.analyse(CodacyPluginsAnalyser.scala:24)
+2023-04-23T22:16:19.0860729Z 	at com.codacy.analysis.core.analysis.CodacyPluginsAnalyser.analyse(CodacyPluginsAnalyser.scala:14)
+2023-04-23T22:16:19.0861303Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.$anonfun$issues$1(AnalyseExecutor.scala:144)
+2023-04-23T22:16:19.0861698Z 	at scala.util.Success.flatMap(Try.scala:251)
+2023-04-23T22:16:19.0862117Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.issues(AnalyseExecutor.scala:137)
+2023-04-23T22:16:19.0862798Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.$anonfun$run$5(AnalyseExecutor.scala:70)
+2023-04-23T22:16:19.0863269Z 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:238)
+2023-04-23T22:16:19.0863681Z 	at scala.collection.immutable.HashSet$HashSet1.foreach(HashSet.scala:321)
+2023-04-23T22:16:19.0864110Z 	at scala.collection.immutable.HashSet$HashTrieSet.foreach(HashSet.scala:977)
+2023-04-23T22:16:19.0864539Z 	at scala.collection.immutable.HashSet$HashTrieSet.foreach(HashSet.scala:977)
+2023-04-23T22:16:19.0864944Z 	at scala.collection.TraversableLike.map(TraversableLike.scala:238)
+2023-04-23T22:16:19.0865359Z 	at scala.collection.TraversableLike.map$(TraversableLike.scala:231)
+2023-04-23T22:16:19.0865785Z 	at scala.collection.AbstractSet.scala$collection$SetLike$$super$map(Set.scala:51)
+2023-04-23T22:16:19.0866161Z 	at scala.collection.SetLike.map(SetLike.scala:104)
+2023-04-23T22:16:19.0866481Z 	at scala.collection.SetLike.map$(SetLike.scala:104)
+2023-04-23T22:16:19.0866825Z 	at scala.collection.AbstractSet.map(Set.scala:51)
+2023-04-23T22:16:19.0867232Z 	at scala.collection.parallel.ParIterableLike.map(ParIterableLike.scala:502)
+2023-04-23T22:16:19.0867699Z 	at scala.collection.parallel.ParIterableLike.map$(ParIterableLike.scala:500)
+2023-04-23T22:16:19.0868178Z 	at scala.collection.parallel.immutable.ParHashSet.map(ParHashSet.scala:50)
+2023-04-23T22:16:19.0868628Z 	at com.codacy.analysis.core.utils.SetOps$.mapInParallel(SetOps.scala:13)
+2023-04-23T22:16:19.0869084Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.$anonfun$run$4(AnalyseExecutor.scala:54)
+2023-04-23T22:16:19.0869483Z 	at scala.util.Either.map(Either.scala:353)
+2023-04-23T22:16:19.0869885Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.run(AnalyseExecutor.scala:52)
+2023-04-23T22:16:19.0929951Z 	at com.codacy.analysis.cli.command.AnalyseCommand.$anonfun$run$1(AnalyseCommand.scala:68)
+2023-04-23T22:16:19.0930428Z 	at scala.util.Either.flatMap(Either.scala:341)
+2023-04-23T22:16:19.0930859Z 	at com.codacy.analysis.cli.command.AnalyseCommand.run(AnalyseCommand.scala:67)
+2023-04-23T22:16:19.0931322Z 	at com.codacy.analysis.cli.MainImpl.runCommand(Main.scala:19)
+2023-04-23T22:16:19.0931689Z 	at com.codacy.analysis.cli.MainImpl.run(Main.scala:14)
+2023-04-23T22:16:19.0932077Z 	at com.codacy.analysis.cli.command.CLIApp.run(CLIApp.scala:22)
+2023-04-23T22:16:19.0932484Z 	at com.codacy.analysis.cli.command.CLIApp.run(CLIApp.scala:18)
+2023-04-23T22:16:19.0933013Z 	at com.codacy.analysis.cli.command.CommandAppWithBaseCommand.$anonfun$main$1(CommandAppWithBaseCommand.scala:103)
+2023-04-23T22:16:19.0933653Z 	at com.codacy.analysis.cli.command.CommandAppWithBaseCommand.$anonfun$main$1$adapted(CommandAppWithBaseCommand.scala:88)
+2023-04-23T22:16:19.0934123Z 	at scala.Option.foreach(Option.scala:407)
+2023-04-23T22:16:19.0934596Z 	at com.codacy.analysis.cli.command.CommandAppWithBaseCommand.main(CommandAppWithBaseCommand.scala:88)
+2023-04-23T22:16:19.0935064Z 	at com.codacy.analysis.cli.Main.main(Main.scala)
+2023-04-23T22:16:19.2430003Z 04/23 22:16:19 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Verifying if docker image codacy/codacy-metrics-cloc:0.2.4 exists locally. took 52ms 
+2023-04-23T22:16:20.6940875Z 04/23 22:16:20 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Running docker image codacy/codacy-metrics-cloc:0.2.4. took 1444ms 
+2023-04-23T22:16:20.6941641Z 04/23 22:16:20 [34mINFO [0;39m [36mc.c.a.c.a.CodacyPluginsAnalyser:48[0;39m - Completed metrics for metrics with 6 results 
+2023-04-23T22:16:20.6942277Z 04/23 22:16:20 [34mINFO [0;39m [36mc.c.a.c.a.AnalyseExecutor:192[0;39m - Could not find local extra configuration for shellcheck 
+2023-04-23T22:16:20.6942876Z 04/23 22:16:20 [34mINFO [0;39m [36mc.c.a.c.a.AnalyseExecutor:181[0;39m - Preparing to run shellcheck with defaults 
+2023-04-23T22:16:20.6943566Z 04/23 22:16:20 [34mINFO [0;39m [36mc.c.analysis.core.tools.Tool:101[0;39m - Using the root directory /home/runner/work/spring-test-project/spring-test-project to run 
+2023-04-23T22:16:20.7305577Z 04/23 22:16:20 [39mDEBUG[0;39m [36mCodacyPlugins:17[0;39m - codacy/codacy-shellcheck:2.4.0 doesn't exist locally. 
+2023-04-23T22:16:20.7313362Z 04/23 22:16:20 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Verifying if docker image codacy/codacy-shellcheck:2.4.0 exists locally. took 39ms 
+2023-04-23T22:16:22.3791080Z 04/23 22:16:22 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Pulling docker image codacy/codacy-shellcheck:2.4.0. took 1642ms 
+2023-04-23T22:16:22.6966026Z 04/23 22:16:22 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Running docker image codacy/codacy-shellcheck:2.4.0. took 320ms 
+2023-04-23T22:16:22.7068960Z 04/23 22:16:22 [34mINFO [0;39m [36mc.c.a.c.a.CodacyPluginsAnalyser:28[0;39m - Completed analysis for shellcheck with 7 results 
+2023-04-23T22:16:22.8028787Z 04/23 22:16:22 [39mDEBUG[0;39m [36mCodacyPlugins:17[0;39m - codacy/codacy-metrics-pmd:0.1.72 doesn't exist locally. 
+2023-04-23T22:16:22.8039225Z 04/23 22:16:22 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Verifying if docker image codacy/codacy-metrics-pmd:0.1.72 exists locally. took 44ms 
+2023-04-23T22:16:24.5751011Z 04/23 22:16:24 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Pulling docker image codacy/codacy-metrics-pmd:0.1.72. took 1771ms 
+2023-04-23T22:16:26.3925933Z 04/23 22:16:26 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Running docker image codacy/codacy-metrics-pmd:0.1.72. took 1817ms 
+2023-04-23T22:16:26.3939423Z 04/23 22:16:26 [34mINFO [0;39m [36mc.c.a.c.a.CodacyPluginsAnalyser:48[0;39m - Completed metrics for metrics with 5 results 
+2023-04-23T22:16:26.4356273Z 04/23 22:16:26 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Verifying if docker image codacy/codacy-metrics-cloc:0.2.4 exists locally. took 39ms 
+2023-04-23T22:16:27.8699737Z 04/23 22:16:27 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Running docker image codacy/codacy-metrics-cloc:0.2.4. took 1434ms 
+2023-04-23T22:16:27.8712379Z 04/23 22:16:27 [34mINFO [0;39m [36mc.c.a.c.a.CodacyPluginsAnalyser:48[0;39m - Completed metrics for metrics with 2 results 
+2023-04-23T22:16:27.8713087Z 04/23 22:16:27 [34mINFO [0;39m [36mc.c.a.c.a.AnalyseExecutor:192[0;39m - Could not find local extra configuration for jacksonlinter 
+2023-04-23T22:16:27.8731448Z 04/23 22:16:27 [34mINFO [0;39m [36mc.c.a.c.a.AnalyseExecutor:181[0;39m - Preparing to run jacksonlinter with defaults 
+2023-04-23T22:16:27.8732177Z 04/23 22:16:27 [34mINFO [0;39m [36mc.c.analysis.core.tools.Tool:101[0;39m - Using the root directory /home/runner/work/spring-test-project/spring-test-project to run 
+2023-04-23T22:16:27.9184343Z 04/23 22:16:27 [39mDEBUG[0;39m [36mCodacyPlugins:17[0;39m - codacy/codacy-jackson-linter:5.2.1 doesn't exist locally. 
+2023-04-23T22:16:27.9191458Z 04/23 22:16:27 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Verifying if docker image codacy/codacy-jackson-linter:5.2.1 exists locally. took 46ms 
+2023-04-23T22:16:29.6324875Z 04/23 22:16:29 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Pulling docker image codacy/codacy-jackson-linter:5.2.1. took 1706ms 
+2023-04-23T22:16:30.9287998Z 04/23 22:16:30 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Running docker image codacy/codacy-jackson-linter:5.2.1. took 1293ms 
+2023-04-23T22:16:30.9288729Z 04/23 22:16:30 [34mINFO [0;39m [36mc.c.a.c.a.CodacyPluginsAnalyser:28[0;39m - Completed analysis for jacksonlinter with 0 results 
+2023-04-23T22:16:30.9289321Z 04/23 22:16:30 [34mINFO [0;39m [36mc.c.a.c.a.AnalyseExecutor:192[0;39m - Could not find local extra configuration for hadolint 
+2023-04-23T22:16:30.9289891Z 04/23 22:16:30 [34mINFO [0;39m [36mc.c.a.c.a.AnalyseExecutor:181[0;39m - Preparing to run hadolint with defaults 
+2023-04-23T22:16:30.9290556Z 04/23 22:16:30 [34mINFO [0;39m [36mc.c.analysis.core.tools.Tool:101[0;39m - Using the root directory /home/runner/work/spring-test-project/spring-test-project to run 
+2023-04-23T22:16:30.9291202Z 04/23 22:16:30 [34mINFO [0;39m [36mc.c.a.c.a.CodacyPluginsAnalyser:28[0;39m - Completed analysis for hadolint with 0 results 
+2023-04-23T22:16:30.9832159Z 04/23 22:16:30 [39mDEBUG[0;39m [36mCodacyPlugins:17[0;39m - codacy/codacy-duplication-pmdcpd:2.0.145 doesn't exist locally. 
+2023-04-23T22:16:30.9837252Z 04/23 22:16:30 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Verifying if docker image codacy/codacy-duplication-pmdcpd:2.0.145 exists locally. took 49ms 
+2023-04-23T22:16:33.0336821Z 04/23 22:16:33 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Pulling docker image codacy/codacy-duplication-pmdcpd:2.0.145. took 2049ms 
+2023-04-23T22:16:34.4967273Z 04/23 22:16:34 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Running docker image codacy/codacy-duplication-pmdcpd:2.0.145. took 1457ms 
+2023-04-23T22:16:34.5043767Z 04/23 22:16:34 [34mINFO [0;39m [36mc.c.a.c.a.CodacyPluginsAnalyser:66[0;39m - Completed duplication for duplication with 0 results 
+2023-04-23T22:16:34.5050334Z 04/23 22:16:34 [34mINFO [0;39m [36mc.c.a.c.a.AnalyseExecutor:192[0;39m - Could not find local extra configuration for eslint 
+2023-04-23T22:16:34.5050973Z 04/23 22:16:34 [34mINFO [0;39m [36mc.c.a.c.a.AnalyseExecutor:181[0;39m - Preparing to run eslint with defaults 
+2023-04-23T22:16:34.5051629Z 04/23 22:16:34 [34mINFO [0;39m [36mc.c.analysis.core.tools.Tool:101[0;39m - Using the root directory /home/runner/work/spring-test-project/spring-test-project to run 
+2023-04-23T22:16:34.5459965Z 04/23 22:16:34 [39mDEBUG[0;39m [36mCodacyPlugins:17[0;39m - codacy/codacy-eslint:5.9.1 doesn't exist locally. 
+2023-04-23T22:16:34.5465120Z 04/23 22:16:34 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Verifying if docker image codacy/codacy-eslint:5.9.1 exists locally. took 40ms 
+2023-04-23T22:16:53.8793732Z 04/23 22:16:53 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Pulling docker image codacy/codacy-eslint:5.9.1. took 19332ms 
+2023-04-23T22:16:56.5445169Z 04/23 22:16:56 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Running docker image codacy/codacy-eslint:5.9.1. took 2663ms 
+2023-04-23T22:16:56.5486964Z 04/23 22:16:56 [1;31mERROR[0;39m [36mc.c.a.c.a.CodacyPluginsAnalyser:30[0;39m - Failed analysis for eslint 
+2023-04-23T22:16:56.5487412Z java.lang.Throwable: 
+2023-04-23T22:16:56.5487634Z Docker exited with code 1
+2023-04-23T22:16:56.5487852Z stdout: 
+2023-04-23T22:16:56.5488181Z stderr: ConfigurationNotFoundError: No ESLint configuration found in /src/complete/build/reports.
+2023-04-23T22:16:56.5488846Z     at CascadingConfigArrayFactory._finalizeConfigArray (/node_modules/eslint/lib/cli-engine/cascading-config-array-factory.js:491:19)
+2023-04-23T22:16:56.5489615Z     at CascadingConfigArrayFactory.getConfigArrayForFile (/node_modules/eslint/lib/cli-engine/cascading-config-array-factory.js:287:21)
+2023-04-23T22:16:56.5490295Z     at FileEnumerator._iterateFilesWithFile (/node_modules/eslint/lib/cli-engine/file-enumerator.js:356:43)
+2023-04-23T22:16:56.5490846Z     at FileEnumerator._iterateFiles (/node_modules/eslint/lib/cli-engine/file-enumerator.js:337:25)
+2023-04-23T22:16:56.5491370Z     at FileEnumerator.iterateFiles (/node_modules/eslint/lib/cli-engine/file-enumerator.js:287:59)
+2023-04-23T22:16:56.5492053Z     at iterateFiles.next (<anonymous>)
+2023-04-23T22:16:56.5492505Z     at CLIEngine.executeOnFiles (/node_modules/eslint/lib/cli-engine/cli-engine.js:751:48)
+2023-04-23T22:16:56.5492832Z     at /dist/src/engineImpl.js:26:38
+2023-04-23T22:16:56.5493097Z     at Generator.next (<anonymous>)
+2023-04-23T22:16:56.5493376Z     at fulfilled (/dist/src/engineImpl.js:5:58) {
+2023-04-23T22:16:56.5493698Z   messageTemplate: 'no-config-found',
+2023-04-23T22:16:56.5494081Z   messageData: { directoryPath: '/src/complete/build/reports' }
+2023-04-23T22:16:56.5494340Z }
+2023-04-23T22:16:56.5494515Z            
+2023-04-23T22:16:56.5494867Z 	at com.codacy.plugins.runners.BinaryDockerRunner.$anonfun$run$4(BinaryDockerRunner.scala:87)
+2023-04-23T22:16:56.5495284Z 	at scala.util.Success.flatMap(Try.scala:251)
+2023-04-23T22:16:56.5495703Z 	at com.codacy.plugins.runners.BinaryDockerRunner.run(BinaryDockerRunner.scala:72)
+2023-04-23T22:16:56.5496192Z 	at com.codacy.plugins.results.traits.ToolRunner.$anonfun$apply$2(ToolRunner.scala:73)
+2023-04-23T22:16:56.5496886Z 	at com.codacy.plugins.results.traits.CodacyDocker$.$anonfun$usingDockerConfig$2(CodacyDocker.scala:41)
+2023-04-23T22:16:56.5497387Z 	at com.codacy.plugins.utils.FileHelper$.$anonfun$usingNewFile$2(FileHelper.scala:51)
+2023-04-23T22:16:56.5497735Z 	at scala.util.Try$.apply(Try.scala:213)
+2023-04-23T22:16:56.5498095Z 	at com.codacy.plugins.utils.FileHelper$.usingNewFile(FileHelper.scala:45)
+2023-04-23T22:16:56.5498569Z 	at com.codacy.plugins.results.traits.CodacyDocker$.usingConfigPath(CodacyDocker.scala:53)
+2023-04-23T22:16:56.5499101Z 	at com.codacy.plugins.results.traits.CodacyDocker$.$anonfun$usingDockerConfig$1(CodacyDocker.scala:38)
+2023-04-23T22:16:56.5499486Z 	at scala.Option.map(Option.scala:230)
+2023-04-23T22:16:56.5499890Z 	at com.codacy.plugins.results.traits.CodacyDocker$.usingDockerConfig(CodacyDocker.scala:37)
+2023-04-23T22:16:56.5500391Z 	at com.codacy.plugins.results.traits.ToolRunner.$anonfun$apply$1(ToolRunner.scala:72)
+2023-04-23T22:16:56.5500765Z 	at scala.util.Try$.apply(Try.scala:213)
+2023-04-23T22:16:56.5501146Z 	at com.codacy.plugins.results.traits.ToolRunner.apply(ToolRunner.scala:58)
+2023-04-23T22:16:56.5501617Z 	at com.codacy.plugins.results.traits.ToolRunner.run(ToolRunner.scala:47)
+2023-04-23T22:16:56.5502033Z 	at com.codacy.analysis.core.tools.Tool.run(Tool.scala:80)
+2023-04-23T22:16:56.5502527Z 	at com.codacy.analysis.core.analysis.CodacyPluginsAnalyser.analyse(CodacyPluginsAnalyser.scala:24)
+2023-04-23T22:16:56.5503151Z 	at com.codacy.analysis.core.analysis.CodacyPluginsAnalyser.analyse(CodacyPluginsAnalyser.scala:14)
+2023-04-23T22:16:56.5503726Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.$anonfun$issues$1(AnalyseExecutor.scala:144)
+2023-04-23T22:16:56.5504124Z 	at scala.util.Success.flatMap(Try.scala:251)
+2023-04-23T22:16:56.5504547Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.issues(AnalyseExecutor.scala:137)
+2023-04-23T22:16:56.5505073Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.$anonfun$run$5(AnalyseExecutor.scala:70)
+2023-04-23T22:16:56.5505556Z 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:238)
+2023-04-23T22:16:56.5505969Z 	at scala.collection.immutable.HashSet$HashSet1.foreach(HashSet.scala:321)
+2023-04-23T22:16:56.5506476Z 	at scala.collection.immutable.HashSet$HashTrieSet.foreach(HashSet.scala:977)
+2023-04-23T22:16:56.5506908Z 	at scala.collection.TraversableLike.map(TraversableLike.scala:238)
+2023-04-23T22:16:56.5507317Z 	at scala.collection.TraversableLike.map$(TraversableLike.scala:231)
+2023-04-23T22:16:56.5507752Z 	at scala.collection.AbstractSet.scala$collection$SetLike$$super$map(Set.scala:51)
+2023-04-23T22:16:56.5508138Z 	at scala.collection.SetLike.map(SetLike.scala:104)
+2023-04-23T22:16:56.5508486Z 	at scala.collection.SetLike.map$(SetLike.scala:104)
+2023-04-23T22:16:56.5508810Z 	at scala.collection.AbstractSet.map(Set.scala:51)
+2023-04-23T22:16:56.5509227Z 	at scala.collection.parallel.ParIterableLike.map(ParIterableLike.scala:502)
+2023-04-23T22:16:56.5509820Z 	at scala.collection.parallel.ParIterableLike.map$(ParIterableLike.scala:500)
+2023-04-23T22:16:56.5510333Z 	at scala.collection.parallel.immutable.ParHashSet.map(ParHashSet.scala:50)
+2023-04-23T22:16:56.5510869Z 	at com.codacy.analysis.core.utils.SetOps$.mapInParallel(SetOps.scala:13)
+2023-04-23T22:16:56.5511540Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.$anonfun$run$4(AnalyseExecutor.scala:54)
+2023-04-23T22:16:56.5511969Z 	at scala.util.Either.map(Either.scala:353)
+2023-04-23T22:16:56.5512453Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.run(AnalyseExecutor.scala:52)
+2023-04-23T22:16:56.5513032Z 	at com.codacy.analysis.cli.command.AnalyseCommand.$anonfun$run$1(AnalyseCommand.scala:68)
+2023-04-23T22:16:56.5513525Z 	at scala.util.Either.flatMap(Either.scala:341)
+2023-04-23T22:16:56.5513993Z 	at com.codacy.analysis.cli.command.AnalyseCommand.run(AnalyseCommand.scala:67)
+2023-04-23T22:16:56.5514513Z 	at com.codacy.analysis.cli.MainImpl.runCommand(Main.scala:19)
+2023-04-23T22:16:56.5515092Z 	at com.codacy.analysis.cli.MainImpl.run(Main.scala:14)
+2023-04-23T22:16:56.5515515Z 	at com.codacy.analysis.cli.command.CLIApp.run(CLIApp.scala:22)
+2023-04-23T22:16:56.5515994Z 	at com.codacy.analysis.cli.command.CLIApp.run(CLIApp.scala:18)
+2023-04-23T22:16:56.5516631Z 	at com.codacy.analysis.cli.command.CommandAppWithBaseCommand.$anonfun$main$1(CommandAppWithBaseCommand.scala:103)
+2023-04-23T22:16:56.5517356Z 	at com.codacy.analysis.cli.command.CommandAppWithBaseCommand.$anonfun$main$1$adapted(CommandAppWithBaseCommand.scala:88)
+2023-04-23T22:16:56.5517852Z 	at scala.Option.foreach(Option.scala:407)
+2023-04-23T22:16:56.5518414Z 	at com.codacy.analysis.cli.command.CommandAppWithBaseCommand.main(CommandAppWithBaseCommand.scala:88)
+2023-04-23T22:16:56.5519000Z 	at com.codacy.analysis.cli.Main.main(Main.scala)
+2023-04-23T22:16:56.7036184Z 04/23 22:16:56 [34mINFO [0;39m [36mc.c.a.c.a.AnalyseExecutor:192[0;39m - Could not find local extra configuration for pmd-legacy 
+2023-04-23T22:16:56.7038691Z 04/23 22:16:56 [34mINFO [0;39m [36mc.c.a.c.a.AnalyseExecutor:181[0;39m - Preparing to run pmd-legacy with defaults 
+2023-04-23T22:16:56.7041155Z 04/23 22:16:56 [34mINFO [0;39m [36mc.c.analysis.core.tools.Tool:101[0;39m - Using the root directory /home/runner/work/spring-test-project/spring-test-project to run 
+2023-04-23T22:16:56.7467063Z 04/23 22:16:56 [39mDEBUG[0;39m [36mCodacyPlugins:17[0;39m - codacy/codacy-pmdjava:2.0.0-pmdlegacy.57fdbf2 doesn't exist locally. 
+2023-04-23T22:16:56.7468558Z 04/23 22:16:56 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Verifying if docker image codacy/codacy-pmdjava:2.0.0-pmdlegacy.57fdbf2 exists locally. took 39ms 
+2023-04-23T22:17:02.1016722Z 04/23 22:17:02 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Pulling docker image codacy/codacy-pmdjava:2.0.0-pmdlegacy.57fdbf2. took 5354ms 
+2023-04-23T22:17:03.4868755Z 04/23 22:17:03 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Running docker image codacy/codacy-pmdjava:2.0.0-pmdlegacy.57fdbf2. took 1375ms 
+2023-04-23T22:17:03.4869670Z 04/23 22:17:03 [1;31mERROR[0;39m [36mc.c.a.c.a.CodacyPluginsAnalyser:30[0;39m - Failed analysis for pmd-legacy 
+2023-04-23T22:17:03.4870095Z java.lang.Throwable: 
+2023-04-23T22:17:03.4870407Z Docker exited with code 1
+2023-04-23T22:17:03.4870819Z stdout: 
+2023-04-23T22:17:03.4871160Z stderr: Apr 23, 2023 10:17:03 PM net.sourceforge.pmd.RulesetsFactoryUtils getRuleSets
+2023-04-23T22:17:03.4871622Z SEVERE: No rules found. Maybe you mispelled a rule name? (null)
+2023-04-23T22:17:03.4871962Z Error executing the tool
+2023-04-23T22:17:03.4872335Z java.lang.IllegalArgumentException: No rules found. Maybe you mispelled a rule name? (null)
+2023-04-23T22:17:03.4872953Z 	at net.sourceforge.pmd.RulesetsFactoryUtils.getRuleSets(RulesetsFactoryUtils.java:41)
+2023-04-23T22:17:03.4873445Z 	at com.codacy.pmd.PMD$.apply(PMD.scala:57)
+2023-04-23T22:17:03.4873853Z 	at com.codacy.tools.scala.seed.DockerEngine.$anonfun$main$2(DockerEngine.scala:42)
+2023-04-23T22:17:03.4874740Z 	at com.codacy.tools.scala.seed.DockerEngine.$anonfun$main$2$adapted(DockerEngine.scala:28)
+2023-04-23T22:17:03.4875278Z 	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+2023-04-23T22:17:03.4875646Z 	at scala.util.Success.map(Try.scala:213)
+2023-04-23T22:17:03.4876050Z 	at com.codacy.tools.scala.seed.DockerEngine.$anonfun$main$1(DockerEngine.scala:28)
+2023-04-23T22:17:03.4876505Z 	at scala.util.Success.flatMap(Try.scala:251)
+2023-04-23T22:17:03.4876972Z 	at com.codacy.tools.scala.seed.DockerEngine.main(DockerEngine.scala:27)
+2023-04-23T22:17:03.4877389Z 	at com.codacy.Engine.main(Engine.scala)
+2023-04-23T22:17:03.4877698Z            
+2023-04-23T22:17:03.4878133Z 	at com.codacy.plugins.runners.BinaryDockerRunner.$anonfun$run$4(BinaryDockerRunner.scala:87)
+2023-04-23T22:17:03.4878627Z 	at scala.util.Success.flatMap(Try.scala:251)
+2023-04-23T22:17:03.4879256Z 	at com.codacy.plugins.runners.BinaryDockerRunner.run(BinaryDockerRunner.scala:72)
+2023-04-23T22:17:03.4879869Z 	at com.codacy.plugins.results.traits.ToolRunner.$anonfun$apply$2(ToolRunner.scala:73)
+2023-04-23T22:17:03.4880645Z 	at com.codacy.plugins.results.traits.CodacyDocker$.$anonfun$usingDockerConfig$2(CodacyDocker.scala:41)
+2023-04-23T22:17:03.4881178Z 	at com.codacy.plugins.utils.FileHelper$.$anonfun$usingNewFile$2(FileHelper.scala:51)
+2023-04-23T22:17:03.4883587Z 	at scala.util.Try$.apply(Try.scala:213)
+2023-04-23T22:17:03.4884134Z 	at com.codacy.plugins.utils.FileHelper$.usingNewFile(FileHelper.scala:45)
+2023-04-23T22:17:03.4884686Z 	at com.codacy.plugins.results.traits.CodacyDocker$.usingConfigPath(CodacyDocker.scala:53)
+2023-04-23T22:17:03.4885254Z 	at com.codacy.plugins.results.traits.CodacyDocker$.$anonfun$usingDockerConfig$1(CodacyDocker.scala:38)
+2023-04-23T22:17:03.4885728Z 	at scala.Option.map(Option.scala:230)
+2023-04-23T22:17:03.4886206Z 	at com.codacy.plugins.results.traits.CodacyDocker$.usingDockerConfig(CodacyDocker.scala:37)
+2023-04-23T22:17:03.4886759Z 	at com.codacy.plugins.results.traits.ToolRunner.$anonfun$apply$1(ToolRunner.scala:72)
+2023-04-23T22:17:03.4887233Z 	at scala.util.Try$.apply(Try.scala:213)
+2023-04-23T22:17:03.4887698Z 	at com.codacy.plugins.results.traits.ToolRunner.apply(ToolRunner.scala:58)
+2023-04-23T22:17:03.4888192Z 	at com.codacy.plugins.results.traits.ToolRunner.run(ToolRunner.scala:47)
+2023-04-23T22:17:03.4888693Z 	at com.codacy.analysis.core.tools.Tool.run(Tool.scala:80)
+2023-04-23T22:17:03.4889299Z 	at com.codacy.analysis.core.analysis.CodacyPluginsAnalyser.analyse(CodacyPluginsAnalyser.scala:24)
+2023-04-23T22:17:03.4890008Z 	at com.codacy.analysis.core.analysis.CodacyPluginsAnalyser.analyse(CodacyPluginsAnalyser.scala:14)
+2023-04-23T22:17:03.4890607Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.$anonfun$issues$1(AnalyseExecutor.scala:144)
+2023-04-23T22:17:03.4891090Z 	at scala.util.Success.flatMap(Try.scala:251)
+2023-04-23T22:17:03.4891614Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.issues(AnalyseExecutor.scala:137)
+2023-04-23T22:17:03.4892161Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.$anonfun$run$5(AnalyseExecutor.scala:70)
+2023-04-23T22:17:03.4892727Z 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:238)
+2023-04-23T22:17:03.4893221Z 	at scala.collection.immutable.HashSet$HashSet1.foreach(HashSet.scala:321)
+2023-04-23T22:17:03.4893723Z 	at scala.collection.immutable.HashSet$HashTrieSet.foreach(HashSet.scala:977)
+2023-04-23T22:17:03.4894200Z 	at scala.collection.TraversableLike.map(TraversableLike.scala:238)
+2023-04-23T22:17:03.4894702Z 	at scala.collection.TraversableLike.map$(TraversableLike.scala:231)
+2023-04-23T22:17:03.4895200Z 	at scala.collection.AbstractSet.scala$collection$SetLike$$super$map(Set.scala:51)
+2023-04-23T22:17:03.4895606Z 	at scala.collection.SetLike.map(SetLike.scala:104)
+2023-04-23T22:17:03.4896005Z 	at scala.collection.SetLike.map$(SetLike.scala:104)
+2023-04-23T22:17:03.4896446Z 	at scala.collection.AbstractSet.map(Set.scala:51)
+2023-04-23T22:17:03.4896930Z 	at scala.collection.parallel.ParIterableLike.map(ParIterableLike.scala:502)
+2023-04-23T22:17:03.4897620Z 	at scala.collection.parallel.ParIterableLike.map$(ParIterableLike.scala:500)
+2023-04-23T22:17:03.4898172Z 	at scala.collection.parallel.immutable.ParHashSet.map(ParHashSet.scala:50)
+2023-04-23T22:17:03.4898740Z 	at com.codacy.analysis.core.utils.SetOps$.mapInParallel(SetOps.scala:13)
+2023-04-23T22:17:03.4899236Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.$anonfun$run$4(AnalyseExecutor.scala:54)
+2023-04-23T22:17:03.4978560Z 	at scala.util.Either.map(Either.scala:353)
+2023-04-23T22:17:03.4981189Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.run(AnalyseExecutor.scala:52)
+2023-04-23T22:17:03.4981730Z 	at com.codacy.analysis.cli.command.AnalyseCommand.$anonfun$run$1(AnalyseCommand.scala:68)
+2023-04-23T22:17:03.4982144Z 	at scala.util.Either.flatMap(Either.scala:341)
+2023-04-23T22:17:03.4982544Z 	at com.codacy.analysis.cli.command.AnalyseCommand.run(AnalyseCommand.scala:67)
+2023-04-23T22:17:03.4983000Z 	at com.codacy.analysis.cli.MainImpl.runCommand(Main.scala:19)
+2023-04-23T22:17:03.4983630Z 	at com.codacy.analysis.cli.MainImpl.run(Main.scala:14)
+2023-04-23T22:17:03.4984024Z 	at com.codacy.analysis.cli.command.CLIApp.run(CLIApp.scala:22)
+2023-04-23T22:17:03.4984419Z 	at com.codacy.analysis.cli.command.CLIApp.run(CLIApp.scala:18)
+2023-04-23T22:17:03.4984947Z 	at com.codacy.analysis.cli.command.CommandAppWithBaseCommand.$anonfun$main$1(CommandAppWithBaseCommand.scala:103)
+2023-04-23T22:17:03.4985606Z 	at com.codacy.analysis.cli.command.CommandAppWithBaseCommand.$anonfun$main$1$adapted(CommandAppWithBaseCommand.scala:88)
+2023-04-23T22:17:03.4986063Z 	at scala.Option.foreach(Option.scala:407)
+2023-04-23T22:17:03.4986534Z 	at com.codacy.analysis.cli.command.CommandAppWithBaseCommand.main(CommandAppWithBaseCommand.scala:88)
+2023-04-23T22:17:03.4987012Z 	at com.codacy.analysis.cli.Main.main(Main.scala)
+2023-04-23T22:17:03.5747328Z 04/23 22:17:03 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Verifying if docker image codacy/codacy-metrics-cloc:0.2.4 exists locally. took 50ms 
+2023-04-23T22:17:05.0536823Z 04/23 22:17:05 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Running docker image codacy/codacy-metrics-cloc:0.2.4. took 1476ms 
+2023-04-23T22:17:05.0565292Z 04/23 22:17:05 [34mINFO [0;39m [36mc.c.a.c.a.CodacyPluginsAnalyser:48[0;39m - Completed metrics for metrics with 6 results 
+2023-04-23T22:17:05.0920500Z 04/23 22:17:05 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Verifying if docker image codacy/codacy-metrics-cloc:0.2.4 exists locally. took 38ms 
+2023-04-23T22:17:06.4624940Z 04/23 22:17:06 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Running docker image codacy/codacy-metrics-cloc:0.2.4. took 1363ms 
+2023-04-23T22:17:06.4683617Z 04/23 22:17:06 [1;31mERROR[0;39m [36mc.c.a.c.a.CodacyPluginsAnalyser:50[0;39m - Failed metrics for metrics 
+2023-04-23T22:17:06.4722464Z java.lang.Throwable: 
+2023-04-23T22:17:06.4722776Z Docker exited with code 1
+2023-04-23T22:17:06.4722998Z stdout: 
+2023-04-23T22:17:06.4723612Z stderr: com.fasterxml.jackson.databind.exc.MismatchedInputException: No content to map due to end-of-input
+2023-04-23T22:17:06.4724091Z  at [Source: (String)""; line: 1, column: 0]
+2023-04-23T22:17:06.4724559Z 	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
+2023-04-23T22:17:06.4725124Z 	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4145)
+2023-04-23T22:17:06.4725619Z 	at com.fasterxml.jackson.databind.ObjectMapper._readValue(ObjectMapper.java:3971)
+2023-04-23T22:17:06.4726118Z 	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2276)
+2023-04-23T22:17:06.4726600Z 	at play.api.libs.json.jackson.JacksonJson$.parseJsValue(JacksonJson.scala:255)
+2023-04-23T22:17:06.4727026Z 	at play.api.libs.json.StaticBinding$.parseJsValue(StaticBinding.scala:16)
+2023-04-23T22:17:06.4727390Z 	at play.api.libs.json.Json$.parse(Json.scala:169)
+2023-04-23T22:17:06.4727725Z 	at codacy.metrics.Cloc$.$anonfun$commandResult$2(Cloc.scala:54)
+2023-04-23T22:17:06.4728360Z 	at scala.util.Try$.apply(Try.scala:210)
+2023-04-23T22:17:06.4728676Z 	at codacy.metrics.Cloc$.$anonfun$commandResult$1(Cloc.scala:54)
+2023-04-23T22:17:06.4729007Z 	at scala.util.Success.flatMap(Try.scala:258)
+2023-04-23T22:17:06.4729314Z 	at codacy.metrics.Cloc$.commandResult(Cloc.scala:53)
+2023-04-23T22:17:06.4729635Z 	at codacy.metrics.Cloc$.getLinesCount(Cloc.scala:32)
+2023-04-23T22:17:06.4729945Z 	at codacy.metrics.Cloc$.apply(Cloc.scala:21)
+2023-04-23T22:17:06.4730339Z 	at com.codacy.docker.api.metrics.DockerMetrics.$anonfun$main$2(DockerMetrics.scala:30)
+2023-04-23T22:17:06.4730837Z 	at com.codacy.docker.api.metrics.DockerMetrics.withNativeTry(DockerMetrics.scala:57)
+2023-04-23T22:17:06.4731348Z 	at com.codacy.docker.api.metrics.DockerMetrics.$anonfun$main$1(DockerMetrics.scala:27)
+2023-04-23T22:17:06.4731733Z 	at scala.util.Success.flatMap(Try.scala:258)
+2023-04-23T22:17:06.4732391Z 	at com.codacy.docker.api.metrics.DockerMetrics.main(DockerMetrics.scala:25)
+2023-04-23T22:17:06.4732880Z 	at codacy.metrics.Metrics.main(Metrics.scala)
+2023-04-23T22:17:06.4733401Z            
+2023-04-23T22:17:06.4733790Z 	at com.codacy.plugins.runners.BinaryDockerRunner.$anonfun$run$4(BinaryDockerRunner.scala:87)
+2023-04-23T22:17:06.4734188Z 	at scala.util.Success.flatMap(Try.scala:251)
+2023-04-23T22:17:06.4734603Z 	at com.codacy.plugins.runners.BinaryDockerRunner.run(BinaryDockerRunner.scala:72)
+2023-04-23T22:17:06.4735115Z 	at com.codacy.plugins.metrics.traits.MetricsRunner.$anonfun$run$1(MetricsRunner.scala:42)
+2023-04-23T22:17:06.4735676Z 	at com.codacy.plugins.utils.FileHelper$.$anonfun$usingNewFile$2(FileHelper.scala:51)
+2023-04-23T22:17:06.4736105Z 	at scala.util.Try$.apply(Try.scala:213)
+2023-04-23T22:17:06.4736537Z 	at com.codacy.plugins.utils.FileHelper$.usingNewFile(FileHelper.scala:45)
+2023-04-23T22:17:06.4737133Z 	at com.codacy.plugins.metrics.traits.MetricsRunner.usingConfiguration(MetricsRunner.scala:49)
+2023-04-23T22:17:06.4737759Z 	at com.codacy.plugins.metrics.traits.MetricsRunner.run(MetricsRunner.scala:38)
+2023-04-23T22:17:06.4738303Z 	at com.codacy.analysis.core.tools.MetricsTool.run(MetricsTool.scala:42)
+2023-04-23T22:17:06.4738921Z 	at com.codacy.analysis.core.analysis.CodacyPluginsAnalyser.metrics(CodacyPluginsAnalyser.scala:44)
+2023-04-23T22:17:06.4739622Z 	at com.codacy.analysis.core.analysis.CodacyPluginsAnalyser.metrics(CodacyPluginsAnalyser.scala:14)
+2023-04-23T22:17:06.4740279Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.$anonfun$run$5(AnalyseExecutor.scala:79)
+2023-04-23T22:17:06.4740822Z 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:238)
+2023-04-23T22:17:06.4741332Z 	at scala.collection.immutable.HashSet$HashSet1.foreach(HashSet.scala:321)
+2023-04-23T22:17:06.4741836Z 	at scala.collection.immutable.HashSet$HashTrieSet.foreach(HashSet.scala:977)
+2023-04-23T22:17:06.4742336Z 	at scala.collection.TraversableLike.map(TraversableLike.scala:238)
+2023-04-23T22:17:06.4742857Z 	at scala.collection.TraversableLike.map$(TraversableLike.scala:231)
+2023-04-23T22:17:06.4743376Z 	at scala.collection.AbstractSet.scala$collection$SetLike$$super$map(Set.scala:51)
+2023-04-23T22:17:06.4743835Z 	at scala.collection.SetLike.map(SetLike.scala:104)
+2023-04-23T22:17:06.4744254Z 	at scala.collection.SetLike.map$(SetLike.scala:104)
+2023-04-23T22:17:06.4744656Z 	at scala.collection.AbstractSet.map(Set.scala:51)
+2023-04-23T22:17:06.4745149Z 	at scala.collection.parallel.ParIterableLike.map(ParIterableLike.scala:502)
+2023-04-23T22:17:06.4745707Z 	at scala.collection.parallel.ParIterableLike.map$(ParIterableLike.scala:500)
+2023-04-23T22:17:06.4746267Z 	at scala.collection.parallel.immutable.ParHashSet.map(ParHashSet.scala:50)
+2023-04-23T22:17:06.4746783Z 	at com.codacy.analysis.core.utils.SetOps$.mapInParallel(SetOps.scala:13)
+2023-04-23T22:17:06.4747340Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.$anonfun$run$4(AnalyseExecutor.scala:54)
+2023-04-23T22:17:06.4747817Z 	at scala.util.Either.map(Either.scala:353)
+2023-04-23T22:17:06.4748303Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.run(AnalyseExecutor.scala:52)
+2023-04-23T22:17:06.4749021Z 	at com.codacy.analysis.cli.command.AnalyseCommand.$anonfun$run$1(AnalyseCommand.scala:68)
+2023-04-23T22:17:06.4749507Z 	at scala.util.Either.flatMap(Either.scala:341)
+2023-04-23T22:17:06.4749931Z 	at com.codacy.analysis.cli.command.AnalyseCommand.run(AnalyseCommand.scala:67)
+2023-04-23T22:17:06.4750453Z 	at com.codacy.analysis.cli.MainImpl.runCommand(Main.scala:19)
+2023-04-23T22:17:06.4750913Z 	at com.codacy.analysis.cli.MainImpl.run(Main.scala:14)
+2023-04-23T22:17:06.4751369Z 	at com.codacy.analysis.cli.command.CLIApp.run(CLIApp.scala:22)
+2023-04-23T22:17:06.4751851Z 	at com.codacy.analysis.cli.command.CLIApp.run(CLIApp.scala:18)
+2023-04-23T22:17:06.4752458Z 	at com.codacy.analysis.cli.command.CommandAppWithBaseCommand.$anonfun$main$1(CommandAppWithBaseCommand.scala:103)
+2023-04-23T22:17:06.4753188Z 	at com.codacy.analysis.cli.command.CommandAppWithBaseCommand.$anonfun$main$1$adapted(CommandAppWithBaseCommand.scala:88)
+2023-04-23T22:17:06.4754100Z 	at scala.Option.foreach(Option.scala:407)
+2023-04-23T22:17:06.4754656Z 	at com.codacy.analysis.cli.command.CommandAppWithBaseCommand.main(CommandAppWithBaseCommand.scala:88)
+2023-04-23T22:17:06.4755219Z 	at com.codacy.analysis.cli.Main.main(Main.scala)
+2023-04-23T22:17:06.4755909Z 04/23 22:17:06 [34mINFO [0;39m [36mc.c.a.c.a.AnalyseExecutor:192[0;39m - Could not find local extra configuration for remark-lint 
+2023-04-23T22:17:06.4756559Z 04/23 22:17:06 [34mINFO [0;39m [36mc.c.a.c.a.AnalyseExecutor:181[0;39m - Preparing to run remark-lint with defaults 
+2023-04-23T22:17:06.4757312Z 04/23 22:17:06 [34mINFO [0;39m [36mc.c.analysis.core.tools.Tool:101[0;39m - Using the root directory /home/runner/work/spring-test-project/spring-test-project to run 
+2023-04-23T22:17:06.5059064Z 04/23 22:17:06 [39mDEBUG[0;39m [36mCodacyPlugins:17[0;39m - codacy/codacy-remark-lint:2.5.8 doesn't exist locally. 
+2023-04-23T22:17:06.5063959Z 04/23 22:17:06 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Verifying if docker image codacy/codacy-remark-lint:2.5.8 exists locally. took 46ms 
+2023-04-23T22:17:09.2538488Z 04/23 22:17:09 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Pulling docker image codacy/codacy-remark-lint:2.5.8. took 2746ms 
+2023-04-23T22:17:09.8199543Z 04/23 22:17:09 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Running docker image codacy/codacy-remark-lint:2.5.8. took 562ms 
+2023-04-23T22:17:09.8221520Z 04/23 22:17:09 [34mINFO [0;39m [36mc.c.a.c.a.CodacyPluginsAnalyser:28[0;39m - Completed analysis for remark-lint with 71 results 
+2023-04-23T22:17:09.8323972Z 04/23 22:17:09 [34mINFO [0;39m [36mc.c.a.c.a.AnalyseExecutor:192[0;39m - Could not find local extra configuration for pmd 
+2023-04-23T22:17:09.8329569Z 04/23 22:17:09 [34mINFO [0;39m [36mc.c.a.c.a.AnalyseExecutor:181[0;39m - Preparing to run pmd with defaults 
+2023-04-23T22:17:09.8335180Z 04/23 22:17:09 [34mINFO [0;39m [36mc.c.analysis.core.tools.Tool:101[0;39m - Using the root directory /home/runner/work/spring-test-project/spring-test-project to run 
+2023-04-23T22:17:09.8953827Z 04/23 22:17:09 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Verifying if docker image codacy/codacy-pmd:3.10.2 exists locally. took 59ms 
+2023-04-23T22:17:11.4325658Z 04/23 22:17:11 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Running docker image codacy/codacy-pmd:3.10.2. took 1527ms 
+2023-04-23T22:17:11.4326307Z 04/23 22:17:11 [1;31mERROR[0;39m [36mc.c.a.c.a.CodacyPluginsAnalyser:30[0;39m - Failed analysis for pmd 
+2023-04-23T22:17:11.4326643Z java.lang.Throwable: 
+2023-04-23T22:17:11.4326919Z Docker exited with code 1
+2023-04-23T22:17:11.4327117Z stdout: 
+2023-04-23T22:17:11.4327433Z stderr: Apr 23, 2023 10:17:11 PM net.sourceforge.pmd.RulesetsFactoryUtils getRuleSets
+2023-04-23T22:17:11.4327823Z SEVERE: No rules found. Maybe you misspelled a rule name? (null)
+2023-04-23T22:17:11.4328083Z Error executing the tool
+2023-04-23T22:17:11.4328431Z java.lang.IllegalArgumentException: No rules found. Maybe you misspelled a rule name? (null)
+2023-04-23T22:17:11.4329230Z 	at net.sourceforge.pmd.RulesetsFactoryUtils.getRuleSets(RulesetsFactoryUtils.java:47)
+2023-04-23T22:17:11.4329634Z 	at com.codacy.pmd.PMD$.apply(PMD.scala:66)
+2023-04-23T22:17:11.4330039Z 	at com.codacy.tools.scala.seed.DockerEngine.executeTool(DockerEngine.scala:53)
+2023-04-23T22:17:11.4330517Z 	at com.codacy.tools.scala.seed.DockerEngine.$anonfun$main$2(DockerEngine.scala:35)
+2023-04-23T22:17:11.4330888Z 	at scala.util.Success.map(Try.scala:262)
+2023-04-23T22:17:11.4331254Z 	at com.codacy.tools.scala.seed.DockerEngine.$anonfun$main$1(DockerEngine.scala:27)
+2023-04-23T22:17:11.4331634Z 	at scala.util.Success.flatMap(Try.scala:258)
+2023-04-23T22:17:11.4332015Z 	at com.codacy.tools.scala.seed.DockerEngine.main(DockerEngine.scala:26)
+2023-04-23T22:17:11.4332369Z 	at com.codacy.Engine.main(Engine.scala)
+2023-04-23T22:17:11.4332605Z            
+2023-04-23T22:17:11.4333052Z 	at com.codacy.plugins.runners.BinaryDockerRunner.$anonfun$run$4(BinaryDockerRunner.scala:87)
+2023-04-23T22:17:11.4333630Z 	at scala.util.Success.flatMap(Try.scala:251)
+2023-04-23T22:17:11.4334042Z 	at com.codacy.plugins.runners.BinaryDockerRunner.run(BinaryDockerRunner.scala:72)
+2023-04-23T22:17:11.4334537Z 	at com.codacy.plugins.results.traits.ToolRunner.$anonfun$apply$2(ToolRunner.scala:73)
+2023-04-23T22:17:11.4335054Z 	at com.codacy.plugins.results.traits.CodacyDocker$.$anonfun$usingDockerConfig$2(CodacyDocker.scala:41)
+2023-04-23T22:17:11.4335538Z 	at com.codacy.plugins.utils.FileHelper$.$anonfun$usingNewFile$2(FileHelper.scala:51)
+2023-04-23T22:17:11.4335898Z 	at scala.util.Try$.apply(Try.scala:213)
+2023-04-23T22:17:11.4336252Z 	at com.codacy.plugins.utils.FileHelper$.usingNewFile(FileHelper.scala:45)
+2023-04-23T22:17:11.4336707Z 	at com.codacy.plugins.results.traits.CodacyDocker$.usingConfigPath(CodacyDocker.scala:53)
+2023-04-23T22:17:11.4337230Z 	at com.codacy.plugins.results.traits.CodacyDocker$.$anonfun$usingDockerConfig$1(CodacyDocker.scala:38)
+2023-04-23T22:17:11.4337626Z 	at scala.Option.map(Option.scala:230)
+2023-04-23T22:17:11.4338030Z 	at com.codacy.plugins.results.traits.CodacyDocker$.usingDockerConfig(CodacyDocker.scala:37)
+2023-04-23T22:17:11.4338511Z 	at com.codacy.plugins.results.traits.ToolRunner.$anonfun$apply$1(ToolRunner.scala:72)
+2023-04-23T22:17:11.4338879Z 	at scala.util.Try$.apply(Try.scala:213)
+2023-04-23T22:17:11.4339257Z 	at com.codacy.plugins.results.traits.ToolRunner.apply(ToolRunner.scala:58)
+2023-04-23T22:17:11.4339713Z 	at com.codacy.plugins.results.traits.ToolRunner.run(ToolRunner.scala:47)
+2023-04-23T22:17:11.4340128Z 	at com.codacy.analysis.core.tools.Tool.run(Tool.scala:80)
+2023-04-23T22:17:11.4340632Z 	at com.codacy.analysis.core.analysis.CodacyPluginsAnalyser.analyse(CodacyPluginsAnalyser.scala:24)
+2023-04-23T22:17:11.4341242Z 	at com.codacy.analysis.core.analysis.CodacyPluginsAnalyser.analyse(CodacyPluginsAnalyser.scala:14)
+2023-04-23T22:17:11.4341815Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.$anonfun$issues$1(AnalyseExecutor.scala:144)
+2023-04-23T22:17:11.4342242Z 	at scala.util.Success.flatMap(Try.scala:251)
+2023-04-23T22:17:11.4342661Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.issues(AnalyseExecutor.scala:137)
+2023-04-23T22:17:11.4343174Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.$anonfun$run$5(AnalyseExecutor.scala:70)
+2023-04-23T22:17:11.4343645Z 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:238)
+2023-04-23T22:17:11.4344068Z 	at scala.collection.immutable.HashSet$HashSet1.foreach(HashSet.scala:321)
+2023-04-23T22:17:11.4344493Z 	at scala.collection.immutable.HashSet$HashTrieSet.foreach(HashSet.scala:977)
+2023-04-23T22:17:11.4344902Z 	at scala.collection.TraversableLike.map(TraversableLike.scala:238)
+2023-04-23T22:17:11.4345318Z 	at scala.collection.TraversableLike.map$(TraversableLike.scala:231)
+2023-04-23T22:17:11.4345742Z 	at scala.collection.AbstractSet.scala$collection$SetLike$$super$map(Set.scala:51)
+2023-04-23T22:17:11.4346110Z 	at scala.collection.SetLike.map(SetLike.scala:104)
+2023-04-23T22:17:11.4346549Z 	at scala.collection.SetLike.map$(SetLike.scala:104)
+2023-04-23T22:17:11.4346888Z 	at scala.collection.AbstractSet.map(Set.scala:51)
+2023-04-23T22:17:11.4347286Z 	at scala.collection.parallel.ParIterableLike.map(ParIterableLike.scala:502)
+2023-04-23T22:17:11.4347762Z 	at scala.collection.parallel.ParIterableLike.map$(ParIterableLike.scala:500)
+2023-04-23T22:17:11.4348246Z 	at scala.collection.parallel.immutable.ParHashSet.map(ParHashSet.scala:50)
+2023-04-23T22:17:11.4348705Z 	at com.codacy.analysis.core.utils.SetOps$.mapInParallel(SetOps.scala:13)
+2023-04-23T22:17:11.4349165Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.$anonfun$run$4(AnalyseExecutor.scala:54)
+2023-04-23T22:17:11.4349568Z 	at scala.util.Either.map(Either.scala:353)
+2023-04-23T22:17:11.4349973Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.run(AnalyseExecutor.scala:52)
+2023-04-23T22:17:11.4350466Z 	at com.codacy.analysis.cli.command.AnalyseCommand.$anonfun$run$1(AnalyseCommand.scala:68)
+2023-04-23T22:17:11.4350872Z 	at scala.util.Either.flatMap(Either.scala:341)
+2023-04-23T22:17:11.4351388Z 	at com.codacy.analysis.cli.command.AnalyseCommand.run(AnalyseCommand.scala:67)
+2023-04-23T22:17:11.4351836Z 	at com.codacy.analysis.cli.MainImpl.runCommand(Main.scala:19)
+2023-04-23T22:17:11.4352204Z 	at com.codacy.analysis.cli.MainImpl.run(Main.scala:14)
+2023-04-23T22:17:11.4352591Z 	at com.codacy.analysis.cli.command.CLIApp.run(CLIApp.scala:22)
+2023-04-23T22:17:11.4352995Z 	at com.codacy.analysis.cli.command.CLIApp.run(CLIApp.scala:18)
+2023-04-23T22:17:11.4353514Z 	at com.codacy.analysis.cli.command.CommandAppWithBaseCommand.$anonfun$main$1(CommandAppWithBaseCommand.scala:103)
+2023-04-23T22:17:11.4354169Z 	at com.codacy.analysis.cli.command.CommandAppWithBaseCommand.$anonfun$main$1$adapted(CommandAppWithBaseCommand.scala:88)
+2023-04-23T22:17:11.4354644Z 	at scala.Option.foreach(Option.scala:407)
+2023-04-23T22:17:11.4355103Z 	at com.codacy.analysis.cli.command.CommandAppWithBaseCommand.main(CommandAppWithBaseCommand.scala:88)
+2023-04-23T22:17:11.4355593Z 	at com.codacy.analysis.cli.Main.main(Main.scala)
+2023-04-23T22:17:11.4985400Z 04/23 22:17:11 [34mINFO [0;39m [36mc.c.a.c.a.AnalyseExecutor:192[0;39m - Could not find local extra configuration for checkstyle 
+2023-04-23T22:17:11.4986122Z 04/23 22:17:11 [34mINFO [0;39m [36mc.c.a.c.a.AnalyseExecutor:181[0;39m - Preparing to run checkstyle with defaults 
+2023-04-23T22:17:11.4986806Z 04/23 22:17:11 [34mINFO [0;39m [36mc.c.analysis.core.tools.Tool:101[0;39m - Using the root directory /home/runner/work/spring-test-project/spring-test-project to run 
+2023-04-23T22:17:11.5494841Z 04/23 22:17:11 [39mDEBUG[0;39m [36mCodacyPlugins:17[0;39m - codacy/codacy-checkstyle:2.2.1 doesn't exist locally. 
+2023-04-23T22:17:11.5503521Z 04/23 22:17:11 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Verifying if docker image codacy/codacy-checkstyle:2.2.1 exists locally. took 50ms 
+2023-04-23T22:17:13.0525762Z 04/23 22:17:13 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Pulling docker image codacy/codacy-checkstyle:2.2.1. took 1496ms 
+2023-04-23T22:17:14.3573752Z 04/23 22:17:14 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Running docker image codacy/codacy-checkstyle:2.2.1. took 1300ms 
+2023-04-23T22:17:14.3586893Z 04/23 22:17:14 [1;31mERROR[0;39m [36mc.c.a.c.a.CodacyPluginsAnalyser:30[0;39m - Failed analysis for checkstyle 
+2023-04-23T22:17:14.3587293Z java.lang.Throwable: 
+2023-04-23T22:17:14.3587524Z Docker exited with code 1
+2023-04-23T22:17:14.3587722Z stdout: 
+2023-04-23T22:17:14.3587933Z stderr: Error executing the tool
+2023-04-23T22:17:14.3588237Z java.lang.Exception: Could not generate nor find configuration
+2023-04-23T22:17:14.3588599Z 	at codacy.checkstyle.Checkstyle$.$anonfun$apply$4(Checkstyle.scala:34)
+2023-04-23T22:17:14.3588942Z 	at scala.Option.getOrElse(Option.scala:201)
+2023-04-23T22:17:14.3589287Z 	at codacy.checkstyle.Checkstyle$.$anonfun$apply$1(Checkstyle.scala:34)
+2023-04-23T22:17:14.3589602Z 	at scala.util.Try$.apply(Try.scala:210)
+2023-04-23T22:17:14.3589927Z 	at codacy.checkstyle.Checkstyle$.apply(Checkstyle.scala:25)
+2023-04-23T22:17:14.3590701Z 	at com.codacy.tools.scala.seed.DockerEngine.executeTool(DockerEngine.scala:53)
+2023-04-23T22:17:14.3591188Z 	at com.codacy.tools.scala.seed.DockerEngine.$anonfun$main$2(DockerEngine.scala:35)
+2023-04-23T22:17:14.3591546Z 	at scala.util.Success.map(Try.scala:262)
+2023-04-23T22:17:14.3591929Z 	at com.codacy.tools.scala.seed.DockerEngine.$anonfun$main$1(DockerEngine.scala:27)
+2023-04-23T22:17:14.3592312Z 	at scala.util.Success.flatMap(Try.scala:258)
+2023-04-23T22:17:14.3592677Z 	at com.codacy.tools.scala.seed.DockerEngine.main(DockerEngine.scala:26)
+2023-04-23T22:17:14.3593035Z 	at codacy.Engine.main(Engine.scala)
+2023-04-23T22:17:14.3593265Z            
+2023-04-23T22:17:14.3593615Z 	at com.codacy.plugins.runners.BinaryDockerRunner.$anonfun$run$4(BinaryDockerRunner.scala:87)
+2023-04-23T22:17:14.3594028Z 	at scala.util.Success.flatMap(Try.scala:251)
+2023-04-23T22:17:14.3594434Z 	at com.codacy.plugins.runners.BinaryDockerRunner.run(BinaryDockerRunner.scala:72)
+2023-04-23T22:17:14.3595087Z 	at com.codacy.plugins.results.traits.ToolRunner.$anonfun$apply$2(ToolRunner.scala:73)
+2023-04-23T22:17:14.3595585Z 	at com.codacy.plugins.results.traits.CodacyDocker$.$anonfun$usingDockerConfig$2(CodacyDocker.scala:41)
+2023-04-23T22:17:14.3596081Z 	at com.codacy.plugins.utils.FileHelper$.$anonfun$usingNewFile$2(FileHelper.scala:51)
+2023-04-23T22:17:14.3596436Z 	at scala.util.Try$.apply(Try.scala:213)
+2023-04-23T22:17:14.3596779Z 	at com.codacy.plugins.utils.FileHelper$.usingNewFile(FileHelper.scala:45)
+2023-04-23T22:17:14.3597249Z 	at com.codacy.plugins.results.traits.CodacyDocker$.usingConfigPath(CodacyDocker.scala:53)
+2023-04-23T22:17:14.3597774Z 	at com.codacy.plugins.results.traits.CodacyDocker$.$anonfun$usingDockerConfig$1(CodacyDocker.scala:38)
+2023-04-23T22:17:14.3598174Z 	at scala.Option.map(Option.scala:230)
+2023-04-23T22:17:14.3598558Z 	at com.codacy.plugins.results.traits.CodacyDocker$.usingDockerConfig(CodacyDocker.scala:37)
+2023-04-23T22:17:14.3599110Z 	at com.codacy.plugins.results.traits.ToolRunner.$anonfun$apply$1(ToolRunner.scala:72)
+2023-04-23T22:17:14.3599482Z 	at scala.util.Try$.apply(Try.scala:213)
+2023-04-23T22:17:14.3599847Z 	at com.codacy.plugins.results.traits.ToolRunner.apply(ToolRunner.scala:58)
+2023-04-23T22:17:14.3600318Z 	at com.codacy.plugins.results.traits.ToolRunner.run(ToolRunner.scala:47)
+2023-04-23T22:17:14.3600735Z 	at com.codacy.analysis.core.tools.Tool.run(Tool.scala:80)
+2023-04-23T22:17:14.3601226Z 	at com.codacy.analysis.core.analysis.CodacyPluginsAnalyser.analyse(CodacyPluginsAnalyser.scala:24)
+2023-04-23T22:17:14.3601959Z 	at com.codacy.analysis.core.analysis.CodacyPluginsAnalyser.analyse(CodacyPluginsAnalyser.scala:14)
+2023-04-23T22:17:14.3602536Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.$anonfun$issues$1(AnalyseExecutor.scala:144)
+2023-04-23T22:17:14.3602948Z 	at scala.util.Success.flatMap(Try.scala:251)
+2023-04-23T22:17:14.3603424Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.issues(AnalyseExecutor.scala:137)
+2023-04-23T22:17:14.3604092Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.$anonfun$run$5(AnalyseExecutor.scala:70)
+2023-04-23T22:17:14.3604570Z 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:238)
+2023-04-23T22:17:14.3605074Z 	at scala.collection.immutable.HashSet$HashSet1.foreach(HashSet.scala:321)
+2023-04-23T22:17:14.3605487Z 	at scala.collection.immutable.HashSet$HashTrieSet.foreach(HashSet.scala:977)
+2023-04-23T22:17:14.3605908Z 	at scala.collection.TraversableLike.map(TraversableLike.scala:238)
+2023-04-23T22:17:14.3606323Z 	at scala.collection.TraversableLike.map$(TraversableLike.scala:231)
+2023-04-23T22:17:14.3606736Z 	at scala.collection.AbstractSet.scala$collection$SetLike$$super$map(Set.scala:51)
+2023-04-23T22:17:14.3607116Z 	at scala.collection.SetLike.map(SetLike.scala:104)
+2023-04-23T22:17:14.3607452Z 	at scala.collection.SetLike.map$(SetLike.scala:104)
+2023-04-23T22:17:14.3607773Z 	at scala.collection.AbstractSet.map(Set.scala:51)
+2023-04-23T22:17:14.3608471Z 	at scala.collection.parallel.ParIterableLike.map(ParIterableLike.scala:502)
+2023-04-23T22:17:14.3608949Z 	at scala.collection.parallel.ParIterableLike.map$(ParIterableLike.scala:500)
+2023-04-23T22:17:14.3609430Z 	at scala.collection.parallel.immutable.ParHashSet.map(ParHashSet.scala:50)
+2023-04-23T22:17:14.3609874Z 	at com.codacy.analysis.core.utils.SetOps$.mapInParallel(SetOps.scala:13)
+2023-04-23T22:17:14.3610347Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.$anonfun$run$4(AnalyseExecutor.scala:54)
+2023-04-23T22:17:14.3610749Z 	at scala.util.Either.map(Either.scala:353)
+2023-04-23T22:17:14.3611142Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.run(AnalyseExecutor.scala:52)
+2023-04-23T22:17:14.3611645Z 	at com.codacy.analysis.cli.command.AnalyseCommand.$anonfun$run$1(AnalyseCommand.scala:68)
+2023-04-23T22:17:14.3612047Z 	at scala.util.Either.flatMap(Either.scala:341)
+2023-04-23T22:17:14.3612450Z 	at com.codacy.analysis.cli.command.AnalyseCommand.run(AnalyseCommand.scala:67)
+2023-04-23T22:17:14.3613006Z 	at com.codacy.analysis.cli.MainImpl.runCommand(Main.scala:19)
+2023-04-23T22:17:14.3613383Z 	at com.codacy.analysis.cli.MainImpl.run(Main.scala:14)
+2023-04-23T22:17:14.3613771Z 	at com.codacy.analysis.cli.command.CLIApp.run(CLIApp.scala:22)
+2023-04-23T22:17:14.3614158Z 	at com.codacy.analysis.cli.command.CLIApp.run(CLIApp.scala:18)
+2023-04-23T22:17:14.3614687Z 	at com.codacy.analysis.cli.command.CommandAppWithBaseCommand.$anonfun$main$1(CommandAppWithBaseCommand.scala:103)
+2023-04-23T22:17:14.3615345Z 	at com.codacy.analysis.cli.command.CommandAppWithBaseCommand.$anonfun$main$1$adapted(CommandAppWithBaseCommand.scala:88)
+2023-04-23T22:17:14.3615815Z 	at scala.Option.foreach(Option.scala:407)
+2023-04-23T22:17:14.3616275Z 	at com.codacy.analysis.cli.command.CommandAppWithBaseCommand.main(CommandAppWithBaseCommand.scala:88)
+2023-04-23T22:17:14.3616757Z 	at com.codacy.analysis.cli.Main.main(Main.scala)
+2023-04-23T22:17:14.4272729Z 04/23 22:17:14 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Verifying if docker image codacy/codacy-metrics-cloc:0.2.4 exists locally. took 57ms 
+2023-04-23T22:17:15.8792999Z 04/23 22:17:15 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Running docker image codacy/codacy-metrics-cloc:0.2.4. took 1446ms 
+2023-04-23T22:17:15.8793693Z 04/23 22:17:15 [34mINFO [0;39m [36mc.c.a.c.a.CodacyPluginsAnalyser:48[0;39m - Completed metrics for metrics with 4 results 
+2023-04-23T22:17:15.8794298Z 04/23 22:17:15 [34mINFO [0;39m [36mc.c.a.c.a.AnalyseExecutor:192[0;39m - Could not find local extra configuration for pmd-legacy 
+2023-04-23T22:17:15.8795025Z 04/23 22:17:15 [34mINFO [0;39m [36mc.c.a.c.a.AnalyseExecutor:181[0;39m - Preparing to run pmd-legacy with defaults 
+2023-04-23T22:17:15.8795707Z 04/23 22:17:15 [34mINFO [0;39m [36mc.c.analysis.core.tools.Tool:101[0;39m - Using the root directory /home/runner/work/spring-test-project/spring-test-project to run 
+2023-04-23T22:17:15.9185105Z 04/23 22:17:15 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Verifying if docker image codacy/codacy-pmdjava:2.0.0-pmdlegacy.57fdbf2 exists locally. took 39ms 
+2023-04-23T22:17:17.3447192Z 04/23 22:17:17 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Running docker image codacy/codacy-pmdjava:2.0.0-pmdlegacy.57fdbf2. took 1425ms 
+2023-04-23T22:17:17.3467918Z 04/23 22:17:17 [1;31mERROR[0;39m [36mc.c.a.c.a.CodacyPluginsAnalyser:30[0;39m - Failed analysis for pmd-legacy 
+2023-04-23T22:17:17.3469377Z java.lang.Throwable: 
+2023-04-23T22:17:17.3469620Z Docker exited with code 1
+2023-04-23T22:17:17.3469832Z stdout: 
+2023-04-23T22:17:17.3470138Z stderr: Apr 23, 2023 10:17:17 PM net.sourceforge.pmd.RulesetsFactoryUtils getRuleSets
+2023-04-23T22:17:17.3470530Z SEVERE: No rules found. Maybe you mispelled a rule name? (null)
+2023-04-23T22:17:17.3470806Z Error executing the tool
+2023-04-23T22:17:17.3471146Z java.lang.IllegalArgumentException: No rules found. Maybe you mispelled a rule name? (null)
+2023-04-23T22:17:17.3471648Z 	at net.sourceforge.pmd.RulesetsFactoryUtils.getRuleSets(RulesetsFactoryUtils.java:41)
+2023-04-23T22:17:17.3472330Z 	at com.codacy.pmd.PMD$.apply(PMD.scala:57)
+2023-04-23T22:17:17.3472715Z 	at com.codacy.tools.scala.seed.DockerEngine.$anonfun$main$2(DockerEngine.scala:42)
+2023-04-23T22:17:17.3473180Z 	at com.codacy.tools.scala.seed.DockerEngine.$anonfun$main$2$adapted(DockerEngine.scala:28)
+2023-04-23T22:17:17.3473573Z 	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+2023-04-23T22:17:17.3473871Z 	at scala.util.Success.map(Try.scala:213)
+2023-04-23T22:17:17.3474235Z 	at com.codacy.tools.scala.seed.DockerEngine.$anonfun$main$1(DockerEngine.scala:28)
+2023-04-23T22:17:17.3474613Z 	at scala.util.Success.flatMap(Try.scala:251)
+2023-04-23T22:17:17.3474996Z 	at com.codacy.tools.scala.seed.DockerEngine.main(DockerEngine.scala:27)
+2023-04-23T22:17:17.3475365Z 	at com.codacy.Engine.main(Engine.scala)
+2023-04-23T22:17:17.3475587Z            
+2023-04-23T22:17:17.3475946Z 	at com.codacy.plugins.runners.BinaryDockerRunner.$anonfun$run$4(BinaryDockerRunner.scala:87)
+2023-04-23T22:17:17.3476518Z 	at scala.util.Success.flatMap(Try.scala:251)
+2023-04-23T22:17:17.3476921Z 	at com.codacy.plugins.runners.BinaryDockerRunner.run(BinaryDockerRunner.scala:72)
+2023-04-23T22:17:17.3477419Z 	at com.codacy.plugins.results.traits.ToolRunner.$anonfun$apply$2(ToolRunner.scala:73)
+2023-04-23T22:17:17.3477934Z 	at com.codacy.plugins.results.traits.CodacyDocker$.$anonfun$usingDockerConfig$2(CodacyDocker.scala:41)
+2023-04-23T22:17:17.3478413Z 	at com.codacy.plugins.utils.FileHelper$.$anonfun$usingNewFile$2(FileHelper.scala:51)
+2023-04-23T22:17:17.3478776Z 	at scala.util.Try$.apply(Try.scala:213)
+2023-04-23T22:17:17.3479129Z 	at com.codacy.plugins.utils.FileHelper$.usingNewFile(FileHelper.scala:45)
+2023-04-23T22:17:17.3479596Z 	at com.codacy.plugins.results.traits.CodacyDocker$.usingConfigPath(CodacyDocker.scala:53)
+2023-04-23T22:17:17.3480107Z 	at com.codacy.plugins.results.traits.CodacyDocker$.$anonfun$usingDockerConfig$1(CodacyDocker.scala:38)
+2023-04-23T22:17:17.3480507Z 	at scala.Option.map(Option.scala:230)
+2023-04-23T22:17:17.3480915Z 	at com.codacy.plugins.results.traits.CodacyDocker$.usingDockerConfig(CodacyDocker.scala:37)
+2023-04-23T22:17:17.3481394Z 	at com.codacy.plugins.results.traits.ToolRunner.$anonfun$apply$1(ToolRunner.scala:72)
+2023-04-23T22:17:17.3482031Z 	at scala.util.Try$.apply(Try.scala:213)
+2023-04-23T22:17:17.3482419Z 	at com.codacy.plugins.results.traits.ToolRunner.apply(ToolRunner.scala:58)
+2023-04-23T22:17:17.3482890Z 	at com.codacy.plugins.results.traits.ToolRunner.run(ToolRunner.scala:47)
+2023-04-23T22:17:17.3483295Z 	at com.codacy.analysis.core.tools.Tool.run(Tool.scala:80)
+2023-04-23T22:17:17.3483802Z 	at com.codacy.analysis.core.analysis.CodacyPluginsAnalyser.analyse(CodacyPluginsAnalyser.scala:24)
+2023-04-23T22:17:17.3484427Z 	at com.codacy.analysis.core.analysis.CodacyPluginsAnalyser.analyse(CodacyPluginsAnalyser.scala:14)
+2023-04-23T22:17:17.3484988Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.$anonfun$issues$1(AnalyseExecutor.scala:144)
+2023-04-23T22:17:17.3485416Z 	at scala.util.Success.flatMap(Try.scala:251)
+2023-04-23T22:17:17.3485840Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.issues(AnalyseExecutor.scala:137)
+2023-04-23T22:17:17.3486359Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.$anonfun$run$5(AnalyseExecutor.scala:70)
+2023-04-23T22:17:17.3486820Z 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:238)
+2023-04-23T22:17:17.3487244Z 	at scala.collection.immutable.HashSet$HashSet1.foreach(HashSet.scala:321)
+2023-04-23T22:17:17.3487702Z 	at scala.collection.immutable.HashSet$HashTrieSet.foreach(HashSet.scala:977)
+2023-04-23T22:17:17.3488120Z 	at scala.collection.immutable.HashSet$HashTrieSet.foreach(HashSet.scala:977)
+2023-04-23T22:17:17.3488544Z 	at scala.collection.TraversableLike.map(TraversableLike.scala:238)
+2023-04-23T22:17:17.3488962Z 	at scala.collection.TraversableLike.map$(TraversableLike.scala:231)
+2023-04-23T22:17:17.3489389Z 	at scala.collection.AbstractSet.scala$collection$SetLike$$super$map(Set.scala:51)
+2023-04-23T22:17:17.3489907Z 	at scala.collection.SetLike.map(SetLike.scala:104)
+2023-04-23T22:17:17.3490245Z 	at scala.collection.SetLike.map$(SetLike.scala:104)
+2023-04-23T22:17:17.3490582Z 	at scala.collection.AbstractSet.map(Set.scala:51)
+2023-04-23T22:17:17.3490981Z 	at scala.collection.parallel.ParIterableLike.map(ParIterableLike.scala:502)
+2023-04-23T22:17:17.3491461Z 	at scala.collection.parallel.ParIterableLike.map$(ParIterableLike.scala:500)
+2023-04-23T22:17:17.3491943Z 	at scala.collection.parallel.immutable.ParHashSet.map(ParHashSet.scala:50)
+2023-04-23T22:17:17.3492386Z 	at com.codacy.analysis.core.utils.SetOps$.mapInParallel(SetOps.scala:13)
+2023-04-23T22:17:17.3492854Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.$anonfun$run$4(AnalyseExecutor.scala:54)
+2023-04-23T22:17:17.3493258Z 	at scala.util.Either.map(Either.scala:353)
+2023-04-23T22:17:17.3496862Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.run(AnalyseExecutor.scala:52)
+2023-04-23T22:17:17.3497382Z 	at com.codacy.analysis.cli.command.AnalyseCommand.$anonfun$run$1(AnalyseCommand.scala:68)
+2023-04-23T22:17:17.3498017Z 	at scala.util.Either.flatMap(Either.scala:341)
+2023-04-23T22:17:17.3498427Z 	at com.codacy.analysis.cli.command.AnalyseCommand.run(AnalyseCommand.scala:67)
+2023-04-23T22:17:17.3498860Z 	at com.codacy.analysis.cli.MainImpl.runCommand(Main.scala:19)
+2023-04-23T22:17:17.3499245Z 	at com.codacy.analysis.cli.MainImpl.run(Main.scala:14)
+2023-04-23T22:17:17.3499629Z 	at com.codacy.analysis.cli.command.CLIApp.run(CLIApp.scala:22)
+2023-04-23T22:17:17.3500033Z 	at com.codacy.analysis.cli.command.CLIApp.run(CLIApp.scala:18)
+2023-04-23T22:17:17.3500551Z 	at com.codacy.analysis.cli.command.CommandAppWithBaseCommand.$anonfun$main$1(CommandAppWithBaseCommand.scala:103)
+2023-04-23T22:17:17.3501208Z 	at com.codacy.analysis.cli.command.CommandAppWithBaseCommand.$anonfun$main$1$adapted(CommandAppWithBaseCommand.scala:88)
+2023-04-23T22:17:17.3501679Z 	at scala.Option.foreach(Option.scala:407)
+2023-04-23T22:17:17.3502138Z 	at com.codacy.analysis.cli.command.CommandAppWithBaseCommand.main(CommandAppWithBaseCommand.scala:88)
+2023-04-23T22:17:17.3502631Z 	at com.codacy.analysis.cli.Main.main(Main.scala)
+2023-04-23T22:17:17.3752654Z 04/23 22:17:17 [34mINFO [0;39m [36mc.c.a.c.a.AnalyseExecutor:192[0;39m - Could not find local extra configuration for spotbugs 
+2023-04-23T22:17:17.3755584Z 04/23 22:17:17 [34mINFO [0;39m [36mc.c.a.c.a.AnalyseExecutor:181[0;39m - Preparing to run spotbugs with defaults 
+2023-04-23T22:17:17.3756626Z 04/23 22:17:17 [34mINFO [0;39m [36mc.c.analysis.core.tools.Tool:101[0;39m - Using the root directory /home/runner/work/spring-test-project/spring-test-project to run 
+2023-04-23T22:17:17.4269975Z 04/23 22:17:17 [39mDEBUG[0;39m [36mCodacyPlugins:17[0;39m - codacy/codacy-spotbugs:1.10.1 doesn't exist locally. 
+2023-04-23T22:17:17.4274466Z 04/23 22:17:17 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Verifying if docker image codacy/codacy-spotbugs:1.10.1 exists locally. took 50ms 
+2023-04-23T22:17:19.4165456Z 04/23 22:17:19 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Pulling docker image codacy/codacy-spotbugs:1.10.1. took 1981ms 
+2023-04-23T22:17:22.8685091Z 04/23 22:17:22 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Running docker image codacy/codacy-spotbugs:1.10.1. took 3454ms 
+2023-04-23T22:17:22.8685745Z 04/23 22:17:22 [1;31mERROR[0;39m [36mc.c.a.c.a.CodacyPluginsAnalyser:30[0;39m - Failed analysis for spotbugs 
+2023-04-23T22:17:22.8686081Z java.lang.Throwable: 
+2023-04-23T22:17:22.8686301Z Docker exited with code 1
+2023-04-23T22:17:22.8686512Z stdout: 
+2023-04-23T22:17:22.8686751Z stderr: SLF4J: No SLF4J providers were found.
+2023-04-23T22:17:22.8687133Z SLF4J: Defaulting to no-operation (NOP) logger implementation
+2023-04-23T22:17:22.8687541Z SLF4J: See http://www.slf4j.org/codes.html#noProviders for further details.
+2023-04-23T22:17:22.8687846Z Error executing the tool
+2023-04-23T22:17:22.8688141Z java.lang.Exception: Could not find compiled code inside modules:
+2023-04-23T22:17:22.8688642Z 
+2023-04-23T22:17:22.8688799Z - classesDirectories: /src
+2023-04-23T22:17:22.8689047Z   sourceDirectories: /src
+2023-04-23T22:17:22.8689189Z 
+2023-04-23T22:17:22.8689372Z 	at com.codacy.tools.spotbugs.SpotBugs$.apply(SpotBugs.scala:70)
+2023-04-23T22:17:22.8689805Z 	at com.codacy.tools.scala.seed.DockerEngine.executeTool(DockerEngine.scala:53)
+2023-04-23T22:17:22.8690288Z 	at com.codacy.tools.scala.seed.DockerEngine.$anonfun$main$2(DockerEngine.scala:35)
+2023-04-23T22:17:22.8690676Z 	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+2023-04-23T22:17:22.8690974Z 	at scala.util.Success.map(Try.scala:213)
+2023-04-23T22:17:22.8691335Z 	at com.codacy.tools.scala.seed.DockerEngine.$anonfun$main$1(DockerEngine.scala:27)
+2023-04-23T22:17:22.8691713Z 	at scala.util.Success.flatMap(Try.scala:251)
+2023-04-23T22:17:22.8692093Z 	at com.codacy.tools.scala.seed.DockerEngine.main(DockerEngine.scala:26)
+2023-04-23T22:17:22.8692489Z 	at com.codacy.tools.spotbugs.Engine.main(Engine.scala)
+2023-04-23T22:17:22.8692767Z            
+2023-04-23T22:17:22.8693293Z 	at com.codacy.plugins.runners.BinaryDockerRunner.$anonfun$run$4(BinaryDockerRunner.scala:87)
+2023-04-23T22:17:22.8693691Z 	at scala.util.Success.flatMap(Try.scala:251)
+2023-04-23T22:17:22.8694102Z 	at com.codacy.plugins.runners.BinaryDockerRunner.run(BinaryDockerRunner.scala:72)
+2023-04-23T22:17:22.8694601Z 	at com.codacy.plugins.results.traits.ToolRunner.$anonfun$apply$2(ToolRunner.scala:73)
+2023-04-23T22:17:22.8695112Z 	at com.codacy.plugins.results.traits.CodacyDocker$.$anonfun$usingDockerConfig$2(CodacyDocker.scala:41)
+2023-04-23T22:17:22.8695597Z 	at com.codacy.plugins.utils.FileHelper$.$anonfun$usingNewFile$2(FileHelper.scala:51)
+2023-04-23T22:17:22.8695953Z 	at scala.util.Try$.apply(Try.scala:213)
+2023-04-23T22:17:22.8696307Z 	at com.codacy.plugins.utils.FileHelper$.usingNewFile(FileHelper.scala:45)
+2023-04-23T22:17:22.8696762Z 	at com.codacy.plugins.results.traits.CodacyDocker$.usingConfigPath(CodacyDocker.scala:53)
+2023-04-23T22:17:22.8697286Z 	at com.codacy.plugins.results.traits.CodacyDocker$.$anonfun$usingDockerConfig$1(CodacyDocker.scala:38)
+2023-04-23T22:17:22.8697692Z 	at scala.Option.map(Option.scala:230)
+2023-04-23T22:17:22.8698079Z 	at com.codacy.plugins.results.traits.CodacyDocker$.usingDockerConfig(CodacyDocker.scala:37)
+2023-04-23T22:17:22.8698576Z 	at com.codacy.plugins.results.traits.ToolRunner.$anonfun$apply$1(ToolRunner.scala:72)
+2023-04-23T22:17:22.8698950Z 	at scala.util.Try$.apply(Try.scala:213)
+2023-04-23T22:17:22.8699331Z 	at com.codacy.plugins.results.traits.ToolRunner.apply(ToolRunner.scala:58)
+2023-04-23T22:17:22.8699788Z 	at com.codacy.plugins.results.traits.ToolRunner.run(ToolRunner.scala:47)
+2023-04-23T22:17:22.8700206Z 	at com.codacy.analysis.core.tools.Tool.run(Tool.scala:80)
+2023-04-23T22:17:22.8700710Z 	at com.codacy.analysis.core.analysis.CodacyPluginsAnalyser.analyse(CodacyPluginsAnalyser.scala:24)
+2023-04-23T22:17:22.8701319Z 	at com.codacy.analysis.core.analysis.CodacyPluginsAnalyser.analyse(CodacyPluginsAnalyser.scala:14)
+2023-04-23T22:17:22.8701903Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.$anonfun$issues$1(AnalyseExecutor.scala:144)
+2023-04-23T22:17:22.8702317Z 	at scala.util.Success.flatMap(Try.scala:251)
+2023-04-23T22:17:22.8702740Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.issues(AnalyseExecutor.scala:137)
+2023-04-23T22:17:22.8703251Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.$anonfun$run$5(AnalyseExecutor.scala:70)
+2023-04-23T22:17:22.8703724Z 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:238)
+2023-04-23T22:17:22.8704149Z 	at scala.collection.immutable.HashSet$HashSet1.foreach(HashSet.scala:321)
+2023-04-23T22:17:22.8704560Z 	at scala.collection.immutable.HashSet$HashTrieSet.foreach(HashSet.scala:977)
+2023-04-23T22:17:22.8704992Z 	at scala.collection.immutable.HashSet$HashTrieSet.foreach(HashSet.scala:977)
+2023-04-23T22:17:22.8705411Z 	at scala.collection.TraversableLike.map(TraversableLike.scala:238)
+2023-04-23T22:17:22.8705828Z 	at scala.collection.TraversableLike.map$(TraversableLike.scala:231)
+2023-04-23T22:17:22.8706359Z 	at scala.collection.AbstractSet.scala$collection$SetLike$$super$map(Set.scala:51)
+2023-04-23T22:17:22.8706742Z 	at scala.collection.SetLike.map(SetLike.scala:104)
+2023-04-23T22:17:22.8707076Z 	at scala.collection.SetLike.map$(SetLike.scala:104)
+2023-04-23T22:17:22.8707397Z 	at scala.collection.AbstractSet.map(Set.scala:51)
+2023-04-23T22:17:22.8707812Z 	at scala.collection.parallel.ParIterableLike.map(ParIterableLike.scala:502)
+2023-04-23T22:17:22.8708293Z 	at scala.collection.parallel.ParIterableLike.map$(ParIterableLike.scala:500)
+2023-04-23T22:17:22.8708776Z 	at scala.collection.parallel.immutable.ParHashSet.map(ParHashSet.scala:50)
+2023-04-23T22:17:22.8709214Z 	at com.codacy.analysis.core.utils.SetOps$.mapInParallel(SetOps.scala:13)
+2023-04-23T22:17:22.8709683Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.$anonfun$run$4(AnalyseExecutor.scala:54)
+2023-04-23T22:17:22.8710081Z 	at scala.util.Either.map(Either.scala:353)
+2023-04-23T22:17:22.8710586Z 	at com.codacy.analysis.cli.analysis.AnalyseExecutor.run(AnalyseExecutor.scala:52)
+2023-04-23T22:17:22.8711094Z 	at com.codacy.analysis.cli.command.AnalyseCommand.$anonfun$run$1(AnalyseCommand.scala:68)
+2023-04-23T22:17:22.8711495Z 	at scala.util.Either.flatMap(Either.scala:341)
+2023-04-23T22:17:22.8711885Z 	at com.codacy.analysis.cli.command.AnalyseCommand.run(AnalyseCommand.scala:67)
+2023-04-23T22:17:22.8712331Z 	at com.codacy.analysis.cli.MainImpl.runCommand(Main.scala:19)
+2023-04-23T22:17:22.8712707Z 	at com.codacy.analysis.cli.MainImpl.run(Main.scala:14)
+2023-04-23T22:17:22.8713089Z 	at com.codacy.analysis.cli.command.CLIApp.run(CLIApp.scala:22)
+2023-04-23T22:17:22.8713478Z 	at com.codacy.analysis.cli.command.CLIApp.run(CLIApp.scala:18)
+2023-04-23T22:17:22.8714004Z 	at com.codacy.analysis.cli.command.CommandAppWithBaseCommand.$anonfun$main$1(CommandAppWithBaseCommand.scala:103)
+2023-04-23T22:17:22.8714660Z 	at com.codacy.analysis.cli.command.CommandAppWithBaseCommand.$anonfun$main$1$adapted(CommandAppWithBaseCommand.scala:88)
+2023-04-23T22:17:22.8715125Z 	at scala.Option.foreach(Option.scala:407)
+2023-04-23T22:17:22.8715648Z 	at com.codacy.analysis.cli.command.CommandAppWithBaseCommand.main(CommandAppWithBaseCommand.scala:88)
+2023-04-23T22:17:22.8716129Z 	at com.codacy.analysis.cli.Main.main(Main.scala)
+2023-04-23T22:17:22.9956785Z 04/23 22:17:22 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Verifying if docker image codacy/codacy-metrics-cloc:0.2.4 exists locally. took 41ms 
+2023-04-23T22:17:24.4201108Z 04/23 22:17:24 [34mINFO [0;39m [36mCodacyPlugins:26[0;39m - Running docker image codacy/codacy-metrics-cloc:0.2.4. took 1417ms 
+2023-04-23T22:17:24.4202125Z 04/23 22:17:24 [34mINFO [0;39m [36mc.c.a.c.a.CodacyPluginsAnalyser:48[0;39m - Completed metrics for metrics with 2 results 

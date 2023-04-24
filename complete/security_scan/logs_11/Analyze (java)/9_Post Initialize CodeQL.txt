@@ -1,0 +1,24 @@
+2023-04-23T22:16:42.0878308Z Post job cleanup.
+2023-04-23T22:16:42.4246114Z [command]/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/codeql version --format=terse
+2023-04-23T22:16:42.9187321Z 2.13.0
+2023-04-23T22:16:43.2462419Z [command]/opt/hostedtoolcache/CodeQL/2.13.0-20230414/x64/codeql/codeql database export-diagnostics /home/runner/work/_temp/codeql_databases --db-cluster --format=sarif-latest --output=/home/runner/work/_temp/codeql-intermediate-results.sarif --sarif-include-diagnostics -vvv --sarif-category /language:java
+2023-04-23T22:16:43.7531854Z Writing logs to /home/runner/work/_temp/codeql_databases/log/database-export-diagnostics-20230423.221643.749.log.
+2023-04-23T22:16:43.9853930Z Interpreting diagnostic messages
+2023-04-23T22:16:43.9894219Z Looking for diagnostics in /home/runner/work/_temp/codeql_databases/java/diagnostic...
+2023-04-23T22:16:43.9901488Z Looking for diagnostics in /home/runner/work/_temp/codeql_databases/java/diagnostic/extractors...
+2023-04-23T22:16:43.9908012Z Looking for diagnostics in /home/runner/work/_temp/codeql_databases/java/diagnostic/extractors/java...
+2023-04-23T22:16:43.9914055Z Looking for diagnostics in /home/runner/work/_temp/codeql_databases/diagnostic...
+2023-04-23T22:16:43.9921105Z Looking for diagnostics in /home/runner/work/_temp/codeql_databases/diagnostic/tracer...
+2023-04-23T22:16:43.9938796Z Found 0 raw diagnostic messages.
+2023-04-23T22:16:44.0040911Z Processed diagnostic messages (removed 0 due to limits, created 0 summary diagnostics for status page).
+2023-04-23T22:16:44.0065767Z Interpreted diagnostic messages. (17ms)
+2023-04-23T22:16:44.1720037Z Uploading failed SARIF file ../codeql-failed-run.sarif
+2023-04-23T22:16:44.1801225Z ##[group]Uploading results
+2023-04-23T22:16:44.1802036Z Processing sarif files: ["../codeql-failed-run.sarif"]
+2023-04-23T22:16:44.1981686Z Uploading results
+2023-04-23T22:16:44.4795617Z Successfully uploaded results
+2023-04-23T22:16:44.4796811Z ##[endgroup]
+2023-04-23T22:16:44.4799224Z ##[group]Waiting for processing to finish
+2023-04-23T22:16:44.6437493Z Analysis upload status is pending.
+2023-04-23T22:16:49.8071388Z Analysis upload status is failed.
+2023-04-23T22:16:49.8078863Z ##[endgroup]

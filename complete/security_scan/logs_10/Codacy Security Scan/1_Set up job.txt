@@ -1,0 +1,29 @@
+2023-04-23T22:15:51.1643574Z Current runner version: '2.303.0'
+2023-04-23T22:15:51.1669378Z ##[group]Operating System
+2023-04-23T22:15:51.1669949Z Ubuntu
+2023-04-23T22:15:51.1670327Z 22.04.2
+2023-04-23T22:15:51.1670563Z LTS
+2023-04-23T22:15:51.1670865Z ##[endgroup]
+2023-04-23T22:15:51.1671198Z ##[group]Runner Image
+2023-04-23T22:15:51.1671502Z Image: ubuntu-22.04
+2023-04-23T22:15:51.1671858Z Version: 20230417.1
+2023-04-23T22:15:51.1672362Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20230417.1/images/linux/Ubuntu2204-Readme.md
+2023-04-23T22:15:51.1672957Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20230417.1
+2023-04-23T22:15:51.1673431Z ##[endgroup]
+2023-04-23T22:15:51.1673773Z ##[group]Runner Image Provisioner
+2023-04-23T22:15:51.1674139Z 2.0.139.1
+2023-04-23T22:15:51.1674383Z ##[endgroup]
+2023-04-23T22:15:51.1675105Z ##[group]GITHUB_TOKEN Permissions
+2023-04-23T22:15:51.1675713Z Actions: read
+2023-04-23T22:15:51.1676024Z Contents: read
+2023-04-23T22:15:51.1676343Z Metadata: read
+2023-04-23T22:15:51.1676953Z SecurityEvents: write
+2023-04-23T22:15:51.1677321Z ##[endgroup]
+2023-04-23T22:15:51.1681023Z Secret source: Actions
+2023-04-23T22:15:51.1681483Z Prepare workflow directory
+2023-04-23T22:15:51.2400331Z Prepare all required actions
+2023-04-23T22:15:51.2583213Z Getting action download info
+2023-04-23T22:15:51.4779879Z Download action repository 'actions/checkout@v3' (SHA:8e5e7e5ab8b370d6c329ec480221332ada57f0ab)
+2023-04-23T22:15:52.0936571Z Download action repository 'codacy/codacy-analysis-cli-action@d840f886c4bd4edc059706d09c6a1586111c540b' (SHA:d840f886c4bd4edc059706d09c6a1586111c540b)
+2023-04-23T22:15:52.4809676Z Download action repository 'github/codeql-action@v2' (SHA:b2c19fb9a2a485599ccf4ed5d65527d94bc57226)
+2023-04-23T22:15:57.0344081Z Complete job name: Codacy Security Scan
