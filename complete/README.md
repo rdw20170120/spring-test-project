@@ -30,7 +30,7 @@ Consider these factors:
 * Add liveness and readiness probes
 * Enhance GitHub-integrated scanning with a paid account
 * Enhance Synk scanning with a paid account
-* Improve the Docker image (see comments in [`Dockerfile`](./Dockerfile)
+* Improve the Docker image - see comments in [`Dockerfile`](./Dockerfile)
 * Productionize everything
 * Run dynamic security scans against the deployment
 * Strictly build the components separately
